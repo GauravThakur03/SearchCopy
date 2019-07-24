@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <displayImages>true</displayImages>
+    <translations>
+        <SEARCH>Search</SEARCH>
+        <RESULTS>Results</RESULTS>
+        <PREVIEW>Preview</PREVIEW>
+        <PRODUCT_CATEGORY>Product Category</PRODUCT_CATEGORY>
+        <MODEL_YEAR>Model Year</MODEL_YEAR>
+        <CONTENT_TYPE>Content type</CONTENT_TYPE>
+        <OPEN_WINDOW_TITLE>Open in new window</OPEN_WINDOW_TITLE>
+        <CLOSE_PREVIEW>Close preview</CLOSE_PREVIEW>
+        <SHOW_MORE>Show more</SHOW_MORE>
+        <SHOW_LESS>Show less</SHOW_LESS>
+        <CLEAR_FILTERS>Clear Filters</CLEAR_FILTERS>
+        <LAST_UPDATED>Last Modified</LAST_UPDATED>
+        <SHOW_FILTERS>Show Filters</SHOW_FILTERS>
+        <VIEW_RESULTS>View Results</VIEW_RESULTS>
+        <CONTEXT_SEARCH_MESSAGE>Showing results for model specific search</CONTEXT_SEARCH_MESSAGE>
+        <SEARCH_ENTIRE_LINK>Search entire site</SEARCH_ENTIRE_LINK>
+        <NO_SUGGESTIONS>No suggestions, for search term!</NO_SUGGESTIONS>
+    </translations>
+    <productCategoryList>
+        <productCategory>
+            <key>AGMS</key>
+            <label>Ag management solutions</label>
+            <value>category==Ag management solutions</value>
+        </productCategory>
+        <productCategory>
+            <key>COMBINE_AND_HEADERS</key>
+            <label>Combines and headers</label>
+            <value>category==Combines and headers</value>
+        </productCategory>
+        <productCategory>
+            <key>COMMERCIAL_MOVERS</key>
+            <label>Commercial movers</label>
+            <value>category==Commercial movers</value>
+        </productCategory>
+        <productCategory>
+            <key>COTTON_HARVESTERS</key>
+            <label>Cotton harvesters</label>
+            <value>category==Cotton harvesters</value>
+        </productCategory>
+        <productCategory>
+            <key>CUTTERS_AND_SHREDDERS</key>
+            <label>Cutters and shredders</label>
+            <value>category==Cutters and shredders</value>
+        </productCategory>
+        <productCategory>
+            <key>EARCTHMOVING_EQUIPMENTS</key>
+            <label>Earthmoving equipments </label>
+            <value>category==Earthmoving equipments </value>
+        </productCategory>
+        <productCategory>
+            <key>FRONTIER_EQUIPMENT</key>
+            <label>Frontier equipment</label>
+            <value>category==Frontier equipment</value>
+        </productCategory>
+        <productCategory>
+            <key>GOLF_AND_TURF</key>
+            <label>Golf and turf</label>
+            <value>category==Golf and turf</value>
+        </productCategory>
+        <productCategory>
+            <key>HEY_AND_FORAGE</key>
+            <label>Hay and forage</label>
+            <value>category==Hay and forage</value>
+        </productCategory>
+        <productCategory>
+            <key>LAWN_EQUIPMENT</key>
+            <label>Lawn equipment</label>
+            <value>category==Lawn equipment</value>
+        </productCategory>
+        <productCategory>
+            <key>MAETRIAL_HANDLING</key>
+            <label>Material Handling</label>
+            <value>category==Material Handling</value>
+        </productCategory>
+        <productCategory>
+            <key>SEEDING</key>
+            <label>Seeding</label>
+            <value>category==Seeding</value>
+        </productCategory>
+        <productCategory>
+            <key>SPRAYERS</key>
+            <label>Sprayers</label>
+            <value>category==Sprayers</value>
+        </productCategory>
+        <productCategory>
+            <key>TILLAGE</key>
+            <label>Tillage</label>
+            <value>category==Tillage</value>
+        </productCategory>
+        <productCategory>
+            <key>TRACTERS</key>
+            <label>Tractors</label>
+            <value>category==Tractors</value>
+        </productCategory>
+        <productCategory>
+            <key>UTILITY_VEHICLES</key>
+            <label>Utility vehicles</label>
+            <value>category==Utility vehicles</value>
+        </productCategory>
+    </productCategoryList>
+    <contentTypeList>
+        <contentType>
+            <key>ATTACHMENTS</key>
+            <label>Attachments</label>
+            <value>sub-type==Attachments</value>
+        </contentType>
+        <contentType>
+            <key>COMPETITIVE</key>
+            <label>Competitive</label>
+            <value>sub-type==Competitive</value>
+        </contentType>
+        <contentType>
+            <key>FEATURES</key>
+            <label>Features</label>
+            <value>sub-type==Features</value>
+        </contentType>
+        <contentType>
+            <key>MODEL</key>
+            <label>Model</label>
+            <value>sub-type==Model</value>
+        </contentType>
+        <contentType>
+            <key>PRODUCT_ANNOUNCEMENTS</key>
+            <label>Product announcements</label>
+            <value>sub-type==Product announcements</value>
+        </contentType>
+        <contentType>
+            <key>PRODUCT_LAUNCH_CENTER</key>
+            <label>Product launch center</label>
+            <value>sub-type==Product launch center</value>
+        </contentType>
+    </contentTypeList>
+    <modelYearList>
+        <modelYear>
+            <key>2019</key>
+            <label>2019</label>
+            <value>model-year==2019</value>
+        </modelYear>
+        <modelYear>
+            <key>2018</key>
+            <label>2018</label>
+            <value>model-year==2018</value>
+        </modelYear>
+        <modelYear>
+            <key>2017</key>
+            <label>2017</label>
+            <value>model-year==2017</value>
+        </modelYear>
+        <modelYear>
+            <key>2016</key>
+            <label>2016</label>
+            <value>model-year==2016</value>
+        </modelYear>
+        <modelYear>
+            <key>2015</key>
+            <label>2015</label>
+            <value>model-year==2015</value>
+        </modelYear>
+        <modelYear>
+            <key>2014</key>
+            <label>2014</label>
+            <value>model-year==2014</value>
+        </modelYear>
+        <modelYear>
+            <key>2013</key>
+            <label>2013</label>
+            <value>model-year==2013</value>
+        </modelYear>
+        <modelYear>
+            <key>2012</key>
+            <label>2012</label>
+            <value>model-year==2012</value>
+        </modelYear>
+        <modelYear>
+            <key>2011</key>
+            <label>2011</label>
+            <value>model-year==2011</value>
+        </modelYear>
+        <modelYear>
+            <key>2010</key>
+            <label>2010</label>
+            <value>model-year==2010</value>
+        </modelYear>
+    </modelYearList>
+</settings>

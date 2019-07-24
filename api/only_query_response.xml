@@ -1,0 +1,699 @@
+<?xml version="1.0"?>
+<vce>
+  <param name="v:project" value="deere-gsm-project"/>
+  <param name="country-site" value="en_GB"/>
+  <param name="contet-type" value="text/xml"/>
+  <param name="render.function" value="xml-feed-display"/>
+  <param name="query" value="tractors"/>
+  <option name="render.tree-show" value="7"/>
+  <binning base-url="http://search.tal.deere.com/cgi-bin/query-meta?&amp;v:project=deere-gsm-project&amp;country-site=en_GB&amp;contet-type=text%2Fxml&amp;render.function=xml-feed-display&amp;query=tractors&amp;binning-state=">
+    <binning-set label="Product Category" bs-id="category">
+      <bin label="Tractors" ndocs="10596" token="category==Tractors">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Ag management solutions" ndocs="1136" token="category==Ag management solutions">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Lawn equipment" ndocs="1084" token="category==Lawn equipment">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Hay and forage" ndocs="845" token="category==Hay and forage">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Material handling" ndocs="795" token="category==Material handling">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Sprayers" ndocs="412" token="category==Sprayers">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Commercial mowers" ndocs="357" token="category==Commercial mowers">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Combines and headers" ndocs="314" token="category==Combines and headers">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Golf and turf" ndocs="180" token="category==Golf and turf">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Utility vehicles" ndocs="94" token="category==Utility vehicles">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Seeding" ndocs="54" token="category==Seeding">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="commercial_mowers" ndocs="14" token="category==commercial_mowers">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="tractors" ndocs="11" token="category==tractors">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Tillage" ndocs="9" token="category==Tillage">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="golf_turf" ndocs="7" token="category==golf_turf">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="lawn_equipment" ndocs="6" token="category==lawn_equipment">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="ams" ndocs="5" token="category==ams">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Combines and Headers" ndocs="5" token="category==Combines and Headers">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="utility_vehicles" ndocs="5" token="category==utility_vehicles">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="combines_headers" ndocs="3" token="category==combines_headers">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="hay_forage" ndocs="3" token="category==hay_forage">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="material_handling" ndocs="2" token="category==material_handling">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="sprayers" ndocs="2" token="category==sprayers">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="Hay &amp; Forage" ndocs="1" token="category==Hay &amp; Forage">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+      <bin label="seeding" ndocs="1" token="category==seeding">
+        <binning-set bs-id="deere-gsm-collection|1"/>
+      </bin>
+    </binning-set>
+    <binning-set label="Model Year" bs-id="model-year">
+      <bin label="2017" ndocs="2860" token="model-year==2017"/>
+      <bin label="2016" ndocs="2484" token="model-year==2016"/>
+      <bin label="2015" ndocs="2380" token="model-year==2015"/>
+      <bin label="2018" ndocs="2025" token="model-year==2018"/>
+      <bin label="2014" ndocs="1737" token="model-year==2014"/>
+      <bin label="2019" ndocs="1380" token="model-year==2019"/>
+      <bin label="All" ndocs="1026" token="model-year==All"/>
+      <bin label="2013" ndocs="943" token="model-year==2013"/>
+      <bin label="2012" ndocs="655" token="model-year==2012"/>
+      <bin label="Attachments" ndocs="292" token="model-year==Attachments"/>
+      <bin label="2011" ndocs="22" token="model-year==2011"/>
+      <bin label="2009" ndocs="1" token="model-year==2009"/>
+    </binning-set>
+    <binning-state separator="%0A%0A"/>
+  </binning>
+  <added-source elt-id="11" max-elt-id="11" name="deere-gsm-source-select" maintainers="deeredev" test-strictly="test-strictly" type="ref" modified-by="data-explorer-admin" modified="1439580024" over-request="1.3" num="200" retrieved="200">
+    <added-source maintainers="deere, esatalert" name="deere-gsm-source-201" test-strictly="test-strictly" modified="1446141374" modified-by="ss59845" max-elt-id="68" status="queried" requested="200" admin-url="http://lsde90srchi1.sdde.deere.com:275/cgi-bin/admin" vse-vse="vse-vse" query-xml-supported="query-xml-supported" cached="cached" stoplist="none" stem2="none" stem="depluralize" total-results-with-duplicates="16293" retrieval-ms="51" search-ms="2" total-results="16293" retrieved="200">
+      <parse url="http://lsde90srchi1.sdde.deere.com:7210/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22tractors%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=viv%3aif-else%28%24sub-type%3d%27Attachment%27,%20%24score%20*%20viv%3aif-else%28%24status%20%3d%20%27Current%27,%202,%201%29,%20%24score%20*%20viv%3aif-else%28%24year%3d%27Attachments%27%20or%20not%28%24year%29,%202000,%20%24year%29%29&amp;binning-mode=normal&amp;force-binning=0&amp;max=300&amp;start=0&amp;num=200&amp;staging=0&amp;collection=deere-gsm-collection&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=0&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0&amp;rights=v.gp97135%0av.everyone&amp;fi-cond=%24country-site%3d%27en_GB%27" start-time="24" end-time="106" http-status="200 OK" status="fetched processed parsed" retrieved="200"/>
+    </added-source>
+  </added-source>
+  <added-source maintainers="ss59845" name="deere-gsm-source-header-new" test-strictly="test-strictly" modified="1538485049" modified-by="dc73091@Enterprise Search -Tech Lead" max-elt-id="316">
+    <parse url="http://dlrdoc.deere.com/sales/salesmanual/ssi/GB/en/header_responsive.html" start-time="24" end-time="63" http-status="200 OK" status="fetched processed parsed"/>
+  </added-source>
+  <added-source name="deere-gsm-source-footer-new" maintainers="ar02538" test-strictly="test-strictly" modified-by="ar02538" max-elt-id="51" modified="1471286141">
+    <parse url="http://dlrdoc.deere.com/sales/salesmanual/ssi/GB/en/footer_responsive.html" start-time="45" end-time="66" http-status="200 OK" status="fetched processed parsed"/>
+  </added-source>
+  <list path="" num="200" level="0" start="0" per="25">
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2012/product_announcements/7r_8r_ballast_calculator.html" filetypes="html " rank="0" source="deere-gsm-source-201" score="0.111111" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2012/product_announcements/7r_8r_ballast_calculator.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc0&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/product_announcements/7r_8r_ballast_calculator.html</content>
+      <content name="last-modified" type="text">Oct 14,
+  2011 13:47:59 GMT</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/product_announcements/7r_8r_ballast_calculator.html</content>
+      <content name="last-modified" type="text">Oct 14,
+  2011 13:47:59 GMT</content>
+      <content type="html" name="title">&lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ballast calculator for 7R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; and 8R/8RT Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; model year 2011</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/product_announcements/7r_8r_ballast_calculator.html</content>
+      <content name="last-modified" type="text">Oct 14,
+  2011 13:47:59 GMT</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">Properly ballasting a &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; is one of the most important elements to optimizing its performance.</content>
+      <content name="year" type="html">2012</content>
+      <content name="sub-type" type="html">Product Announcement</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">&lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ballast calculator for 7R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; and 8R/8RT Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; model year 2011</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">                      
+                     &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ballast calculator for 7R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; and 8R/8RT Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; model year 2011
+                                         
+                                                    Properly ballasting a &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; is one of the most important elements to optimizing its  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2012/product_announcements/7r_dlg_powermix_test.html" filetypes="html " rank="1" source="deere-gsm-source-201" score="0.1" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2012/product_announcements/7r_dlg_powermix_test.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc1&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/product_announcements/7r_dlg_powermix_test.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/product_announcements/7r_dlg_powermix_test.html</content>
+      <content type="html" name="title">7280R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; underlines the John Deere Stage IIIB &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;’s first-class performance in DLG PowerMix and Profi &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; ...</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/product_announcements/7r_dlg_powermix_test.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">Official DLG PowerMix test results were recently released on the &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; of the Year 2012 awarded t</content>
+      <content name="year" type="html">2012</content>
+      <content name="sub-type" type="html">Product Announcement</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">7280R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; underlines the John Deere Stage IIIB &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;’s first-class performance in DLG PowerMix and Profi &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; ...</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">                      
+                     7280R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; underlines the John Deere Stage IIIB &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;’s first-class performance in DLG PowerMix and Profi &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/cost_of_operation_7230r_vs_fendt_826_vario.html" filetypes="html " rank="2" source="deere-gsm-source-201" score="0.0909091" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/cost_of_operation_7230r_vs_fendt_826_vario.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc2&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7230r_vs_fendt_826_vario.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7230r_vs_fendt_826_vario.html</content>
+      <content type="html" name="title">Cost of operation: AutoPowr™ 7230R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 826 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7230r_vs_fendt_826_vario.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">Cost of operation: AutoPowr 7230R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 826 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,7R Series &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="year" type="html">2015</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">Cost of operation: AutoPowr 7230R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 826 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... vs. Fendt® 826 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;
+                
+                
+                
+                
+                
+                                         
+                             Print                   7R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation comparison                        Many different factors affect the overall cost of  ... following numbers show the maintenance costs for each &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; model based on 800 hours annually for five  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/cost_of_operation_7250r_vs_fendt_828_vario.html" filetypes="html " rank="3" source="deere-gsm-source-201" score="0.0833333" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/cost_of_operation_7250r_vs_fendt_828_vario.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc3&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7250r_vs_fendt_828_vario.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7250r_vs_fendt_828_vario.html</content>
+      <content type="html" name="title">Cost of operation: AutoPowr™ 7250R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 828 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7250r_vs_fendt_828_vario.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">Cost of operation: AutoPowr 7250R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 828 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,7R Series &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="year" type="html">2015</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">Cost of operation: AutoPowr 7250R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 828 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... vs. Fendt® 828 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;
+                
+                
+                
+                
+                
+                                         
+                             Print                   7R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation comparison                        Many different factors affect the overall cost of  ... following numbers show the maintenance costs for each &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; model based on 800 hours annually for five  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/cost_of_operation_7310r_vs_fendt_936_vario.html" filetypes="html " rank="4" source="deere-gsm-source-201" score="0.0769231" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/cost_of_operation_7310r_vs_fendt_936_vario.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc4&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7310r_vs_fendt_936_vario.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7310r_vs_fendt_936_vario.html</content>
+      <content type="html" name="title">Cost of operation: AutoPowr™ 7310R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 936 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/cost_of_operation_7310r_vs_fendt_936_vario.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">Cost of operation: AutoPowr 7310R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 936 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,7R Series &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="year" type="html">2015</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">Cost of operation: AutoPowr 7310R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 936 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... vs. Fendt® 936 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;
+                
+                
+                
+                
+                
+                                         
+                             Print                   7R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation comparison                        Many different factors affect the overall cost of  ... following numbers show the maintenance costs for each &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; model based on 800 hours annually for five  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/jd8370r_vs_fendt939vario_cost_pcb.html" filetypes="html " rank="5" source="deere-gsm-source-201" score="0.0714286" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/jd8370r_vs_fendt939vario_cost_pcb.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc5&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/jd8370r_vs_fendt939vario_cost_pcb.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/jd8370r_vs_fendt939vario_cost_pcb.html</content>
+      <content type="html" name="title">John Deere 8370R AutoPowr™ &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/jd8370r_vs_fendt939vario_cost_pcb.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">John Deere 8370R AutoPowr™ &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt�® Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,8R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation c</content>
+      <content name="year" type="html">2015</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">John Deere 8370R AutoPowr™ &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt�® Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;
+                
+                
+                
+                                         
+                             Print                   8R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation comparison                         Many different factors affect the overall cost of  ... following numbers show the maintenance costs for each &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; model based on 800 hours annually for five  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/jd8370r_vs_nht8420_cost_pcb.html" filetypes="html " rank="6" source="deere-gsm-source-201" score="0.0666667" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/competitive/jd8370r_vs_nht8420_cost_pcb.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc6&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/jd8370r_vs_nht8420_cost_pcb.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/jd8370r_vs_nht8420_cost_pcb.html</content>
+      <content type="html" name="title">John Deere 8370R AutoPowr™ &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T8.420 Auto Command &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/competitive/jd8370r_vs_nht8420_cost_pcb.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">John Deere 8370R AutoPowr™ &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T8.420 Auto Command &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,8R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;:</content>
+      <content name="year" type="html">2015</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">John Deere 8370R AutoPowr™ &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T8.420 Auto Command &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... T8.420 Auto Command &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;
+                
+                
+                
+                                         
+                             Print                   8R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation comparison                        Many different factors affect  ... following numbers show the maintenance costs for each &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt; model based on 800 hours annually for five  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2014/product_announcements/tractor_implement_automation.html" filetypes="html " rank="7" source="deere-gsm-source-201" score="0.0625" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2014/product_announcements/tractor_implement_automation.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc7&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2014/product_announcements/&lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;_implement_automation.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2014/product_announcements/&lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;_implement_automation.html</content>
+      <content type="html" name="title">&lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; Implement Automation (TIA) available for R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2014/product_announcements/&lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;_implement_automation.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">TIA has been available for R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; (6, 7, and 8R) since January 2013. TIA enables automat</content>
+      <content name="year" type="html">2014</content>
+      <content name="sub-type" type="html">Product Announcement</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">&lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; Implement Automation (TIA) available for R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... Grimme®, Pöttinger®, and now Krone® manufacturers.                  John Deere - &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;-baler automation                  &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;-baler automation offers automatic &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2013/product_announcements/tractor_implement_automation.html" filetypes="html " rank="8" source="deere-gsm-source-201" score="0.0588235" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2013/product_announcements/tractor_implement_automation.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc8&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2013/product_announcements/&lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;_implement_automation.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2013/product_announcements/&lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;_implement_automation.html</content>
+      <content type="html" name="title">&lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; Implement Automation available for R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; (Revised 11-Jan-2013)</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2013/product_announcements/&lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;_implement_automation.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">&lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; Implement Automation (TIA) is available for R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; (6, 7, and 8R) beginning Janu</content>
+      <content name="year" type="html">2013</content>
+      <content name="sub-type" type="html">Product Announcement</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">&lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; Implement Automation available for R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; (Revised 11-Jan-2013)</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... John Deere, Grimme®, and Pöttinger® manufacturers.                  John Deere - &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;-Baler Automation                 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;-Baler Automation offers automatic &lt;span class="vivbold qt0"&gt;tractor&lt;/span&gt;  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2012/competitive/7r_vs_800_vario_fendt.html" filetypes="html " rank="9" source="deere-gsm-source-201" score="0.0555556" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2012/competitive/7r_vs_800_vario_fendt.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc9&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/competitive/7r_vs_800_vario_fendt.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/competitive/7r_vs_800_vario_fendt.html</content>
+      <content type="html" name="title">John Deere 7R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; vs. Fendt® 800 Vario &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; - for internal use only</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2012/competitive/7r_vs_800_vario_fendt.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">The John Deere 7R Series Row-Crop &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; are specifically designed for customers who desire a tra</content>
+      <content name="year" type="html">2012</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">John Deere 7R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; vs. Fendt 800 Vario &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; - for internal use only</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt; do not offer such a feature.        &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; model      7200R      7215R      7230R      7260R      7280R      822      824       ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/ams/2017/product_announcements/atc_deutz_massey.html" filetypes="html " rank="10" source="deere-gsm-source-201" score="0.0526316" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/ams/2017/product_announcements/atc_deutz_massey.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc10&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/ams/2017/product_announcements/atc_deutz_massey.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/ams/2017/product_announcements/atc_deutz_massey.html</content>
+      <content type="html" name="title">AutoTrac™ Controller now available for additional John Deere, Deutz-Fahr® &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;, and Massey Ferguson® &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/ams/2017/product_announcements/atc_deutz_massey.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">Ag management solutions</content>
+      <content name="description" type="html">AutoTrac Controller now available for additional John Deere, Deutz-Fahr &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;, and Ma</content>
+      <content name="year" type="html">2017</content>
+      <content name="sub-type" type="html">Product Announcement</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">AutoTrac Controller now available for additional John Deere, Deutz-Fahr &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;, and Massey Ferguson &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="subcategory" type="html">Ag management solutions</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html"> ... now available for additional John Deere, Deutz-Fahr® &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;, and Massey Ferguson® &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;    The approved platforms list for AutoTrac Controller Raven  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/compatibility_supplemental_info/cuts/dimensions_4r.html" filetypes="html " rank="11" source="deere-gsm-source-201" score="0.05" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2015/compatibility_supplemental_info/cuts/dimensions_4r.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc11&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/compatibility_supplemental_info/cuts/dimensions_4r.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/compatibility_supplemental_info/cuts/dimensions_4r.html</content>
+      <content type="html" name="title">4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2015/compatibility_supplemental_info/cuts/dimensions_4r.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html"/>
+      <content name="year" type="html"/>
+      <content name="sub-type" type="html">Feature</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="last_updated" type="html">25-February-2015</content>
+      <content name="snippet" type="html">                  
+              4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;
+                    Print                      4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - cab &lt;span class="vivbold qt0"&gt;tractors  &lt;/span&gt;                                                        Tires (wheel position):      R1 Bar      R3 Turf      R4 Industrial      R3 Turf (golf)       Rear     13.6- ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/8r_vs_claas_axion.html" filetypes="html " rank="12" source="deere-gsm-source-201" score="0.047619" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/8r_vs_claas_axion.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc12&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_claas_axion.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_claas_axion.html</content>
+      <content type="html" name="title">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. CLAAS® Axion 900 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_claas_axion.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. CLAAS Axion 900 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. CLAAS Axion 900 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">           Print    8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. CLAAS® Axion 900 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;                           Key selling points: 8R vs. Axion 900     Performance:  14 percent higher torque rise, 4 percent higher maximum torque and 10 percent more power  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/8r_vs_fendt_900.html" filetypes="html " rank="13" source="deere-gsm-source-201" score="0.0454545" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/8r_vs_fendt_900.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc13&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_fendt_900.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_fendt_900.html</content>
+      <content type="html" name="title">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 900 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_fendt_900.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 900 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 900 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">            Print    8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 900 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;                          Key selling points: 8R vs. Vario 900     Performance:  47 percent higher torque rise, 8 percent higher maximum torque and 10 percent more  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/8r_vs_nh_t8.html" filetypes="html " rank="14" source="deere-gsm-source-201" score="0.0434783" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/8r_vs_nh_t8.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc14&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_nh_t8.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_nh_t8.html</content>
+      <content type="html" name="title">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T8 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/8r_vs_nh_t8.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland T8 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland T8 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">           Print    8R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T8 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;                          Key selling points: 8R vs. T8     Performance:  10 kw greater maximum power take-off (PTO) performance than the New Holland. The 8R &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6r_lf_vs_case_ih_puma.html" filetypes="html " rank="15" source="deere-gsm-source-201" score="0.0416667" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6r_lf_vs_case_ih_puma.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc15&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_case_ih_puma.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_case_ih_puma.html</content>
+      <content type="html" name="title">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Case™ IH Puma® Large-Chassis &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_case_ih_puma.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Case IH Puma Large-Chassis &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Case IH Puma Large-Chassis &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">           Print    6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Case™ IH Puma® Large-Chassis &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;                         Key selling points: 6R vs. Case IH Puma      Maximum productivity  - proven DirectDrive efficiency  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6r_lf_vs_fendt_700_vario.html" filetypes="html " rank="16" source="deere-gsm-source-201" score="0.04" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6r_lf_vs_fendt_700_vario.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc16&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_fendt_700_vario.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_fendt_700_vario.html</content>
+      <content type="html" name="title">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 700 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_fendt_700_vario.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 700 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 700 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">           Print    6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 700 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;                         Key selling points: 6R vs. Fendt 700 Vario      Powertrain efficiency  - 6195R delivers more performance than  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6r_lf_vs_fendt_800_vario.html" filetypes="html " rank="17" source="deere-gsm-source-201" score="0.0384615" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6r_lf_vs_fendt_800_vario.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc17&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_fendt_800_vario.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_fendt_800_vario.html</content>
+      <content type="html" name="title">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 800 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_fendt_800_vario.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 800 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt 800 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">           Print    6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Fendt® 800 Vario &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;                         Key selling points: 6R vs. Fendt 800 Vario      Performance  - best power density: 33.3 kg/ ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/5m_vs_nh_t4.html" filetypes="html " rank="18" source="deere-gsm-source-201" score="0.037037" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/5m_vs_nh_t4.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc18&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/5m_vs_nh_t4.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/5m_vs_nh_t4.html</content>
+      <content type="html" name="title">John Deere 5M &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/5m_vs_nh_t4.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">John Deere 5M &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland T4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">John Deere 5M &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland T4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">           Print    John Deere 5M &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;                         Key selling points - 5 reasons for John Deere 5M      Bigger hydraulic pump capacity  - In base on 5M &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;, 33 percent more than T4 base pump and  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/compatibility_supplemental_info/cuts/dimensions_4m.html" filetypes="html " rank="19" source="deere-gsm-source-201" score="0.0357143" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/compatibility_supplemental_info/cuts/dimensions_4m.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc19&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/compatibility_supplemental_info/cuts/dimensions_4m.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/compatibility_supplemental_info/cuts/dimensions_4m.html</content>
+      <content type="html" name="title">4M &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/compatibility_supplemental_info/cuts/dimensions_4m.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">4M &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Other</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">4M &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="last_updated" type="html">22-May-2015</content>
+      <content name="snippet" type="html">            Print    4M &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;                             Tires (wheel position):      R1 Bar      R3 Turf      R4 Industrial      R3 Turf (golf)       Rear     13.6-28 (8-position)    44x18.00-20 (2- ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/compatibility_supplemental_info/cuts/dimensions_4r.html" filetypes="html " rank="20" source="deere-gsm-source-201" score="0.0344828" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/compatibility_supplemental_info/cuts/dimensions_4r.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc20&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/compatibility_supplemental_info/cuts/dimensions_4r.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/compatibility_supplemental_info/cuts/dimensions_4r.html</content>
+      <content type="html" name="title">4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/compatibility_supplemental_info/cuts/dimensions_4r.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt; ,4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - cab &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Other</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="last_updated" type="html">22-May-2015</content>
+      <content name="snippet" type="html">            Print    4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - open station &lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;    4R &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; dimensions - cab &lt;span class="vivbold qt0"&gt;tractors     &lt;/span&gt;                       Tires (wheel position):      R1 Bar      R3 Turf      R4 Industrial      R3 Turf (golf)       Rear     13.6-28 (8- ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6125r_autopowr_vs_duetz_61604_ttv_cost_op.html" filetypes="html " rank="21" source="deere-gsm-source-201" score="0.0333333" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6125r_autopowr_vs_duetz_61604_ttv_cost_op.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc21&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6125r_autopowr_vs_duetz_61604_ttv_cost_op.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6125r_autopowr_vs_duetz_61604_ttv_cost_op.html</content>
+      <content type="html" name="title">John Deere 6125R AutoPowr™ iT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Deutz™-Fahr 6160.4 TTV iT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6125r_autopowr_vs_duetz_61604_ttv_cost_op.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">John Deere 6125R AutoPowr iT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Deutz-Fahr 6160.4 TTV iT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,6R Series</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">John Deere 6125R AutoPowr iT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Deutz-Fahr 6160.4 TTV iT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">            Print    John Deere 6125R AutoPowr™ iT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Deutz™-Fahr 6160.4 TTV iT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;    6R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation comparison  Many different factors affect the overall cost  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6130r_autopowr_vs_case_maxxum_145cvx_cost_op.html" filetypes="html " rank="22" source="deere-gsm-source-201" score="0.0322581" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6130r_autopowr_vs_case_maxxum_145cvx_cost_op.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc22&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6130r_autopowr_vs_case_maxxum_145cvx_cost_op.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6130r_autopowr_vs_case_maxxum_145cvx_cost_op.html</content>
+      <content type="html" name="title">John Deere 6130R AutoPowr™ FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Case™ IH Maxxum® 145 CVT FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6130r_autopowr_vs_case_maxxum_145cvx_cost_op.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">John Deere 6130R AutoPowr FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Case IH Maxxum 145 CVT FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,6R</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">John Deere 6130R AutoPowr FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Case IH Maxxum 145 CVT FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">            Print    John Deere 6130R AutoPowr™ FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. Case™ IH Maxxum® 145 CVT FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;    6R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation comparison  Many different factors affect the overall cost  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6155r_autopowr_vs_nh_t7225_cost_op.html" filetypes="html " rank="23" source="deere-gsm-source-201" score="0.03125" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6155r_autopowr_vs_nh_t7225_cost_op.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc23&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6155r_autopowr_vs_nh_t7225_cost_op.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6155r_autopowr_vs_nh_t7225_cost_op.html</content>
+      <content type="html" name="title">John Deere 6155R AutoPowr™ FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T7.225 AutoCommand™ FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6155r_autopowr_vs_nh_t7225_cost_op.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">John Deere 6155R AutoPowr FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland T7.225 AutoCommand FT4 Tr</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">John Deere 6155R AutoPowr FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland T7.225 AutoCommand FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">            Print    John Deere 6155R AutoPowr™ FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. New Holland™ T7.225 AutoCommand™ FT4 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;    6R Series &lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;: Cost of operation comparison  Many different factors affect the overall cost  ... </content>
+    </document>
+    <document url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6r_lf_vs_claas_axion_800.html" filetypes="html " rank="24" source="deere-gsm-source-201" score="0.030303" truncated-url="http://dlrdoc.deere.com/sales/salesmanual/en_GB/tractors/2016/competitive/6r_lf_vs_claas_axion_800.html" context="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc24&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_claas_axion_800.html</content>
+      <content name="country-site" type="html">en_GB</content>
+      <content name="filetype" type="text">html</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_claas_axion_800.html</content>
+      <content type="html" name="title">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. CLAAS® AXION® 800 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="url" type="text">http://dlrdoc.deere.com/sales/salesmanual/en_GB/&lt;span class="vivbold qt0"&gt;tractors&lt;/span&gt;/2016/competitive/6r_lf_vs_claas_axion_800.html</content>
+      <content name="searchsbu" type="html">AT</content>
+      <content name="category" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="description" type="html">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. CLAAS AXION 800 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; ,</content>
+      <content name="year" type="html">2016</content>
+      <content name="sub-type" type="html">Competitive</content>
+      <content name="functional_area" type="html"/>
+      <content name="title" type="text">6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. CLAAS AXION 800 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;</content>
+      <content name="subcategory" type="html">&lt;span class="vivbold qt0"&gt;Tractors&lt;/span&gt;</content>
+      <content name="type" type="html">ProductInformation</content>
+      <content name="status" type="html"/>
+      <content name="class" type="html">Sales</content>
+      <content name="snippet" type="html">            Print    6R Large-Frame &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt; vs. CLAAS® AXION® 800 &lt;span class="vivbold qt0"&gt;Tractor&lt;/span&gt;                         Key selling points: 6R vs. CLAAS AXION 800      Higher performance  – 2 tons less weight, more  ... </content>
+    </document>
+  </list>
+  <navigation base-url="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v:state=root|root-">
+    <link start="0" end="25">0-25|0</link>
+    <link start="25" end="50">25-25|0</link>
+    <link start="50" end="75">50-25|0</link>
+    <link start="75" end="100">75-25|0</link>
+    <link start="100" end="125">100-25|0</link>
+    <link start="125" end="150">125-25|0</link>
+    <link start="150" end="175">150-25|0</link>
+    <link start="175" end="200">175-25|0</link>
+    <link type="next" start="25" end="50">25-25|0</link>
+  </navigation>
+  <tree base-url="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;v:state=" recluster-base-url="http://search.tal.deere.com/cgi-bin/query-meta?v%3afile=viv_Aqxkzb&amp;">
+    <node type="top" id="N398" level="0" ndocs="200" active="1" subnodes="17" ts="|root" ls="root|root" bs="|root">
+      <node type="close" id="N470" level="1" ndocs="25" subnodes="4" ts="(root(N470))|root" ls="root|N470" bs="(root(N470))|N470">
+        <description>Tractor vs</description>
+      </node>
+      <node type="close" id="N874" level="1" ndocs="40" subnodes="5" ts="(root(N874))|root" ls="root|N874" bs="(root(N874))|N874">
+        <description>Weight, Ballasting And</description>
+      </node>
+      <node type="close" id="N661" level="1" ndocs="30" subnodes="3" ts="(root(N661))|root" ls="root|N661" bs="(root(N661))|N661">
+        <description>Track Tractors</description>
+      </node>
+      <node type="close" id="N606" level="1" ndocs="14" subnodes="2" ts="(root(N606))|root" ls="root|N606" bs="(root(N606))|N606">
+        <description>Deck, Lawn equipment</description>
+      </node>
+      <node type="close" id="N412" level="1" ndocs="15" subnodes="2" ts="(root(N412))|root" ls="root|N412" bs="(root(N412))|N412">
+        <description>Compatibility</description>
+      </node>
+      <node type="close" id="N946" level="1" ndocs="9" subnodes="4" ts="(root(N946))|root" ls="root|N946" bs="(root(N946))|N946">
+        <description>Of the</description>
+      </node>
+      <node type="close" id="N886" level="1" ndocs="13" subnodes="2" ts="(root(N886))|root" ls="root|N886" bs="(root(N886))|N886">
+        <description>Options for</description>
+      </node>
+      <node type="more" ts="(root-0-14)|root" id="NM-root"/>
+    </node>
+  </tree>
+</vce>
