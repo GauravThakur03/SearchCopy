@@ -1,0 +1,30 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6":     true,
+        "browser": true,
+        "node":    true
+    },   
+    "extends": [
+        "eslint:recommended", 
+        "plugin:react/recommended",
+        "./rules/es5.js",
+        "./rules/es6.js",
+        "./rules/es8.js",
+        "./rules/node.js",
+        "./rules/react.js"
+    ],    
+    "rules": {
+    }
+}

@@ -1,0 +1,103 @@
+{
+	"productCategories": [
+		{
+			"id": "tractors",
+			"key": "TRACTORS",
+			"value": "category==Tractors"
+		},
+		{
+			"id": "agms",
+			"key": "AGMS",
+			"value": "category==Ag management solutions"
+		},
+		{
+			"id": "lawnEquipment",
+			"key": "LAWN_EQUIPMENT",
+			"value": "category==Lawn equipment"
+		},
+		{
+			"id": "hayAndForage",
+			"key": "HAY_AND_FORAGE",
+			"value": "category==Hay and forage"
+		},
+		{
+			"id": "materialHandling",
+			"key": "MATERIAL_HANDLING",
+			"value": "category==Material handling"
+		},
+		{
+			"id": "sprayers",
+			"key": "SPARAYERS",
+			"value": "category==Sprayers"
+		},
+		{
+			"id": "commercialMowers",
+			"key": "COMMERCIAL_MOWERS",
+			"value": "category==Commercial mowers"
+		},
+		{
+			"id": "combineAndHeaders",
+			"key": "COMBINE_AND_HEADERS",
+			"value": "category==Combines and headers"
+		}
+	],
+	"models": [
+		{
+			"id": "2019",
+			"key": "2019",
+			"value": "model-year==2019"
+		},
+		{
+			"id": "2018",
+			"key": "2018",
+			"value": "model-year==2018"
+		},
+		{
+			"id": "2017",
+			"key": "2017",
+			"value": "model-year==2017"
+		},
+		{
+			"id": "2016",
+			"key": "2016",
+			"value": "model-year==2016"
+		},
+		{
+			"id": "2015",
+			"key": "2015",
+			"value": "model-year==2015"
+		}
+	],
+	"contentType": [
+		{
+			"id": "contentAttachments",
+			"key": "ATTACHMENTS",
+			"value": "content-type==Attachments"
+		},
+		{
+			"id": "competitive",
+			"key": "COMPETITIVE",
+			"value": "content-type==Competitive"
+		},
+		{
+			"id": "features",
+			"key": "FEATURES",
+			"value": "content-type==Features"
+		},
+		{
+			"id": "model",
+			"key": "MODEL",
+			"value": "content-type==Model"
+		},
+		{
+			"id": "productAnnouncements",
+			"key": "PRODUCT_ANNOUNCEMENTS",
+			"value": "content-type==Product announcements"
+		},
+		{
+			"id": "productLaunchCenter",
+			"key": "PRODCUT_LAUCH_CANTER",
+			"value": "content-type==Product Launch Center"
+		}
+	]
+}
