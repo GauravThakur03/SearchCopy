@@ -19,6 +19,7 @@
         <CONTEXT_SEARCH_MESSAGE>Showing results for model specific search</CONTEXT_SEARCH_MESSAGE>
         <SEARCH_ENTIRE_LINK>Search entire site</SEARCH_ENTIRE_LINK>
         <NO_SUGGESTIONS>No suggestions, for search term!</NO_SUGGESTIONS>
+        <OF>of</OF>
     </translations>
     <productCategoryList>
         <productCategory>
