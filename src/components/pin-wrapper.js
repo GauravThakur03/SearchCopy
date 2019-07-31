@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {FormattedMessage} from 'react-intl';
 
 const PinWrapper = (props) => {
     return (
@@ -16,12 +17,12 @@ const PinWrapper = (props) => {
                                             onClick={props.toggleFilters}
                                         >
                                             <span className='btn-filter'>
-                                                <span>{'Show Filters'}</span>
+                                                <FormattedMessage id={'SHOW_FILTERS'}/>
                                             </span>
                                         </a>
                                     </div>
                                     <div className='filter-result'>
-                                        <span className='number-of-results'>{'100 Results'}</span>
+                                        <span className='number-of-results'>{props.totalResults} <FormattedMessage id={'RESULTS'}/></span>
                                     </div>
                                 </div>
                             </div>
@@ -34,14 +35,17 @@ const PinWrapper = (props) => {
                                             className='button6 btn-show-results'
                                             onClick={props.toggleFilters}
                                         >
-                                            <span>{'View Results'}</span>
+                                            <FormattedMessage id={'VIEW_RESULTS'}/>
                                         </a>
                                     </div>
                                 </div>
                                 <div className='col-xs-10 filter-col-2'>
                                     <div className='right-btn'>
-                                        <a className='button6 nsw-btn'>
-                                            {'Clear Filters'}
+                                        <a
+                                            className='button6 nsw-btn'
+                                            onClick={props.clearFilter}
+                                        >
+                                            <FormattedMessage id={'CLEAR_FILTERS'}/>
                                         </a>
                                     </div>
                                 </div>
@@ -55,7 +59,7 @@ const PinWrapper = (props) => {
                                             className='button6 btn-show-results'
                                             onClick={props.toggleFilters}
                                         >
-                                            <span>{'View Results'}</span>
+                                            <FormattedMessage id={'VIEW_RESULTS'}/>
                                         </a>
                                     </div>
                                 </div>
@@ -65,7 +69,7 @@ const PinWrapper = (props) => {
                                             className='button1 btn-show-filters'
                                             onClick={props.toggleFilters}
                                         >
-                                            {'Show Filters'}
+                                            <FormattedMessage id={'SHOW_FILTERS'}/>
                                         </a>
                                     </div>
                                 </div>
@@ -79,7 +83,9 @@ const PinWrapper = (props) => {
 };
 
 PinWrapper.propTypes = {
-    toggleFilters: PropTypes.func
+    clearFilter: PropTypes.func,
+    toggleFilters: PropTypes.func,
+    totalResults: PropTypes.number
 };
 
 export default PinWrapper;

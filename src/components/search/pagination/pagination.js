@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import {FormattedMessage} from 'react-intl';
 
 import PaginationState from './pagination-state';
 
@@ -71,7 +72,7 @@ class Pagination extends Component {
                 </div>
                 <div className='pagination-state'>
                     <div className='page-current'>{this.props.pagination.navigation.currentPage}</div>
-                    {'of'}
+                    <FormattedMessage id={'OF'}/>
                     <div className='page-last'>{this.pages.length}</div>
                 </div>
                 {
