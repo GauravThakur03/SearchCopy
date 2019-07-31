@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import BinningFilterConnector from './binning/binning-filter-connector';
 import ResultContainer from './search/result-container';
-import PinWrapper from './pin-wrapper';
+import PinWrapper from './pin-wrapper-connector';
 
 class MainContainer extends Component {
     constructor(props) {
