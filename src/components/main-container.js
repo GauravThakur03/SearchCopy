@@ -9,27 +9,44 @@ class MainContainer extends Component {
         super(props);
 
         this.toggleFilters = this.toggleFilters.bind(this);
-
+        this.handleWindowresize = this.handleWindowresize.bind(this);
+        this.adjustHeightOfAside = this.adjustHeightOfAside.bind(this);
         this.state = {
             toggleFilters: false
         };
     }
 
     toggleFilters() {
-        this.setState({
-            toggleFilters: !this.state.toggleFilters
-        });
+        this.adjustHeightOfAside();
+        this.setState((state, props) => ({
+            toggleFilters: !state.toggleFilters
+        }));
+        document.getElementsByTagName("html")[0].classList.toggle("lock-scroll-small");
     }
 
+    componentDidMount() {
+        window.addEventListener("resize", this.handleWindowresize);
+    }
+
+    handleWindowresize() {
+        this.adjustHeightOfAside();
+    }
+
+    adjustHeightOfAside() {
+        if (!this.state.toggleFilters) {
+            const d = document.getElementById('headerSection').offsetHeight;
+            document.getElementById("filter-aside").style.height = "calc(100vh - " + d + "px)";
+        }
+    }
     render() {
         return (
             <div className='plc-toc'>
                 <div className={`${this.state.toggleFilters ? 'show-filters' : ''} search-results-listing-template background-1`}>
-                    <PinWrapper toggleFilters={this.toggleFilters}/>
+                    <PinWrapper toggleFilters={this.toggleFilters} />
                     <div className='container'>
                         <div className='row relative'>
-                            <BinningFilterConnector/>
-                            <ResultContainer/>
+                            <BinningFilterConnector />
+                            <ResultContainer />
                         </div>
                     </div>
                 </div>

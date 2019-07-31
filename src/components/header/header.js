@@ -14,10 +14,14 @@ class Header extends Component {
 
     componentDidMount() {
         if (this.props.locale !== '') {
-            this.props.loadHeader(this.url).then((html) => this.setState({
-                content: html
-            }));
+            this.props.loadHeader(this.url).then((html) => {
+                this.setState({
+                    content: html
+                });
+                onHeaderLoad();
+            });
         }
+
     }
 
     componentWillReceiveProps(nextProps) {
@@ -32,7 +36,7 @@ class Header extends Component {
         return (
             <Fragment>
                 {this.state.content && (
-                    <div
+                    <div id="headerSection" className="full-width"
                         dangerouslySetInnerHTML={
                             {
                                 __html: this.state.content

@@ -5,9 +5,7 @@ import {FormattedMessage} from 'react-intl';
 import FilterGroup from './filter-group';
 
 const BinningFilter = (props) => {
-    const filterHeight = {
-        'height': '388px'
-    };
+   
     const countLabel = {
         'paddingLeft': '0px'
     };
@@ -18,8 +16,7 @@ const BinningFilter = (props) => {
     return (
         <aside
             className='template-panel left-rail col-lg-6'
-            id='ls-row-3-col-1-row-2-col-1-row-1'
-            style={filterHeight}
+            id='filter-aside'
         >
             <div
                 className='template-panel-content'
