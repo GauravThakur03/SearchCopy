@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PinWrapper = () => {
+const PinWrapper = (props) => {
     return (
         <div className='pin-wrapper'>
             <div className='filter-bar-search-results-component'>
@@ -10,7 +11,10 @@ const PinWrapper = () => {
                             <div className='row'>
                                 <div className='col-xs-24 filter-col-1'>
                                     <div className='btn-filter-selector'>
-                                        <a className='button6'>
+                                        <a
+                                            className='button6'
+                                            onClick={props.toggleFilters}
+                                        >
                                             <span className='btn-filter'>
                                                 <span>{'Show Filters'}</span>
                                             </span>
@@ -26,7 +30,10 @@ const PinWrapper = () => {
                             <div className='row'>
                                 <div className='col-xs-14 filter-col-1'>
                                     <div className='left-btn'>
-                                        <a className='button6 btn-show-results'>
+                                        <a
+                                            className='button6 btn-show-results'
+                                            onClick={props.toggleFilters}
+                                        >
                                             <span>{'View Results'}</span>
                                         </a>
                                     </div>
@@ -44,14 +51,20 @@ const PinWrapper = () => {
                             <div className='row'>
                                 <div className='col-xs-12 filter-col-1'>
                                     <div className='left-btn'>
-                                        <a className='button6 btn-show-results'>
+                                        <a
+                                            className='button6 btn-show-results'
+                                            onClick={props.toggleFilters}
+                                        >
                                             <span>{'View Results'}</span>
                                         </a>
                                     </div>
                                 </div>
                                 <div className='col-xs-12 filter-col-2'>
                                     <div className='right-btn'>
-                                        <a className='button1 btn-show-filters'>
+                                        <a
+                                            className='button1 btn-show-filters'
+                                            onClick={props.toggleFilters}
+                                        >
                                             {'Show Filters'}
                                         </a>
                                     </div>
@@ -63,6 +76,10 @@ const PinWrapper = () => {
             </div>
         </div>
     );
+};
+
+PinWrapper.propTypes = {
+    toggleFilters: PropTypes.func
 };
 
 export default PinWrapper;
