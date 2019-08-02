@@ -1,6 +1,7 @@
 export const showImage = true;
 
 export function xml2Json(xmlString) {
+    /* global X2JS */
     const x2JS = new X2JS();
 
     return x2JS.xml_str2json(xmlString);
@@ -16,6 +17,7 @@ function parseByType(value) {
 
 function recursiveKeyModifier(bin) {
     return bin.reduce((accumulator, binObject) => {
+        // eslint-disable-next-line no-use-before-define
         const updatedBin = refactorObject(binObject);
 
         accumulator.push(updatedBin);
