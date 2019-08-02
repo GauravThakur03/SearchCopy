@@ -16,16 +16,16 @@ class MainContainer extends Component {
         };
     }
 
-    toggleFilters() {
-        this.adjustHeightOfAside();
-        this.setState((state, props) => ({
-            toggleFilters: !state.toggleFilters
-        }));
-        document.getElementsByTagName("html")[0].classList.toggle("lock-scroll-small");
+    componentDidMount() {
+        window.addEventListener('resize', this.handleWindowresize);
     }
 
-    componentDidMount() {
-        window.addEventListener("resize", this.handleWindowresize);
+    toggleFilters() {
+        this.adjustHeightOfAside();
+        this.setState((state) => ({
+            toggleFilters: !state.toggleFilters
+        }));
+        document.getElementsByTagName('html')[0].classList.toggle('lock-scroll-small');
     }
 
     handleWindowresize() {
@@ -35,18 +35,19 @@ class MainContainer extends Component {
     adjustHeightOfAside() {
         if (!this.state.toggleFilters) {
             const d = document.getElementById('headerSection').offsetHeight;
-            document.getElementById("filter-aside").style.height = "calc(100vh - " + d + "px)";
+
+            document.getElementById('filter-aside').style.height = `calc(100vh - ${d} px`;
         }
     }
     render() {
         return (
             <div className='plc-toc'>
                 <div className={`${this.state.toggleFilters ? 'show-filters' : ''} search-results-listing-template background-1`}>
-                    <PinWrapper toggleFilters={this.toggleFilters} />
+                    <PinWrapper toggleFilters={this.toggleFilters}/>
                     <div className='container'>
                         <div className='row relative'>
-                            <BinningFilterConnector />
-                            <ResultContainer />
+                            <BinningFilterConnector/>
+                            <ResultContainer {...this.props}/>
                         </div>
                     </div>
                 </div>

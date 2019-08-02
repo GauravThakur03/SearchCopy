@@ -18,10 +18,10 @@ class Header extends Component {
                 this.setState({
                     content: html
                 });
+                /* global onHeaderLoad */
                 onHeaderLoad();
             });
         }
-
     }
 
     componentWillReceiveProps(nextProps) {
@@ -36,12 +36,14 @@ class Header extends Component {
         return (
             <Fragment>
                 {this.state.content && (
-                    <div id="headerSection" className="full-width"
+                    <div
+                        className='full-width'
                         dangerouslySetInnerHTML={
                             {
                                 __html: this.state.content
                             }
                         }
+                        id='headerSection'
                     />
                 )}
             </Fragment>

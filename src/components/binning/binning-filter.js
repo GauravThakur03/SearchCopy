@@ -5,7 +5,6 @@ import {FormattedMessage} from 'react-intl';
 import FilterGroup from './filter-group';
 
 const BinningFilter = (props) => {
-   
     const countLabel = {
         'paddingLeft': '0px'
     };
