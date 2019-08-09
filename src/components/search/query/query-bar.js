@@ -37,11 +37,15 @@ class QueryBar extends Component {
 
     onEnter(activeSuggestion, filteredSuggestions, e) {
         e.preventDefault();
-        this.setState({
-            activeSuggestion: 0,
-            showSuggestions: false,
-            userInput: filteredSuggestions[activeSuggestion] || this.state.userInput
-        });
+        if (this.state.showSuggestions) {
+            this.setState({
+                activeSuggestion: 0,
+                showSuggestions: false,
+                userInput: filteredSuggestions[activeSuggestion] || this.state.userInput
+            });
+        } else {
+            this.props.changeQuery(this.state.userInput);
+        }
     }
 
     onUp(activeSuggestion) {
