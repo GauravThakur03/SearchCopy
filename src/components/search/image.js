@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Image = ({shouldShowImage}) => {
+const Image = ({
+    list,
+    shouldShowImage
+}) => {
     return shouldShowImage ? <div className='image-holder col-xs-24 col-sm-8 col-lg-6'>
         <div className='pic-wrapper'>
             <a
-                href='command-center.html'
+                href={list.url}
                 target='_self'
             >
                 <picture>
@@ -30,6 +33,7 @@ const Image = ({shouldShowImage}) => {
 };
 
 Image.propTypes = {
+    list: PropTypes.object,
     shouldShowImage: PropTypes.bool
 };
 

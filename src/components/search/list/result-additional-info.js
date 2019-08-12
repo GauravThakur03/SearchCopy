@@ -9,15 +9,7 @@ const ResultAdditionalInfo = ({list}) => {
                 <b>
                     <FormattedMessage id={'MODEL_YEAR'}/>{':'}
                 </b> {list.year}
-            </span>&nbsp; &nbsp;
-            {
-                list.lastUpdated ? <span>
-                    <b>
-                        <FormattedMessage id={'LAST_UPDATED'}/>
-                    </b> {list.lastUpdated}
-                </span>
-                    : null
-            }
+            </span>
         </div>
     );
 };
