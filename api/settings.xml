@@ -28,14 +28,19 @@
             <value>category==Ag management solutions</value>
         </productCategory>
         <productCategory>
+            <key>ATVS</key>
+            <label>Atvs</label>
+            <value>category==Atvs</value>
+        </productCategory>
+        <productCategory>
             <key>COMBINE_AND_HEADERS</key>
             <label>Combines and headers</label>
             <value>category==Combines and headers</value>
         </productCategory>
         <productCategory>
             <key>COMMERCIAL_MOVERS</key>
-            <label>Commercial movers</label>
-            <value>category==Commercial movers</value>
+            <label>Commercial mowers</label>
+            <value>category==Commercial mowers</value>
         </productCategory>
         <productCategory>
             <key>COTTON_HARVESTERS</key>
@@ -43,19 +48,19 @@
             <value>category==Cotton harvesters</value>
         </productCategory>
         <productCategory>
-            <key>CUTTERS_AND_SHREDDERS</key>
+            <key>COTTON_HARVESTERS</key>
             <label>Cutters and shredders</label>
             <value>category==Cutters and shredders</value>
         </productCategory>
         <productCategory>
-            <key>EARCTHMOVING_EQUIPMENTS</key>
-            <label>Earthmoving equipments </label>
-            <value>category==Earthmoving equipments </value>
+            <key>EARTHMOVING_EQUIPMENTS</key>
+            <label>Earthmoving </label>
+            <value>category==Earthmoving </value>
         </productCategory>
         <productCategory>
             <key>FRONTIER_EQUIPMENT</key>
-            <label>Frontier equipment</label>
-            <value>category==Frontier equipment</value>
+            <label>Frontier</label>
+            <value>category==Frontier</value>
         </productCategory>
         <productCategory>
             <key>GOLF_AND_TURF</key>
@@ -63,7 +68,7 @@
             <value>category==Golf and turf</value>
         </productCategory>
         <productCategory>
-            <key>HEY_AND_FORAGE</key>
+            <key>HAY_AND_FORAGE</key>
             <label>Hay and forage</label>
             <value>category==Hay and forage</value>
         </productCategory>
@@ -73,9 +78,19 @@
             <value>category==Lawn equipment</value>
         </productCategory>
         <productCategory>
-            <key>MAETRIAL_HANDLING</key>
-            <label>Material Handling</label>
-            <value>category==Material Handling</value>
+            <key>LESCO</key>
+            <label>lesco</label>
+            <value>category==lesco</value>
+        </productCategory>
+        <productCategory>
+            <key>MATERIAL_HANDLING</key>
+            <label>Material handling</label>
+            <value>category==Material handling</value>
+        </productCategory>
+        <productCategory>
+            <key>PORTABLE_POWER</key>
+            <label>Portable power</label>
+            <value>category==Portable power</value>
         </productCategory>
         <productCategory>
             <key>SEEDING</key>
@@ -88,31 +103,41 @@
             <value>category==Sprayers</value>
         </productCategory>
         <productCategory>
-            <key>TILLAGE</key>
-            <label>Tillage</label>
-            <value>category==Tillage</value>
+            <key>TELEHANDLERS</key>
+            <label>Telehandlers</label>
+            <value>category==Telehandlers</value>
         </productCategory>
         <productCategory>
-            <key>TRACTERS</key>
-            <label>Tractors</label>
-            <value>category==Tractors</value>
+            <key>TILLAGE_PRIMARY</key>
+            <label>Tillage Primary</label>
+            <value>category==Tillage Primary</value>
+        </productCategory>
+        <productCategory>
+            <key>TILLAGE_SECONDARY</key>
+            <label>Tillage Secondary</label>
+            <value>category==Tillage Secondary</value>
+        </productCategory>
+        <productCategory>
+            <key>TUTORIAL</key>
+            <label>Tutorial</label>
+            <value>category==Tutorial</value>
         </productCategory>
         <productCategory>
             <key>UTILITY_VEHICLES</key>
             <label>Utility vehicles</label>
             <value>category==Utility vehicles</value>
         </productCategory>
+        <productCategory>
+            <key>TRACTORS</key>
+            <label>Tractors</label>
+            <value>category==Tractors</value>
+        </productCategory>
     </productCategoryList>
     <contentTypeList>
         <contentType>
-            <key>ATTACHMENTS</key>
-            <label>Attachments</label>
-            <value>sub-type==Attachments</value>
-        </contentType>
-        <contentType>
-            <key>COMPETITIVE</key>
-            <label>Competitive</label>
-            <value>sub-type==Competitive</value>
+            <key>MODEL</key>
+            <label>Model</label>
+            <value>sub-type==Model</value>
         </contentType>
         <contentType>
             <key>FEATURES</key>
@@ -120,19 +145,24 @@
             <value>sub-type==Features</value>
         </contentType>
         <contentType>
-            <key>MODEL</key>
-            <label>Model</label>
-            <value>sub-type==Model</value>
+            <key>ATTACHMENTS</key>
+            <label>Attachments</label>
+            <value>sub-type==Attachments</value>
         </contentType>
         <contentType>
-            <key>PRODUCT_ANNOUNCEMENTS</key>
-            <label>Product announcements</label>
-            <value>sub-type==Product announcements</value>
+            <key>GENERAL_ANNOUNCEMENTS</key>
+            <label>General announcements</label>
+            <value>sub-type==General announcements</value>
         </contentType>
         <contentType>
-            <key>PRODUCT_LAUNCH_CENTER</key>
-            <label>Product launch center</label>
-            <value>sub-type==Product launch center</value>
+            <key>COMPETITIVE_COMPARISONS</key>
+            <label>Competitive comparisons</label>
+            <value>sub-type==Competitive comparisons</value>
+        </contentType>
+        <contentType>
+            <key>NEW_PRODUCT_LAUNCH_CENTER</key>
+            <label>New product launch center</label>
+            <value>sub-type==New product launch center</value>
         </contentType>
     </contentTypeList>
     <modelYearList>
@@ -173,8 +203,8 @@
         </modelYear>
         <modelYear>
             <key>2012</key>
-            <label>2012</label>
-            <value>model-year==2012</value>
+            <label></label>
+            <value>model-year==</value>
         </modelYear>
         <modelYear>
             <key>2011</key>
@@ -185,6 +215,26 @@
             <key>2010</key>
             <label>2010</label>
             <value>model-year==2010</value>
+        </modelYear>
+        <modelYear>
+            <key>2009</key>
+            <label>2009</label>
+            <value>model-year==2009</value>
+        </modelYear>
+        <modelYear>
+            <key>2008</key>
+            <label>2008</label>
+            <value>model-year==2008</value>
+        </modelYear>
+        <modelYear>
+            <key>2007</key>
+            <label>2007</label>
+            <value>model-year==2007</value>
+        </modelYear>
+        <modelYear>
+            <key>2006</key>
+            <label>2006</label>
+            <value>model-year==2006</value>
         </modelYear>
     </modelYearList>
 </settings>
