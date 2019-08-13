@@ -48,7 +48,7 @@
             <value>category==Cotton harvesters</value>
         </productCategory>
         <productCategory>
-            <key>COTTON_HARVESTERS</key>
+            <key>CUTTERS_AND_SHREDDERS</key>
             <label>Cutters and shredders</label>
             <value>category==Cutters and shredders</value>
         </productCategory>
