@@ -36,7 +36,7 @@ class MainContainer extends Component {
         if (!this.state.toggleFilters) {
             const d = document.getElementById('headerSection').offsetHeight;
 
-            document.getElementById('filter-aside').style.height = `calc(100vh - ${d} px`;
+            document.getElementById('filter-aside').style.height = `calc(100vh - ${d}px)`;
         }
     }
     render() {
