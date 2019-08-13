@@ -44,7 +44,7 @@ class QueryBar extends Component {
                 userInput: filteredSuggestions[activeSuggestion] || this.state.userInput
             });
         } else {
-            this.props.changeQuery(this.state.userInput);
+            this.searchByQuery();
         }
     }
 
@@ -112,7 +112,9 @@ class QueryBar extends Component {
     };
 
     searchByQuery = () => {
-        this.props.changeQuery(this.state.userInput);
+        if (this.state.userInput.length) {
+            this.props.changeQuery(this.state.userInput);
+        }
     }
 
     render() {
