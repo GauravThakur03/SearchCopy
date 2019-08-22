@@ -30,8 +30,8 @@ export function loadHTMLFromUrl(url) {
         });
 }
 
-export function searchSettings() {
-    const endPoint = '../../api/settings.xml';
+export function searchSettings(locale) {
+    const endPoint = `../../api/${locale}.xml`;
 
     return fetch(endPoint)
         .then((response) => {
@@ -48,7 +48,7 @@ export function searchSettings() {
 }
 
 export function fetchSuggestions(searchTerm) {
-    const url = 'https://search.deere.com/cgi-bin/velocity?v.app=autocomplete-json&v.function=autocomplete-collection&bag-of-words=true&filter=&dictionary=deere-ddc-xml-dictionary-autocomplete,deere-ddc-xml-product-autocomplete&num=100';
+    const url = 'https://search.deere.com/cgi-bin/velocity?v.app=autocomplete-json&v.function=autocomplete-collection&bag-of-words=true&filter=&dictionary=deere-ddc-xml-dictionary-autocomplete,deere-ddc-xml-product-autocomplete&num=10';
     const endPoint = `${url}&str=${searchTerm}`;
 
     return fetch(endPoint)

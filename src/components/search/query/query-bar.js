@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {injectIntl, intlShape} from 'react-intl';
+import {injectIntl, intlShape, FormattedMessage} from 'react-intl';
 import PropTypes from 'prop-types';
 
 const NUMBER_3 = 3;
@@ -23,6 +23,7 @@ class QueryBar extends Component {
             // The suggestions that match the user's input
             filteredSuggestions: [],
             // Whether or not the suggestion list is shown
+            loading: false,
             showSuggestions: false,
             // What the user has entered
             userInput: this.props.query
@@ -52,17 +53,24 @@ class QueryBar extends Component {
         if (activeSuggestion === 0) {
             return;
         }
+        const list = document.getElementsByClassName('suggestions')[0];
+        const SCROLL_OFFSET = 42.6665;
 
+        list.scrollTop = list.scrollTop - SCROLL_OFFSET;
         this.setState({
             activeSuggestion: activeSuggestion - 1
         });
     }
 
     onDown(activeSuggestion, filteredSuggestions) {
-        if (activeSuggestion - 1 === filteredSuggestions.length) {
+        if (activeSuggestion === filteredSuggestions.length - 1) {
             return;
         }
+        const list = document.getElementsByClassName('suggestions')[0];
+        const targetLi = document.getElementsByClassName('suggestion-active')[0];
+        const SCROLL_OFFSET = 43;
 
+        list.scrollTop = targetLi.offsetTop - SCROLL_OFFSET;
         this.setState({
             activeSuggestion: activeSuggestion + 1
         });
@@ -73,6 +81,7 @@ class QueryBar extends Component {
 
         this.setState({
             activeSuggestion: 0,
+            loading: true,
             showSuggestions: userInput.length >= NUMBER_3,
             userInput: e.currentTarget.value
         });
@@ -80,12 +89,14 @@ class QueryBar extends Component {
         if (userInput.length >= NUMBER_3) {
             this.props.loadSuggestion(userInput).then((data) => {
                 this.setState({
-                    filteredSuggestions: data.suggestions ? data.suggestions.map((suggestion) => suggestion.term) : []
+                    filteredSuggestions: data.suggestions ? data.suggestions.map((suggestion) => suggestion.term) : [],
+                    loading: false
                 });
             });
         } else {
             this.setState({
-                filteredSuggestions: []
+                filteredSuggestions: [],
+                loading: false
             });
         }
     };
@@ -126,6 +137,7 @@ class QueryBar extends Component {
             state: {
                 activeSuggestion,
                 filteredSuggestions,
+                loading,
                 showSuggestions,
                 userInput
             }
@@ -149,6 +161,7 @@ class QueryBar extends Component {
                                     className={className}
                                     key={index}
                                     onClick={onClick}
+                                    tabIndex={index}
                                 >
                                     {suggestion}
                                 </li>
@@ -159,7 +172,7 @@ class QueryBar extends Component {
             } else {
                 suggestionsListComponent = (
                     <div className='no-suggestions'>
-                        <em>{'No suggestions, for search query!'}</em>
+                        <em><FormattedMessage id={'NO_SUGGESTIONS'}/></em>
                     </div>
                 );
             }
@@ -184,7 +197,7 @@ class QueryBar extends Component {
                         />
                     </div>
                 </form>
-                {suggestionsListComponent}
+                {!loading && suggestionsListComponent}
             </div>
         );
     }
