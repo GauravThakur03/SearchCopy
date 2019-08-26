@@ -29,7 +29,7 @@ class Pagination extends Component {
         }
     }
 
-    setPage = (currentPage, pageText) => () => {
+    setPage(currentPage, pageText) {
         const text = pageText ? pageText : this.pages[currentPage - 1].text;
         const vState = `${this.root}${text}`;
         const pagination = {
@@ -60,7 +60,7 @@ class Pagination extends Component {
                             return (
                                 <a
                                     key={key}
-                                    onClick={this.setPage(page, link.text)}
+                                    onClick={this.setPage.bind(null, page, link.text)}
                                     value={page}
                                 >
                                     <span className={`page-link active ${isCurrent}`}>{page}</span>

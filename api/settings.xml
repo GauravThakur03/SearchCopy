@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-    <displayImages>true</displayImages>
+    <displayImages>false</displayImages>
     <translations>
         <SEARCH>Search</SEARCH>
         <RESULTS>Results</RESULTS>
