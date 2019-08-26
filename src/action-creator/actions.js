@@ -119,9 +119,9 @@ export function clearFilter() {
     };
 }
 
-export function configurations() {
+export function configurations(locale) {
     return (dispatch) => {
-        return searchSettings()
+        return searchSettings(locale)
             .then((data) => {
                 const settings = generateSettings(data.settings);
 
