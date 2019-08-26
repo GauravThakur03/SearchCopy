@@ -9,7 +9,7 @@ const PaginationState = ({
     const nextOrPrevPage = (value) => () => {
         const page = value === 'pagination-next' ? currentPage + 1 : currentPage - 1;
 
-        changePage(page);
+        return changePage(page);
     };
 
     return (
