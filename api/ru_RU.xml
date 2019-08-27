@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-    <displayImages>false</displayImages>
+    <displayImages>true</displayImages>
     <translations>
-        <SEARCH>Search</SEARCH>
-        <RESULTS>Results</RESULTS>
-        <PREVIEW>Preview</PREVIEW>
-        <PRODUCT_CATEGORY>Product Category</PRODUCT_CATEGORY>
-        <MODEL_YEAR>Model Year</MODEL_YEAR>
-        <CONTENT_TYPE>Content type</CONTENT_TYPE>
-        <OPEN_NEW_WINDOW>Open in new window</OPEN_NEW_WINDOW>
-        <CLOSE_PREVIEW>Close preview</CLOSE_PREVIEW>
-        <SHOW_MORE>Show more</SHOW_MORE>
-        <SHOW_LESS>Show less</SHOW_LESS>
-        <CLEAR_FILTERS>Clear Filters</CLEAR_FILTERS>
-        <SHOW_FILTERS>Show Filters</SHOW_FILTERS>
-        <VIEW_RESULTS>View Results</VIEW_RESULTS>
-        <CONTEXT_SEARCH_MESSAGE>Showing results for model specific search</CONTEXT_SEARCH_MESSAGE>
-        <SEARCH_ENTIRE_LINK>Search entire site</SEARCH_ENTIRE_LINK>
-        <NO_SUGGESTIONS>No result found</NO_SUGGESTIONS>
+        <SEARCH>Поиск</SEARCH>
+        <RESULTS>Результаты</RESULTS>
+        <PREVIEW>Предварительный просмотр</PREVIEW>
+        <CLEAR_FILTERS>Очистить фильтры</CLEAR_FILTERS>
+        <MODEL_YEAR>Год выпуска модели</MODEL_YEAR>
+        <OPEN_NEW_WINDOW>Открыть в новом окне</OPEN_NEW_WINDOW>
+        <SHOWING_RESULTS_FOR_MODEL_SPECFIC_SEARCH>Отображение результатов поиска для конкретной модели</SHOWING_RESULTS_FOR_MODEL_SPECFIC_SEARCH>
+        <SEARCH_ENTIRE_SITE>Поиск по всему сайту</SEARCH_ENTIRE_SITE>
+        <NO_SUGGESTIONS_FOR_SEARCH_TERM>No suggestions, for search term!</NO_SUGGESTIONS_FOR_SEARCH_TERM>
+        <CLOSE_PREVIEW>Закрыть предварительный просмотр</CLOSE_PREVIEW>
+        <SHOW_MORE>Показать больше</SHOW_MORE>
+        <SHOW_LESS>Показать меньше</SHOW_LESS>
+        <SHOW_FILTERS>Показать фильтры</SHOW_FILTERS>
+        <VIEW_RESULTS>Просмотр результатов</VIEW_RESULTS>
         <OF>of</OF>
+        <PRODUCT_CATEGORY>Категория товара</PRODUCT_CATEGORY>
+        <CONTENT_TYPE>Тип содержимого</CONTENT_TYPE>
     </translations>
     <productCategoryList>
         <productCategory>
             <key>AGMS</key>
-            <label>Ag management solutions</label>
-            <value>category==Ag management solutions</value>
+            <label>Точное земледелие</label>
+            <value>category==Точное земледелие</value>
         </productCategory>
         <productCategory>
             <key>ATVS</key>
@@ -33,23 +33,23 @@
         </productCategory>
         <productCategory>
             <key>COMBINE_AND_HEADERS</key>
-            <label>Combines and headers</label>
-            <value>category==Combines and headers</value>
+            <label>Комбайны и жатки</label>
+            <value>category==Комбайны и жатки</value>
         </productCategory>
         <productCategory>
             <key>COMMERCIAL_MOVERS</key>
-            <label>Commercial mowers</label>
-            <value>category==Commercial mowers</value>
+            <label>Промышленные косилки</label>
+            <value>category==Промышленные косилки</value>
         </productCategory>
         <productCategory>
             <key>COTTON_HARVESTERS</key>
-            <label>Cotton harvesters</label>
-            <value>category==Cotton harvesters</value>
+            <label>Хлопкоуборочные комбайны</label>
+            <value>category==Хлопкоуборочные комбайны</value>
         </productCategory>
         <productCategory>
             <key>CUTTERS_AND_SHREDDERS</key>
-            <label>Cutters and shredders</label>
-            <value>category==Cutters and shredders</value>
+            <label>Режущие аппараты и шреддеры</label>
+            <value>category==Режущие аппараты и шреддеры</value>
         </productCategory>
         <productCategory>
             <key>EARTHMOVING_EQUIPMENTS</key>
@@ -58,23 +58,23 @@
         </productCategory>
         <productCategory>
             <key>FRONTIER_EQUIPMENT</key>
-            <label>Frontier</label>
-            <value>category==Frontier</value>
+            <label>Frontier </label>
+            <value>category==Frontier </value>
         </productCategory>
         <productCategory>
             <key>GOLF_AND_TURF</key>
-            <label>Golf and turf</label>
-            <value>category==Golf and turf</value>
+            <label>Оборудование для гольфа и садово-парковое оборудование</label>
+            <value>category==Оборудование для гольфа и садово-парковое оборудование</value>
         </productCategory>
         <productCategory>
             <key>HAY_AND_FORAGE</key>
-            <label>Hay and forage</label>
-            <value>category==Hay and forage</value>
+            <label>Сено и силос</label>
+            <value>category==Сено и силос</value>
         </productCategory>
         <productCategory>
             <key>LAWN_EQUIPMENT</key>
-            <label>Lawn equipment</label>
-            <value>category==Lawn equipment</value>
+            <label>Оборудование для газонов</label>
+            <value>category==Оборудование для газонов</value>
         </productCategory>
         <productCategory>
             <key>LESCO</key>
@@ -83,8 +83,8 @@
         </productCategory>
         <productCategory>
             <key>MATERIAL_HANDLING</key>
-            <label>Material handling</label>
-            <value>category==Material handling</value>
+            <label>Погрузочно-разгрузочные операции</label>
+            <value>category==Погрузочно-разгрузочные операции</value>
         </productCategory>
         <productCategory>
             <key>PORTABLE_POWER</key>
@@ -98,8 +98,8 @@
         </productCategory>
         <productCategory>
             <key>SPRAYERS</key>
-            <label>Sprayers</label>
-            <value>category==Sprayers</value>
+            <label>Opryskiwacze</label>
+            <value>category==Opryskiwacze</value>
         </productCategory>
         <productCategory>
             <key>TELEHANDLERS</key>
@@ -122,46 +122,71 @@
             <value>category==Tutorial</value>
         </productCategory>
         <productCategory>
-            <key>UTILITY_VEHICLES</key>
-            <label>Utility vehicles</label>
-            <value>category==Utility vehicles</value>
+            <key>SCRAPERS</key>
+            <label>Чистики</label>
+            <value>category==Чистики</value>
+        </productCategory>
+        <productCategory>
+            <key>PLANTING_AND_SEEDING</key>
+            <label>Посадка и посев</label>
+            <value>category==Посадка и посев</value>
+        </productCategory>
+        <productCategory>
+            <key>SPRAYERS</key>
+            <label>Опрыскиватели</label>
+            <value>category==Опрыскиватели</value>
+        </productCategory>
+        <productCategory>
+            <key>SUGAR_HARVESTING</key>
+            <label>Уборка свекловичных</label>
+            <value>category==Уборка свекловичных</value>
+        </productCategory>
+        <productCategory>
+            <key>TILLAGE</key>
+            <label>Обработка почвы</label>
+            <value>category==Обработка почвы</value>
         </productCategory>
         <productCategory>
             <key>TRACTORS</key>
-            <label>Tractors</label>
-            <value>category==Tractors</value>
+            <label>Тракторы</label>
+            <value>category==Тракторы</value>
+        </productCategory>
+        <productCategory>
+            <key>UTILITY_VEHICLES</key>
+            <label>Машины общего назначения</label>
+            <value>category==Машины общего назначения</value>
         </productCategory>
     </productCategoryList>
     <contentTypeList>
         <contentType>
             <key>MODEL</key>
-            <label>Model</label>
-            <value>sub-type==Model</value>
+            <label>Модель</label>
+            <value>sub-type==Модель</value>
         </contentType>
         <contentType>
             <key>FEATURES</key>
-            <label>Features</label>
-            <value>sub-type==Features</value>
+            <label>Особенности</label>
+            <value>sub-type==Особенности</value>
         </contentType>
         <contentType>
             <key>ATTACHMENTS</key>
-            <label>Attachments</label>
-            <value>sub-type==Attachments</value>
+            <label>Дополнительное оборудование</label>
+            <value>sub-type==Дополнительное оборудование</value>
         </contentType>
         <contentType>
             <key>GENERAL_ANNOUNCEMENTS</key>
-            <label>General announcements</label>
-            <value>sub-type==General announcements</value>
+            <label>Общие объявления</label>
+            <value>sub-type==Общие объявления</value>
         </contentType>
         <contentType>
             <key>COMPETITIVE_COMPARISONS</key>
-            <label>Competitive comparisons</label>
-            <value>sub-type==Competitive comparisons</value>
+            <label>Сравнение с конкурентами</label>
+            <value>sub-type==Сравнение с конкурентами</value>
         </contentType>
         <contentType>
             <key>NEW_PRODUCT_LAUNCH_CENTER</key>
-            <label>New product launch center</label>
-            <value>sub-type==New product launch center</value>
+            <label>Центр выпуска новой продукции</label>
+            <value>sub-type==Центр выпуска новой продукции</value>
         </contentType>
     </contentTypeList>
     <modelYearList>
@@ -202,8 +227,8 @@
         </modelYear>
         <modelYear>
             <key>2012</key>
-            <label></label>
-            <value>model-year==</value>
+            <label>2012</label>
+            <value>model-year==2012</value>
         </modelYear>
         <modelYear>
             <key>2011</key>

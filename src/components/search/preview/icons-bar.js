@@ -28,7 +28,7 @@ class IconsBar extends React.Component {
                     href={this.props.list.url}
                     target='_blank'
                     title={this.props.intl.formatMessage({
-                        id: 'OPEN_WINDOW_TITLE'
+                        id: 'OPEN_NEW_WINDOW'
                     })}
                 >
                     <i className='material-icons'>{'open_in_new'}</i>
