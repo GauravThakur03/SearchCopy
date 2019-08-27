@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-    <displayImages>false</displayImages>
+    <displayImages>true</displayImages>
     <translations>
-        <SEARCH>Search</SEARCH>
-        <RESULTS>Results</RESULTS>
-        <PREVIEW>Preview</PREVIEW>
-        <PRODUCT_CATEGORY>Product Category</PRODUCT_CATEGORY>
-        <MODEL_YEAR>Model Year</MODEL_YEAR>
-        <CONTENT_TYPE>Content type</CONTENT_TYPE>
-        <OPEN_NEW_WINDOW>Open in new window</OPEN_NEW_WINDOW>
-        <CLOSE_PREVIEW>Close preview</CLOSE_PREVIEW>
-        <SHOW_MORE>Show more</SHOW_MORE>
-        <SHOW_LESS>Show less</SHOW_LESS>
-        <CLEAR_FILTERS>Clear Filters</CLEAR_FILTERS>
-        <SHOW_FILTERS>Show Filters</SHOW_FILTERS>
-        <VIEW_RESULTS>View Results</VIEW_RESULTS>
-        <CONTEXT_SEARCH_MESSAGE>Showing results for model specific search</CONTEXT_SEARCH_MESSAGE>
-        <SEARCH_ENTIRE_LINK>Search entire site</SEARCH_ENTIRE_LINK>
-        <NO_SUGGESTIONS>No result found</NO_SUGGESTIONS>
+        <SEARCH>Szukaj</SEARCH>
+        <RESULTS>Wyniki</RESULTS>
+        <PREVIEW>Podgląd</PREVIEW>
+        <CLEAR_FILTERS>Wyczyść filtry</CLEAR_FILTERS>
+        <MODEL_YEAR>Rok modelowy</MODEL_YEAR>
+        <OPEN_NEW_WINDOW>Otwórz w nowym oknie</OPEN_NEW_WINDOW>
+        <SHOWING_RESULTS_FOR_MODEL_SPECFIC_SEARCH>Wyświetlanie wyników wyszukiwania dla konkretnych</SHOWING_RESULTS_FOR_MODEL_SPECFIC_SEARCH>
+        <SEARCH_ENTIRE_SITE>Szukaj w całej witrynie</SEARCH_ENTIRE_SITE>
+        <NO_SUGGESTIONS_FOR_SEARCH_TERM>No suggestions, for search term!</NO_SUGGESTIONS_FOR_SEARCH_TERM>
+        <CLOSE_PREVIEW>Zamknij podgląd</CLOSE_PREVIEW>
+        <SHOW_MORE>Pokaż więcej</SHOW_MORE>
+        <SHOW_LESS>Pokaż mniej</SHOW_LESS>
+        <SHOW_FILTERS>Pokaż filtry</SHOW_FILTERS>
+        <VIEW_RESULTS>Wyświetl wyniki</VIEW_RESULTS>
         <OF>of</OF>
+        <PRODUCT_CATEGORY>Kategoria produktu</PRODUCT_CATEGORY>
+        <CONTENT_TYPE>Typ zawartości</CONTENT_TYPE>
     </translations>
     <productCategoryList>
         <productCategory>
             <key>AGMS</key>
-            <label>Ag management solutions</label>
-            <value>category==Ag management solutions</value>
+            <label>Rozwiązania dla rolnictwa precyzyjnego</label>
+            <value>category==Rozwiązania dla rolnictwa precyzyjnego</value>
         </productCategory>
         <productCategory>
             <key>ATVS</key>
@@ -33,23 +33,23 @@
         </productCategory>
         <productCategory>
             <key>COMBINE_AND_HEADERS</key>
-            <label>Combines and headers</label>
-            <value>category==Combines and headers</value>
+            <label>Kombajny i zespoły żniwne</label>
+            <value>category==Kombajny i zespoły żniwne</value>
         </productCategory>
         <productCategory>
             <key>COMMERCIAL_MOVERS</key>
-            <label>Commercial mowers</label>
-            <value>category==Commercial mowers</value>
+            <label>Kosiarki profesjonalne</label>
+            <value>category==Kosiarki profesjonalne</value>
         </productCategory>
         <productCategory>
             <key>COTTON_HARVESTERS</key>
-            <label>Cotton harvesters</label>
-            <value>category==Cotton harvesters</value>
+            <label>Kombajny do bawełny</label>
+            <value>category==Kombajny do bawełny</value>
         </productCategory>
         <productCategory>
-            <key>CUTTERS_AND_SHREDDERS</key>
-            <label>Cutters and shredders</label>
-            <value>category==Cutters and shredders</value>
+            <key>CURRERS_SHEDDERS</key>
+            <label>Koszenie i rozdrabnianie</label>
+            <value>category==Koszenie i rozdrabnianie</value>
         </productCategory>
         <productCategory>
             <key>EARTHMOVING_EQUIPMENTS</key>
@@ -63,18 +63,18 @@
         </productCategory>
         <productCategory>
             <key>GOLF_AND_TURF</key>
-            <label>Golf and turf</label>
-            <value>category==Golf and turf</value>
+            <label>Maszyny do pielęgnacji pól golfowych i terenów</label>
+            <value>category==Maszyny do pielęgnacji pól golfowych i terenów</value>
         </productCategory>
         <productCategory>
             <key>HAY_AND_FORAGE</key>
-            <label>Hay and forage</label>
-            <value>category==Hay and forage</value>
+            <label>Maszyny do pielęgnacji pól golfowych i terenów</label>
+            <value>category==Maszyny do pielęgnacji pól golfowych i terenów</value>
         </productCategory>
         <productCategory>
             <key>LAWN_EQUIPMENT</key>
-            <label>Lawn equipment</label>
-            <value>category==Lawn equipment</value>
+            <label>Maszyny do pielęgnacji trawników</label>
+            <value>category==Maszyny do pielęgnacji trawników</value>
         </productCategory>
         <productCategory>
             <key>LESCO</key>
@@ -83,8 +83,8 @@
         </productCategory>
         <productCategory>
             <key>MATERIAL_HANDLING</key>
-            <label>Material handling</label>
-            <value>category==Material handling</value>
+            <label>Zagospodarowanie resztek pożniwnych</label>
+            <value>category==Zagospodarowanie resztek pożniwnych</value>
         </productCategory>
         <productCategory>
             <key>PORTABLE_POWER</key>
@@ -92,14 +92,14 @@
             <value>category==Portable power</value>
         </productCategory>
         <productCategory>
-            <key>SEEDING</key>
-            <label>Seeding</label>
-            <value>category==Seeding</value>
+            <key>PLANTING_SEEDING</key>
+            <label>Sadzenie i sianie</label>
+            <value>category==Sadzenie i sianie</value>
         </productCategory>
         <productCategory>
             <key>SPRAYERS</key>
-            <label>Sprayers</label>
-            <value>category==Sprayers</value>
+            <label>Opryskiwacze</label>
+            <value>category==Opryskiwacze</value>
         </productCategory>
         <productCategory>
             <key>TELEHANDLERS</key>
@@ -123,13 +123,13 @@
         </productCategory>
         <productCategory>
             <key>UTILITY_VEHICLES</key>
-            <label>Utility vehicles</label>
-            <value>category==Utility vehicles</value>
+            <label>Pojazdy użytkowe</label>
+            <value>category==Pojazdy użytkowe</value>
         </productCategory>
         <productCategory>
             <key>TRACTORS</key>
-            <label>Tractors</label>
-            <value>category==Tractors</value>
+            <label>Ciągniki</label>
+            <value>category==Ciągniki</value>
         </productCategory>
     </productCategoryList>
     <contentTypeList>
@@ -140,28 +140,28 @@
         </contentType>
         <contentType>
             <key>FEATURES</key>
-            <label>Features</label>
-            <value>sub-type==Features</value>
+            <label>Funkcje</label>
+            <value>sub-type==Funkcje</value>
         </contentType>
         <contentType>
             <key>ATTACHMENTS</key>
-            <label>Attachments</label>
-            <value>sub-type==Attachments</value>
+            <label>Wyposażenie dodatkowe</label>
+            <value>sub-type==Wyposażenie dodatkowe</value>
         </contentType>
         <contentType>
             <key>GENERAL_ANNOUNCEMENTS</key>
-            <label>General announcements</label>
-            <value>sub-type==General announcements</value>
+            <label>Ogłoszenia ogólne</label>
+            <value>sub-type==Ogłoszenia ogólne</value>
         </contentType>
         <contentType>
             <key>COMPETITIVE_COMPARISONS</key>
-            <label>Competitive comparisons</label>
-            <value>sub-type==Competitive comparisons</value>
+            <label>Porównanie z konkurencją</label>
+            <value>sub-type==Porównanie z konkurencją</value>
         </contentType>
         <contentType>
             <key>NEW_PRODUCT_LAUNCH_CENTER</key>
-            <label>New product launch center</label>
-            <value>sub-type==New product launch center</value>
+            <label>Centrum wprowadzania nowych produktów</label>
+            <value>sub-type==Centrum wprowadzania nowych produktów</value>
         </contentType>
     </contentTypeList>
     <modelYearList>
@@ -202,8 +202,8 @@
         </modelYear>
         <modelYear>
             <key>2012</key>
-            <label></label>
-            <value>model-year==</value>
+            <label>2012</label>
+            <value>model-year==2012</value>
         </modelYear>
         <modelYear>
             <key>2011</key>

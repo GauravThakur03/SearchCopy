@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-    <displayImages>true</displayImages>
+    <displayImages>false</displayImages>
     <translations>
         <SEARCH>Search</SEARCH>
         <RESULTS>Results</RESULTS>
@@ -8,7 +8,7 @@
         <PRODUCT_CATEGORY>Product Category</PRODUCT_CATEGORY>
         <MODEL_YEAR>Model Year</MODEL_YEAR>
         <CONTENT_TYPE>Content type</CONTENT_TYPE>
-        <OPEN_WINDOW_TITLE>Open in new window</OPEN_WINDOW_TITLE>
+        <OPEN_NEW_WINDOW>Open in new window</OPEN_NEW_WINDOW>
         <CLOSE_PREVIEW>Close preview</CLOSE_PREVIEW>
         <SHOW_MORE>Show more</SHOW_MORE>
         <SHOW_LESS>Show less</SHOW_LESS>
