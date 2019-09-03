@@ -4208,22 +4208,33 @@ html {
     user-select: none;
 }
 
+.preview-title {
+    display: flex;
+    padding-right: 0px;
+    flex-direction: row;
+    padding-right: 0px;
+}
+
 .ns-sr-icons {
-    padding-right: 20px !important;
+    display: flex;
+    flex-direction: row-reverse;
     user-select: none;
     z-index: 1;
-    right: 0px;
-    width: auto !important;
+    padding-left: 15px;
 }
 
-.ns-sr-icons.absolute {
-    position: absolute !important;
+.ns-sr-icons a{
+    word-break: initial;
+    overflow-wrap: initial;
+    word-wrap: initial;
+    -ms-word-break: initial;
 }
+
 
 @media print, (min-width: 992px) {
-    .search-results-listing-component .copy h4 {
+    /*.search-results-listing-component .copy h4 {
         padding-right: 167px
-    }
+    }*/
     .preview-icon {
         margin-right: 15px;
     }

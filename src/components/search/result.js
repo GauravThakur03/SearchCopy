@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import IconsBar from './preview/icons-bar';
 import Content from './preview/content';
 import ListContainer from './list/list-container';
 import Image from './image';
@@ -25,16 +24,13 @@ class Result extends Component {
     render() {
         return (
             <div className='expand-collapse-component-item shown search-results-listing-component container available'>
-                <IconsBar
-                    list={this.props.item}
-                    onPreview={this.onPreview}
-                />
                 <Image
                     list={this.props.item}
                     shouldShowImage={this.props.shouldShowImage}
                 />
                 <ListContainer
                     list={this.props.item}
+                    onPreview={this.onPreview}
                     shouldShowImage={this.props.shouldShowImage}
                 />
                 <Content
