@@ -22,7 +22,7 @@ class IconsBar extends React.Component {
 
     render() {
         return (
-            <div className='ns-sr-icons absolute'>
+            <div className='ns-sr-icons'>
                 <a
                     className='open-new'
                     href={this.props.list.url}
