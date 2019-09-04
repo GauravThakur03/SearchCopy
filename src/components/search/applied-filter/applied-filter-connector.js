@@ -13,13 +13,13 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        removeFilter: (selcetion) => {
+        removeFilter: (selection) => {
             const filter = {
-                key: selcetion,
+                key: selection,
                 value: ''
             };
 
-            selcetion === '' ? dispatch(clearFilter()) : dispatch(applyFilter(filter));
+            selection === '' ? dispatch(clearFilter()) : dispatch(applyFilter(filter));
         }
     };
 }

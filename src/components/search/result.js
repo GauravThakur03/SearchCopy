@@ -26,11 +26,12 @@ class Result extends Component {
             <div className='expand-collapse-component-item shown search-results-listing-component container available'>
                 <Image
                     list={this.props.item}
-                    shouldShowImage={this.props.shouldShowImage}
+                    shouldShowImage={!this.state.active && this.props.shouldShowImage}
                 />
                 <ListContainer
                     list={this.props.item}
                     onPreview={this.onPreview}
+                    shouldPreview={this.state.active}
                     shouldShowImage={this.props.shouldShowImage}
                 />
                 <Content

@@ -7,9 +7,10 @@ import Snippet from './snippet';
 const ListContainer = ({
     list,
     onPreview,
+    shouldPreview,
     shouldShowImage
 }) => {
-    const full = shouldShowImage ? '' : 'full';
+    const full = shouldShowImage && !shouldPreview ? '' : 'full';
 
     return (
         <div className={`copy col-xs-24 col-sm-16 col-lg-18 ${full}`}>
@@ -17,7 +18,9 @@ const ListContainer = ({
                 list={list}
                 onPreview={onPreview}
             />
-            <Snippet list={list}/>
+            {
+                !shouldPreview ? <Snippet list={list}/> : null
+            }
         </div>
     );
 };
@@ -25,6 +28,7 @@ const ListContainer = ({
 ListContainer.propTypes = {
     list: PropTypes.object,
     onPreview: PropTypes.func,
+    shouldPreview: PropTypes.bool,
     shouldShowImage: PropTypes.bool
 };
 
