@@ -6,6 +6,17 @@ import FooterConnector from './footer/footer-connector';
 import IntlProviderConnector from './intl-provider-connector';
 
 class AppContainer extends Component {
+    static getDerivedStateFromProps(props, state) {
+        const locale = props.locale;
+
+        if (locale && locale !== state.locale) {
+            props.loadConfigurations(locale);
+        }
+
+        return {
+            locale
+        };
+    }
     constructor(props) {
         super(props);
 
@@ -14,21 +25,11 @@ class AppContainer extends Component {
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         if (this.props.location.query['country-site']) {
             this.props.loadConfigurations(this.props.location.query['country-site']);
         }
         this.props.loadXML(this.props.location.query);
-    }
-
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.locale !== this.props.locale) {
-            this.props.loadConfigurations(nextProps.locale);
-
-            this.setState({
-                locale: nextProps.locale
-            });
-        }
     }
 
     render() {

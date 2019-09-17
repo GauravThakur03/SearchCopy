@@ -14,8 +14,11 @@ export default class Content extends React.Component {
     iframeLoaded(event) {
         const doc = event.target.contentDocument;
 
-        doc.getElementsByClassName('featured-head')[0].remove();
-        doc.getElementsByTagName('footer')[0].remove();
+        const node = doc.getElementsByClassName('featured-head')[0];
+        const footerNode = doc.getElementsByTagName('footer')[0];
+
+        node.parentNode.removeChild(node);
+        footerNode.parentNode.removeChild(footerNode);
 
         this.setState({
             loaded: true

@@ -19,9 +19,9 @@ class Pagination extends Component {
         this.root = 'root|root-';
     }
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.pagination.links.length) {
-            const {links} = nextProps.pagination;
+    componentDidUpdate() {
+        if (this.props.pagination.links.length) {
+            const {links} = this.props.pagination;
 
             this.pages = links.filter((page) => !page.type);
             this.prev = links.find((page) => page.type && page.type === 'previous');
