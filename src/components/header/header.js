@@ -24,8 +24,8 @@ class Header extends Component {
         }
     }
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.locale) {
+    componentDidUpdate() {
+        if (this.props.locale) {
             this.props.loadHeader(this.url).then((html) => this.setState({
                 content: html
             }));
