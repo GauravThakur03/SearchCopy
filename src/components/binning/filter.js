@@ -20,20 +20,20 @@ class Filter extends Component {
             <li>
                 <label
                     className='multilevel'
-                    htmlFor={bin.id}
+                    htmlFor={bin.key}
                 >
                     <div className='checker'>
                         <span className={checked}>
                             <input
                                 className={'checkbox'}
-                                id={bin.id}
-                                name={bin.id}
+                                id={bin.key}
+                                name={bin.key}
                                 onChange={this.handleChange(bin)}
                                 type={'checkbox'}
                             />
                         </span>
                     </div>
-                    <a>{bin.label}</a>
+                    {bin.label}
                 </label>
             </li>
         );

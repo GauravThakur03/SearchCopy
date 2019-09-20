@@ -21,17 +21,17 @@ const AppliedFilter = (props) => {
                 const translatedFilter = findTranslation(filter);
 
                 return (
-                    <button
+                    <div
                         className='button-filter-tag year'
                         key={key}
-                        onClick={remove(filter)}
                         type='button'
                     >
                         {translatedFilter.label}
                         <span
                             className='icon-jd_close'
+                            onClick={remove(filter)}
                         />
-                    </button>
+                    </div>
                 );
             })
         }

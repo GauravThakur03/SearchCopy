@@ -20,8 +20,8 @@ class Footer extends Component {
         }
     }
 
-    componentDidUpdate() {
-        if (this.props.locale) {
+    componentDidUpdate(prevProps) {
+        if (prevProps.locale !== this.props.locale) {
             this.props.loadFooter(this.url).then((html) => this.setState({
                 content: html
             }));

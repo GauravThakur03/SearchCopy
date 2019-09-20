@@ -3311,6 +3311,7 @@ p.new-search-result-description {
 .button-filter-tag {
     margin: 2px !important;
     line-height: 16px !important;
+    display: inline-block;
 }
 
 .search-results-listing-component {
@@ -3995,7 +3996,8 @@ html {
     position: relative;
     display: block;
     padding-left: 25px;
-    line-height: 1.2
+    line-height: 1.2;
+    cursor: pointer;
 }
 
 .filter-search-results-component .filters .filter-group .filter ul li label a {
