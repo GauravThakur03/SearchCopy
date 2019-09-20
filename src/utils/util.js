@@ -48,7 +48,8 @@ function compare(a1, b1, labelA, labelB) {
     return labelA > labelB ? -1 : compareLabel(labelA, labelB);
 }
 
-export function generateSearchList(list) {
+export function generateSearchList(document) {
+    const list = Array.isArray(document) ? document : [document];
     const results = [];
     const match = ['last_updated', 'title', 'year', 'snippet', 'url', 'description', 'country-site'];
 
@@ -90,8 +91,12 @@ export function refactorKeys(binningSet) {
 
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
-    const documents = Array.isArray(vce.list.document) ? vce.list.document : [vce.list.document];
-    const results = generateSearchList(documents);
+
+    if (!vce.list) {
+        return Promise.reject(false);
+    }
+
+    const results = generateSearchList(vce.list.document);
     const {
         list,
         navigation
