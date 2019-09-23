@@ -8,7 +8,7 @@ const ResultDiscription = ({list}) => {
             className='new-search-result-description'
             dangerouslySetInnerHTML={
                 {
-                    __html: list.description
+                    __html: list.snippet
                 }
             }
         />

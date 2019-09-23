@@ -23,11 +23,12 @@ export function loadXML() {
                     perPage: data.list.per,
                     totalRecords: data.list.num
                 };
-
-                dispatch({
-                    links: data.navigation.link,
-                    type: SET_PAGINATION_LINKS
-                });
+                if (data.navigation) {
+                    dispatch({
+                        links: data.navigation.link,
+                        type: SET_PAGINATION_LINKS
+                    });
+                }
                 dispatch({
                     navigation,
                     type: SET_NAVIGATION
