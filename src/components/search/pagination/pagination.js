@@ -38,6 +38,8 @@ class Pagination extends Component {
         };
 
         this.props.onPageChange(pagination);
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }
 
     render() {
