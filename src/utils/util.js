@@ -118,10 +118,13 @@ export function buildQuery(filters) {
 }
 
 export function buildQueryString(search) {
-    const binningParam = buildQuery(Object.values(search.binning.appliedFilters));
-    const binning = binningParam !== '' ? {
+    const binningValues = Object.values(search.binning.appliedFilters);
+
+    binningValues.push('model-year==Attachments');
+    const binningParam = buildQuery(binningValues);
+    const binning = {
         'binning-state': binningParam
-    } : {};
+    };
     const params = {
         ...search.urlParams,
         ...binning

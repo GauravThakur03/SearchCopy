@@ -1,6 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 
+import {headerURL} from '../../utils/config';
+
 /* eslint-disable react/no-danger */
 class Header extends Component {
     constructor(props) {
@@ -9,12 +11,11 @@ class Header extends Component {
         this.state = {
             content: ''
         };
-        this.url = '../../api/header.html';
     }
 
     componentDidMount() {
         if (this.props.locale !== '') {
-            this.props.loadHeader(this.url).then((html) => {
+            this.props.loadHeader(headerURL).then((html) => {
                 this.setState({
                     content: html
                 });
@@ -26,7 +27,7 @@ class Header extends Component {
 
     componentDidUpdate(prevProps) {
         if (prevProps.locale !== this.props.locale) {
-            this.props.loadHeader(this.url).then((html) => this.setState({
+            this.props.loadHeader(headerURL).then((html) => this.setState({
                 content: html
             }));
         }
