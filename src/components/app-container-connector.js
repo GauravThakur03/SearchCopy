@@ -26,6 +26,8 @@ function mapDispatchToProps(dispatch) {
                 ...query
             } = urlParams;
 
+            dispatch(saveQuery(query));
+
             if (year || products) {
                 const model = `model-year==${year.replace(/\D/g, '')}`;
                 const filter = {
@@ -34,9 +36,9 @@ function mapDispatchToProps(dispatch) {
                 };
 
                 dispatch(applyFilter(filter));
+            } else {
+                dispatch(loadXML());
             }
-            dispatch(saveQuery(query));
-            dispatch(loadXML());
         }
     };
 }

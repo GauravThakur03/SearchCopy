@@ -1,6 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 
+import {footerURL} from '../../utils/config';
+
 /* eslint-disable react/no-danger */
 class Footer extends Component {
     constructor(props) {
@@ -9,12 +11,11 @@ class Footer extends Component {
         this.state = {
             content: ''
         };
-        this.url = '../../api/footer.html';
     }
 
     componentDidMount() {
         if (this.props.locale !== '') {
-            this.props.loadFooter(this.url).then((html) => this.setState({
+            this.props.loadFooter(footerURL).then((html) => this.setState({
                 content: html
             }));
         }
@@ -22,7 +23,7 @@ class Footer extends Component {
 
     componentDidUpdate(prevProps) {
         if (prevProps.locale !== this.props.locale) {
-            this.props.loadFooter(this.url).then((html) => this.setState({
+            this.props.loadFooter(footerURL).then((html) => this.setState({
                 content: html
             }));
         }

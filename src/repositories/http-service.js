@@ -1,10 +1,10 @@
 import 'isomorphic-fetch';
 
 import {sendResponse, xml2Json} from '../utils/util';
+import {searchResultsXmlURL, searchSettingXmlURL, autoSuggestionsURL} from '../utils/config';
 
 export function loadSearch(query) {
-    const url = 'http://localhost:7000/loadXML';
-    const endPoint = `${url}?${query}`;
+    const endPoint = `${searchResultsXmlURL}?${query}`;
 
     return fetch(endPoint)
         .then((response) => {
@@ -31,7 +31,7 @@ export function loadHTMLFromUrl(url) {
 }
 
 export function searchSettings(locale) {
-    const endPoint = `../../api/${locale}.xml`;
+    const endPoint = `${searchSettingXmlURL}${locale}.xml`;
 
     return fetch(endPoint)
         .then((response) => {
@@ -48,8 +48,7 @@ export function searchSettings(locale) {
 }
 
 export function fetchSuggestions(searchTerm) {
-    const url = 'https://search.deere.com/cgi-bin/velocity?v.app=autocomplete-json&v.function=autocomplete-collection&bag-of-words=true&filter=&dictionary=deere-ddc-xml-dictionary-autocomplete,deere-ddc-xml-product-autocomplete&num=10';
-    const endPoint = `${url}&str=${searchTerm}`;
+    const endPoint = `${autoSuggestionsURL}&str=${searchTerm}`;
 
     return fetch(endPoint)
         .then((response) => {
