@@ -51,7 +51,7 @@ function compare(a1, b1, labelA, labelB) {
 export function generateSearchList(document) {
     const list = Array.isArray(document) ? document : [document];
     const results = [];
-    const match = ['last_updated', 'title', 'year', 'snippet', 'url', 'description', 'country-site'];
+    const match = ['title', 'year', 'snippet', 'url', 'description', 'country-site'];
 
     list.map((doc) => {
         const temp = [];
@@ -120,7 +120,7 @@ export function buildQuery(filters) {
 export function buildQueryString(search) {
     const binningValues = Object.values(search.binning.appliedFilters);
 
-    binningValues.push('model-year==Attachments');
+    binningValues.push('model-year==All');
     const binningParam = buildQuery(binningValues);
     const binning = {
         'binning-state': binningParam
