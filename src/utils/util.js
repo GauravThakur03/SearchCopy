@@ -48,19 +48,31 @@ function compare(a1, b1, labelA, labelB) {
     return labelA > labelB ? -1 : compareLabel(labelA, labelB);
 }
 
+function getTypeValue(isModel, item) {
+    return isModel ? [parseByType(item.__text)] : parseByType(item.__text);
+}
+
+function getAccumulator(item, accumulator) {
+    const validKey = generateValidKey(item._name);
+    const isModel = item._name === 'base_codes';
+
+    if (!accumulator[validKey]) {
+        accumulator[validKey] = getTypeValue(isModel, item);
+    } else if (isModel) {
+        accumulator[validKey].push(parseByType(item.__text));
+    }
+    return accumulator;
+}
+
 export function generateSearchList(document) {
     const list = Array.isArray(document) ? document : [document];
     const results = [];
-    const match = ['title', 'year', 'snippet', 'url', 'description', 'country-site'];
+    const match = ['title', 'year', 'snippet', 'url', 'description', 'country_site', 'base_codes', 'search_image'];
 
     list.map((doc) => {
-        const temp = [];
         const content = doc.content.reduce((accumulator, item) => {
-            if (match.includes(item._name) && !temp.includes(item._name)) {
-                temp.push(item._name);
-                const validKey = generateValidKey(item._name);
-
-                accumulator[validKey] = parseByType(item.__text);
+            if (match.includes(item._name)) {
+                return getAccumulator(item, accumulator);
             }
             return accumulator;
         }, {});

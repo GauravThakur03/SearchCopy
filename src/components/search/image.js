@@ -5,27 +5,15 @@ const Image = ({
     list,
     shouldShowImage
 }) => {
+    const image = list.searchImage.replace('/docs', 'https://dlrdoc.deere.com');
+
     return shouldShowImage ? <div className='image-holder col-xs-24 col-sm-8 col-lg-6'>
         <div className='pic-wrapper'>
             <a
                 href={list.url}
                 target='_self'
             >
-                <picture>
-                    <source
-                        media='(min-width: 992px)'
-                        srcSet='https://dlrdoc.deere.com/sales/salesmanual/images/NA/combines_headers/combines/gen4_commandcenter_4600.jpg'
-                    />
-                    <source
-                        media='(min-width: 768px)'
-                        srcSet='https://dlrdoc.deere.com/sales/salesmanual/images/NA/combines_headers/combines/gen4_commandcenter_4600.jpg'
-                    />
-                    <source
-                        media='(min-width: 320px)'
-                        srcSet='https://dlrdoc.deere.com/sales/salesmanual/images/NA/combines_headers/combines/gen4_commandcenter_4600.jpg'
-                    />
-                    <img src='https://dlrdoc.deere.com/sales/salesmanual/images/NA/combines_headers/combines/gen4_commandcenter_4600.jpg'/>
-                </picture>
+                <img src={image}/>
             </a>
         </div>
     </div>
