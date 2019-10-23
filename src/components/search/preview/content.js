@@ -14,11 +14,13 @@ export default class Content extends React.Component {
     iframeLoaded(event) {
         const doc = event.target.contentDocument;
 
-        const node = doc.getElementsByClassName('featured-head')[0];
-        const footerNode = doc.getElementsByTagName('footer')[0];
+        if (doc) {
+            const node = doc.getElementsByClassName('featured-head')[0];
+            const footerNode = doc.getElementsByTagName('footer')[0];
 
-        node.parentNode.removeChild(node);
-        footerNode.parentNode.removeChild(footerNode);
+            node.parentNode.removeChild(node);
+            footerNode.parentNode.removeChild(footerNode);
+        }
 
         this.setState({
             loaded: true
@@ -31,13 +33,12 @@ export default class Content extends React.Component {
                 {
                     this.props.active
                         ? (
-                            /* src will be this.props.url. For now its hardcoded because of CORS restriction on loading remote stories in iframe*/
                             <div className={this.state.loaded ? 'ns-iframe-wrapper ns-visible' : 'ns-iframe-wrapper'}>
                                 <iframe
                                     frameBorder='0'
                                     height='614'
                                     onLoad={this.iframeLoaded}
-                                    src='remote-stories/command-center.html'
+                                    src={this.props.list.url}
                                     width='100%'
                                 >
                                     {'Either data not found at given url or This browser does not support object.'}
@@ -52,5 +53,6 @@ export default class Content extends React.Component {
 
 Content.propTypes = {
     active: PropTypes.bool,
-    activeClass: PropTypes.string
+    activeClass: PropTypes.string,
+    list: PropTypes.object
 };
