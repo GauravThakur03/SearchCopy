@@ -15,7 +15,10 @@ class Footer extends Component {
 
     componentDidMount() {
         if (this.props.locale !== '') {
-            this.props.loadFooter(footerURL).then((html) => this.setState({
+            const locale = this.props.locale.split('_');
+            const url = locale[1] === 'NA' ? `${footerURL}/${locale[1]}/footer_onepage.html` : `${footerURL}/${locale[1]}/${locale[0]}/footer_onepage.html`;
+
+            this.props.loadFooter(url).then((html) => this.setState({
                 content: html
             }));
         }
@@ -23,7 +26,10 @@ class Footer extends Component {
 
     componentDidUpdate(prevProps) {
         if (prevProps.locale !== this.props.locale) {
-            this.props.loadFooter(footerURL).then((html) => this.setState({
+            const locale = this.props.locale.split('_');
+            const url = locale[1] === 'NA' ? `${footerURL}/${locale[1]}/footer_onepage.html` : `${footerURL}/${locale[1]}/${locale[0]}/footer_onepage.html`;
+
+            this.props.loadFooter(url).then((html) => this.setState({
                 content: html
             }));
         }
