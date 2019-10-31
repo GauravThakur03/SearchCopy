@@ -109,7 +109,7 @@ export function applyFilter({
                 currentPage: 1
             }));
         }
-        //dispatch(loadXML());
+        dispatch(loadXML());
     };
 }
 

@@ -22,7 +22,7 @@ function mapDispatchToProps(dispatch) {
                 currentPage
             }));
             dispatch(saveQuery(query));
-            //dispatch(loadXML());
+            dispatch(loadXML());
         }
     };
 }

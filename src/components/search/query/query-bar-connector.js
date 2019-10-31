@@ -15,7 +15,7 @@ function mapDispatchToProps(dispatch) {
             dispatch(saveQuery({
                 query
             }));
-            //dispatch(loadXML());
+            dispatch(loadXML());
         },
         loadSuggestion: (searchTerm) => {
             return loadSuggestion(searchTerm).then((suggestions) => JSON.parse(suggestions)).catch((suggestions) => suggestions);
