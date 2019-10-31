@@ -171,3 +171,16 @@ export function getQuery() {
         return acc;
     }, {});
 }
+
+export function onHeaderLoad() {
+    if ($("#headerSection").length > 0) {
+        APP.global();
+        splashMsgInit();
+        topNavigation();
+        if ($(window).width() > 1024) {
+            headerAlignment();
+        } else {
+            headerAlignmentMobile();
+        }
+    }
+}

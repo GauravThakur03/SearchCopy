@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 
 import {headerURL} from '../../utils/config';
+import {onHeaderLoad} from '../../utils/util';
 
 /* eslint-disable react/no-danger */
 class Header extends Component {
@@ -22,7 +23,6 @@ class Header extends Component {
                 this.setState({
                     content: html
                 });
-                /* global onHeaderLoad */
                 onHeaderLoad();
             });
         }

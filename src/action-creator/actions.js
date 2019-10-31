@@ -131,6 +131,8 @@ export function configurations(locale) {
                     settings,
                     type: SETTINGS
                 });
+
+                ele.classList.add('available');
             })
             .catch((error) => {
                 return error;
