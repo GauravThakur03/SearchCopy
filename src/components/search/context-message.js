@@ -1,22 +1,24 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import {FormattedMessage} from 'react-intl';
+import {getQuery} from '../../utils/util';
 
 class ContextMessage extends Component {
     constructor(props) {
         super(props);
         this.searchEntireSite = this.searchEntireSite.bind(this);
+
+        this.query = getQuery();
     }
 
     searchEntireSite() {
-        const params = Object.assign({}, this.props.location.query);
+        const params = Object.assign({}, this.query);
 
         delete params.year;
-        window.location.href = `/search?${Object.keys(params).map((key) => `${key}=${params[key]}`).join('&')}`;
+        window.location.href = `/sales/salesmanual/ssi/searchResults.html?${Object.keys(params).map((key) => `${key}=${params[key]}`).join('&')}`;
     }
 
     render() {
-        return this.props.location.query.year ? <div className='contextual-msg'>
+        return this.query.year ? <div className='contextual-msg'>
             <a className='nsc-msg'><FormattedMessage id={'CONTEXT_SEARCH_MESSAGE'}/></a>
             <a
                 className='search-entire-site'
@@ -28,9 +30,5 @@ class ContextMessage extends Component {
             : null;
     }
 }
-
-ContextMessage.propTypes = {
-    location: PropTypes.object
-};
 
 export default ContextMessage;

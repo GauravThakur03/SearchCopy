@@ -4,13 +4,14 @@ import PropTypes from 'prop-types';
 import HeaderConnector from './header/header-connector';
 import FooterConnector from './footer/footer-connector';
 import IntlProviderConnector from './intl-provider-connector';
+import MainContainer from './main-container';
 
 class AppContainer extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            locale: this.props.location.query['country-site'] || 'en_GB'
+            locale: this.props.query['country-site'] || 'en_GB'
         };
     }
 
@@ -18,7 +19,7 @@ class AppContainer extends Component {
         if (this.state.locale) {
             this.props.loadConfigurations(this.state.locale);
         }
-        this.props.loadXML(this.props.location.query);
+        this.props.loadXML(this.props.query);
     }
 
     render() {
@@ -30,9 +31,10 @@ class AppContainer extends Component {
                 <Fragment>
                     <div className={'wrapper clearfix'}>
                         <HeaderConnector {...this.state}/>
-                        {React.cloneElement(this.props.children, {
-                            ...this.state
-                        })}
+                        <MainContainer
+                            {...this.props}
+                            {...this.state}
+                        />
                     </div>
                     <FooterConnector {...this.state}/>
                 </Fragment>
@@ -46,8 +48,8 @@ AppContainer.propTypes = {
     loadConfigurations: PropTypes.func,
     loadXML: PropTypes.func,
     locale: PropTypes.string,
-    location: PropTypes.object,
-    messages: PropTypes.object
+    messages: PropTypes.object,
+    query: PropTypes.object
 };
 
 export default AppContainer;
