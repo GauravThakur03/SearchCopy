@@ -1,3 +1,5 @@
+import {defaultState} from '../state/search/pagination';
+
 export const showImage = true;
 
 export function xml2Json(xmlString) {
@@ -136,7 +138,15 @@ export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
 
     if (!vce.list) {
-        return Promise.reject(false);
+        const list = {per: 25, num: 0};
+        const navigation = defaultState().navigation;
+        const results = [];
+
+        return {
+            list,
+            navigation,
+            results
+        };
     }
 
     const results = generateSearchList(vce.list.document);
