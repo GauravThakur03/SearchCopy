@@ -34,7 +34,7 @@ export function loadXML() {
                 });
                 if (data.navigation) {
                     dispatch({
-                        links: data.navigation.link,
+                        links: data.navigation.link || [],
                         type: SET_PAGINATION_LINKS
                     });
                 }
