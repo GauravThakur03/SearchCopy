@@ -20,7 +20,7 @@ class Pagination extends Component {
     }
 
     componentWillUpdate(nextProps) {
-        if (nextProps.pagination.links.length !== this.props.pagination.links.length) {
+        if (nextProps.pagination.navigation.currentPage !== this.props.pagination.navigation.currentPage) {
             const {links} = nextProps.pagination;
 
             this.pages = links.filter((page) => !page.type);
