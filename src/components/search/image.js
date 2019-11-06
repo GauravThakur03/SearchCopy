@@ -5,7 +5,7 @@ const Image = ({
     list,
     shouldShowImage
 }) => {
-    const image = list.searchImage.replace('/docs', 'https://dlrdoc.deere.com');
+    const image = list.searchImage && list.searchImage.replace('/docs', 'https://dlrdoc.deere.com');
 
     return shouldShowImage ? <div className='image-holder col-xs-24 col-sm-8 col-lg-6'>
         <div className='pic-wrapper'>
