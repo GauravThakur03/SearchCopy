@@ -12,7 +12,7 @@ function findLocale(state) {
 
 function mapStateToProps(state) {
     return {
-        locale: query['country-site'] || findLocale(state),
+        locale: query['country_site'] || findLocale(state),
         messages: state.search.settings.translations,
         query
     };
@@ -25,15 +25,14 @@ function mapDispatchToProps(dispatch) {
         },
         loadXML: (urlParams) => {
             const {
-                products,
                 year,
                 ...queryParams
             } = urlParams;
 
             dispatch(saveQuery(queryParams));
 
-            if (year || products) {
-                const model = `model-year==${year.replace(/\D/g, '')}`;
+            if (year) {
+                const model = `year==${year.replace(/\D/g, '')}`;
                 const filter = {
                     key: year.replace(/\D/g, ''),
                     value: model

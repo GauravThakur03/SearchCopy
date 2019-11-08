@@ -11,7 +11,7 @@ class AppContainer extends Component {
         super(props);
 
         this.state = {
-            locale: this.props.query['country-site'] || 'en_GB'
+            locale: this.props.query['country_site'] || 'en_GB'
         };
     }
 

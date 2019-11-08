@@ -172,21 +172,21 @@ export function buildQuery(filters) {
 
 export function buildQueryString(search) {
     const binningValues = Object.values(search.binning.appliedFilters);
+    const { country_site, ...urlParams} = search.urlParams;
 
-    const isModelYear = binningValues.find((value) => value.includes('model-year'));
+    binningValues.push(`country_site==${country_site}`); 
 
-    isModelYear && binningValues.push('model-year==All');
+    const isModelYear = binningValues.find((value) => value.includes('year'));
+
+    isModelYear && binningValues.push('year==All');
 
     const binningParam = buildQuery(binningValues);
     const binning = {
-        'content-type': 'text/xml',
+        'binning-state': binningParam,
+        'content-type': 'text/xml'
     };
-
-    if (binningParam) {
-        binning['binning-state'] = binningParam;
-    }
     const params = {
-        ...search.urlParams,
+        ...urlParams,
         ...binning
     };
 

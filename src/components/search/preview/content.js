@@ -15,7 +15,7 @@ export default class Content extends React.Component {
         const doc = event.target.contentDocument;
 
         if (doc) {
-            const node = doc.getElementsByClassName('featured-head')[0];
+            const node = doc.getElementsByClassName('featured-head')[0] || doc.getElementById('headerSection');
             const footerNode = doc.getElementsByTagName('footer')[0];
 
             node && node.parentNode.removeChild(node);

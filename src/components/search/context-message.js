@@ -13,7 +13,8 @@ class ContextMessage extends Component {
     searchEntireSite() {
         const params = Object.assign({}, this.query);
 
-        delete params.year;
+        ['year', 'products'].forEach(k => delete params[k]);
+
         window.location.href = `/sales/salesmanual/ssi/searchResults.html?${Object.keys(params).map((key) => `${key}=${params[key]}`).join('&')}`;
     }
 
