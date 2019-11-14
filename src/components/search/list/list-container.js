@@ -10,7 +10,7 @@ const ListContainer = ({
     shouldPreview,
     shouldShowImage
 }) => {
-    const full = shouldShowImage && !shouldPreview ? '' : 'full';
+    const full = shouldShowImage && !shouldPreview && list.searchImage ? '' : 'full';
 
     return (
         <div className={`copy col-xs-24 col-sm-16 col-lg-18 ${full}`}>

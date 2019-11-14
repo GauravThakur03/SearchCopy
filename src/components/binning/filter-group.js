@@ -50,7 +50,7 @@ class FilterGroup extends Component {
                                     })
                                 }
                                 {
-                                    this.props.moreLess ? <ShowMore
+                                    this.props.moreLess && filters.length > this.props.moreLessLimit ? <ShowMore
                                         more={this.state.more}
                                         onClick={this.onShowMoreLess}
                                     /> : null}
