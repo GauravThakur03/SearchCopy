@@ -152,22 +152,22 @@ class QueryBar extends Component {
         if (showSuggestions) {
             if (filteredSuggestions.length) {
                 suggestionsListComponent = (
-                    <ul className='suggestions'>
+                    <div className='suggestions'>
                         {filteredSuggestions.map((suggestion, index) => {
                             const className = index === activeSuggestion ? 'suggestion-active' : '';
 
                             return (
-                                <li
+                                <div
                                     className={className}
                                     key={index}
                                     onClick={onClick}
                                     tabIndex={index}
                                 >
                                     {suggestion}
-                                </li>
+                                </div>
                             );
                         })}
-                    </ul>
+                    </div>
                 );
             } else {
                 suggestionsListComponent = (
@@ -189,6 +189,7 @@ class QueryBar extends Component {
                             type='text'
                             value={userInput}
                         />
+                        {!loading && suggestionsListComponent}
                     </span>
                     <div className='search-icon'>
                         <a
@@ -197,7 +198,6 @@ class QueryBar extends Component {
                         />
                     </div>
                 </form>
-                {!loading && suggestionsListComponent}
             </div>
         );
     }
