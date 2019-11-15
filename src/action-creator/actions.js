@@ -33,7 +33,7 @@ export function loadXML() {
                     type: SET_RESULTS
                 });
                 dispatch({
-                    links: data.navigation.link || [],
+                    links: data.navigation ? data.navigation.link : [],
                     type: SET_PAGINATION_LINKS
                 });
             })
