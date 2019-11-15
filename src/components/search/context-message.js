@@ -20,7 +20,7 @@ class ContextMessage extends Component {
 
     render() {
         return this.query.year ? <div className='contextual-msg'>
-            <a className='nsc-msg'><FormattedMessage id={'CONTEXT_SEARCH_MESSAGE'}/></a>
+            <a className='nsc-msg'><FormattedMessage id={'CONTEXT_SEARCH_MESSAGE'}/>&nbsp;</a>
             <a
                 className='search-entire-site'
                 onClick={this.searchEntireSite}
