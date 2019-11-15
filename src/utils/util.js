@@ -72,13 +72,14 @@ export function generateSearchList(document) {
     const match = ['title', 'year', 'snippet', 'url', 'description', 'country_site', 'base_codes', 'search_image'];
 
     list.map((doc) => {
-        const content = doc.content.reduce((accumulator, item) => {
+        let content = doc.content.reduce((accumulator, item) => {
             if (match.includes(item._name)) {
                 return getAccumulator(item, accumulator);
             }
             return accumulator;
         }, {});
 
+        content.url = doc._url;
         results.push(content);
     });
     return results;
@@ -136,7 +137,7 @@ export function refactorKeys(binningSet) {
 
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
-    const totalResults = vc['added-source'][0]['added-source']['_total-results'];
+    const totalResults = vce['added-source'][0]['added-source']['_total-results'];
 
 
     if (!vce.list) {
