@@ -10,7 +10,7 @@ const ResultDiscription = ({
     const baseCodes = intl.formatMessage({
         id: 'BASECODES'
     }); 
-    const value = list.baseCodes ? `<span><b>${baseCodes}: </b>${list.baseCodes.join(',')}` : list.snippet.replace(/<[^>]+>/g, ' ');
+    const value = list.baseCodes ? `<span><b>${baseCodes}: </b>${list.baseCodes.join(',')}` : list.snippet;
 
     return (
         <p

@@ -3,7 +3,7 @@ import t from 'tcomb';
 import Link from './link';
 import Navigation from './navigation';
 
-const PAGE_NUMBER = 10;
+const PAGE_NUMBER = 25;
 
 const Pagination = t.struct({
     links: t.list(Link),

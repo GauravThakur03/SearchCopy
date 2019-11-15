@@ -136,16 +136,19 @@ export function refactorKeys(binningSet) {
 
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
+    const totalResults = vc['added-source'][0]['added-source']['_total-results'];
+
 
     if (!vce.list) {
-        const list = {per: 25, num: 0};
+        const list = {per: 25, num: totalResults};
         const navigation = defaultState().navigation;
         const results = [];
 
         return {
             list,
             navigation,
-            results
+            results,
+            totalResults
         };
     }
 
@@ -154,13 +157,14 @@ export function sendResponse(xml) {
         list,
         navigation
     } = refactorObject(vce);
-    const locale = results.length && results[0].countrySite ? results[0].countrySite : 'en_GB';
+    const locale = results.length && results[0].countrySite ? results[0].countrySite : 'en_NA';
 
     return {
         list,
         locale,
         navigation,
-        results
+        results,
+        totalResults
     };
 }
 

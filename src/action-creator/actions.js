@@ -21,7 +21,7 @@ export function loadXML() {
             .then((data) => {
                 const navigation = {
                     perPage: data.list.per,
-                    totalRecords: data.list.num
+                    totalRecords: data.totalResults
                 };
 
                 dispatch({
@@ -32,12 +32,10 @@ export function loadXML() {
                     results: data.results,
                     type: SET_RESULTS
                 });
-                if (data.navigation) {
-                    dispatch({
-                        links: data.navigation.link || [],
-                        type: SET_PAGINATION_LINKS
-                    });
-                }
+                dispatch({
+                    links: data.navigation.link || [],
+                    type: SET_PAGINATION_LINKS
+                });
             })
             .catch((error) => {
                 return error;
