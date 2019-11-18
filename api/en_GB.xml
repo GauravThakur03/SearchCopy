@@ -15,7 +15,7 @@
         <CLEAR_FILTERS>Clear Filters</CLEAR_FILTERS>
         <SHOW_FILTERS>Show Filters</SHOW_FILTERS>
         <VIEW_RESULTS>View Results</VIEW_RESULTS>
-        <CONTEXT_SEARCH_MESSAGE>Showing results for model specific search</CONTEXT_SEARCH_MESSAGE>
+        <CONTEXT_SEARCH_MESSAGE>Showing results for model specific search.</CONTEXT_SEARCH_MESSAGE>
         <SEARCH_ENTIRE_LINK>Search entire site</SEARCH_ENTIRE_LINK>
         <NO_SUGGESTIONS>No result found</NO_SUGGESTIONS>
         <OF>of</OF>

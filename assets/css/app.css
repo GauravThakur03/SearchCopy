@@ -136,5 +136,8 @@
 .ns-iframe-wrapper.ns-visible{
     visibility: visible;
 }
+.vivbold {
+	font-weight: 600;
+}
 
 /*Accordion end*/

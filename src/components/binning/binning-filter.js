@@ -31,7 +31,7 @@ const BinningFilter = (props) => {
                                 <div className='content'>
                                     <fieldset>
                                         <ul className='fancy-checkbox-group'>
-                                            <li>
+                                            <li className='ns-count-leaf'>
                                                 <span
                                                     className='content-type'
                                                     style={countLabel}
