@@ -3,7 +3,7 @@ import {
 } from '../../../actions';
 
 function setPaginationLinks(state, action) {
-    return action.links;
+    return action.links || [];
 }
 
 export default function (state = [], action) {
