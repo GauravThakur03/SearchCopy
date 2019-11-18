@@ -38,15 +38,11 @@ class QueryBar extends Component {
 
     onEnter(activeSuggestion, filteredSuggestions, e) {
         e.preventDefault();
-        if (this.state.showSuggestions) {
-            this.setState({
-                activeSuggestion: 0,
-                showSuggestions: false,
-                userInput: filteredSuggestions[activeSuggestion] || this.state.userInput
-            });
-        } else {
-            this.searchByQuery();
-        }
+        this.setState({
+            activeSuggestion: 0,
+            showSuggestions: false,
+            userInput: filteredSuggestions[activeSuggestion] || this.state.userInput
+        }, this.searchByQuery);
     }
 
     onUp(activeSuggestion) {
@@ -147,7 +143,7 @@ class QueryBar extends Component {
             id: 'SEARCH'
         });
 
-        let suggestionsListComponent;
+        let suggestionsListComponent, noSuggestions;
 
         if (showSuggestions) {
             if (filteredSuggestions.length) {
@@ -170,7 +166,7 @@ class QueryBar extends Component {
                     </div>
                 );
             } else {
-                suggestionsListComponent = (
+                noSuggestions = (
                     <div className='no-suggestions'>
                         <em><FormattedMessage id={'NO_SUGGESTIONS'}/></em>
                     </div>
@@ -198,6 +194,7 @@ class QueryBar extends Component {
                         />
                     </div>
                 </form>
+                {!loading && noSuggestions}
             </div>
         );
     }

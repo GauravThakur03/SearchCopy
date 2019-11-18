@@ -137,7 +137,7 @@ export function refactorKeys(binningSet) {
 
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
-    const totalResults = vce['added-source'][0]['added-source']['_total-results'];
+    const totalResults = Number(Array.isArray(vce['added-source']) ? vce['added-source'][0]['added-source']['_total-results'] : vce['added-source']['added-source']['_total-results']);
 
 
     if (!vce.list) {
