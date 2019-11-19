@@ -137,6 +137,10 @@
     visibility: visible;
 }
 
+.vivbold {
+    font-weight: 600;
+} 
+
 .spinner {
     text-align: center;
 }
