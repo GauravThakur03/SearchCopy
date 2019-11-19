@@ -1,3 +1,5 @@
+import {defaultState} from '../state/search/pagination';
+
 export const showImage = true;
 
 export function xml2Json(xmlString) {
@@ -70,13 +72,14 @@ export function generateSearchList(document) {
     const match = ['title', 'year', 'snippet', 'url', 'description', 'country_site', 'base_codes', 'search_image'];
 
     list.map((doc) => {
-        const content = doc.content.reduce((accumulator, item) => {
+        let content = doc.content.reduce((accumulator, item) => {
             if (match.includes(item._name)) {
                 return getAccumulator(item, accumulator);
             }
             return accumulator;
         }, {});
 
+        content.url = doc._url;
         results.push(content);
     });
     return results;
@@ -97,15 +100,57 @@ export function sortModel(bins) {
     });
 }
 
+export const sortBy = (key, reverse) => {
+
+  // Move smaller items towards the front
+  // or back of the array depending on if
+  // we want to sort the array in reverse
+  // order or not.
+  const moveSmaller = reverse ? 1 : -1;
+
+  // Move larger items towards the front
+  // or back of the array depending on if
+  // we want to sort the array in reverse
+  // order or not.
+  const moveLarger = reverse ? -1 : 1;
+
+  /**
+   * @param  {*} a
+   * @param  {*} b
+   * @return {Number}
+   */
+  return (a, b) => {
+    if (a[key] < b[key]) {
+      return moveSmaller;
+    }
+    if (a[key] > b[key]) {
+      return moveLarger;
+    }
+    return 0;
+  };
+}; 
+ 
+
 export function refactorKeys(binningSet) {
     return recursiveKeyModifier(binningSet);
 }
 
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
+    const totalResults = Number(Array.isArray(vce['added-source']) ? vce['added-source'][0]['added-source']['_total-results'] : vce['added-source']['added-source']['_total-results']);
+
 
     if (!vce.list) {
-        return Promise.reject(false);
+        const list = {per: 25, num: totalResults};
+        const navigation = defaultState().navigation;
+        const results = [];
+
+        return {
+            list,
+            navigation,
+            results,
+            totalResults
+        };
     }
 
     const results = generateSearchList(vce.list.document);
@@ -113,13 +158,14 @@ export function sendResponse(xml) {
         list,
         navigation
     } = refactorObject(vce);
-    const locale = results.length && results[0].countrySite ? results[0].countrySite : 'en_GB';
+    const locale = results.length && results[0].countrySite ? results[0].countrySite : 'en_NA';
 
     return {
         list,
         locale,
         navigation,
-        results
+        results,
+        totalResults
     };
 }
 
@@ -131,14 +177,21 @@ export function buildQuery(filters) {
 
 export function buildQueryString(search) {
     const binningValues = Object.values(search.binning.appliedFilters);
+    const { country_site, ...urlParams} = search.urlParams;
 
-    binningValues.push('model-year==All');
+    binningValues.push(`country_site==${country_site}`); 
+
+    const isModelYear = binningValues.find((value) => value.includes('year'));
+
+    isModelYear && binningValues.push('year==All');
+
     const binningParam = buildQuery(binningValues);
     const binning = {
-        'binning-state': binningParam
+        'binning-state': binningParam,
+        'content-type': 'text/xml'
     };
     const params = {
-        ...search.urlParams,
+        ...urlParams,
         ...binning
     };
 
@@ -160,4 +213,27 @@ export function generateSettings(settings) {
         }
         return accum;
     }, {});
+}
+
+export function getQuery() {
+    return location.search.slice(1).split('&').reduce((acc, value) => {
+        const kv = value.split('=');
+
+        acc[kv[0]] = kv[1];
+
+        return acc;
+    }, {});
+}
+
+export function onHeaderLoad() {
+    if ($("#headerSection").length > 0) {
+        APP.global();
+        splashMsgInit();
+        topNavigation();
+        if ($(window).width() > 1024) {
+            headerAlignment();
+        } else {
+            headerAlignmentMobile();
+        }
+    }
 }

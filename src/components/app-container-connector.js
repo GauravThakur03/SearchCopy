@@ -2,15 +2,19 @@ import {connect as reduxConnect} from 'react-redux';
 
 import AppContainer from './app-container';
 import {loadXML, saveQuery, configurations, applyFilter} from '../action-creator/actions';
+import {getQuery} from '../utils/util';
 
-function findLocale(ownProps, state) {
+const query = getQuery();
+
+function findLocale(state) {
     return state.search.results.length ? state.search.results[0].countrySite : '';
 }
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state) {
     return {
-        locale: ownProps.location.query['country-site'] || findLocale(ownProps, state),
-        messages: state.search.settings.translations
+        locale: query['country_site'] || findLocale(state),
+        messages: state.search.settings.translations,
+        query
     };
 }
 
@@ -21,15 +25,14 @@ function mapDispatchToProps(dispatch) {
         },
         loadXML: (urlParams) => {
             const {
-                products,
                 year,
-                ...query
+                ...queryParams
             } = urlParams;
 
-            dispatch(saveQuery(query));
+            dispatch(saveQuery(queryParams));
 
-            if (year || products) {
-                const model = `model-year==${year.replace(/\D/g, '')}`;
+            if (year) {
+                const model = `year==${year.replace(/\D/g, '')}`;
                 const filter = {
                     key: year.replace(/\D/g, ''),
                     value: model

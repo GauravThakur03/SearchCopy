@@ -4,6 +4,7 @@ import {FormattedMessage} from 'react-intl';
 
 import Filter from './filter';
 import ShowMore from './show-more';
+import {sortBy, sortModel} from '../../utils/util';
 
 class FilterGroup extends Component {
     constructor(props) {
@@ -22,6 +23,10 @@ class FilterGroup extends Component {
     }
 
     render() {
+        const filters = Object.assign([], this.props.filters);
+
+        this.props.category === 'MODEL_YEAR' ? sortModel(filters) : filters.sort(sortBy('label')); 
+
         return (
             <div className='filter-group'>
                 <h4>
@@ -35,7 +40,7 @@ class FilterGroup extends Component {
                             </legend>
                             <ul className='fancy-checkbox-group'>
                                 {
-                                    this.props.filters.map((bin, index) => {
+                                    filters.map((bin, index) => {
                                         return this.state.more && index >= this.props.moreLessLimit ? null : (<Filter
                                             appliedFilter={this.props.appliedFilter}
                                             bin={bin}
@@ -45,7 +50,7 @@ class FilterGroup extends Component {
                                     })
                                 }
                                 {
-                                    this.props.moreLess ? <ShowMore
+                                    this.props.moreLess && filters.length > this.props.moreLessLimit ? <ShowMore
                                         more={this.state.more}
                                         onClick={this.onShowMoreLess}
                                     /> : null}

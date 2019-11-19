@@ -1,9 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {injectIntl, intlShape} from 'react-intl'; 
 
 /* eslint-disable react/no-danger */
-const ResultDiscription = ({list}) => {
-    const value = list.baseCodes ? `<span><b>Base Codes: </b>${list.baseCodes.join(',')}` : list.snippet;
+const ResultDiscription = ({
+    intl,
+    list
+}) => {
+    const baseCodes = intl.formatMessage({
+        id: 'BASECODES'
+    }); 
+    const value = list.baseCodes ? `<span><b>${baseCodes}: </b>${list.baseCodes.join(',')}` : list.snippet;
 
     return (
         <p
@@ -18,7 +25,8 @@ const ResultDiscription = ({list}) => {
 };
 
 ResultDiscription.propTypes = {
+    intl: intlShape.isRequired,
     list: PropTypes.object
 };
 
-export default ResultDiscription;
+export default injectIntl(ResultDiscription);

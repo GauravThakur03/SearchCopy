@@ -8,25 +8,9 @@ class Pagination extends Component {
     constructor(props) {
         super(props);
 
-        const {links} = props.pagination;
-
-        this.pages = links.filter((page) => !page.type);
-        this.prev = links.find((page) => page.type && page.type === 'previous');
-        this.next = links.find((page) => page.type && page.type === 'next');
-
         this.setPage = this.setPage.bind(this);
 
         this.root = 'root|root-';
-    }
-
-    componentWillUpdate(nextProps) {
-        if (nextProps.pagination.links.length !== this.props.pagination.links.length) {
-            const {links} = nextProps.pagination;
-
-            this.pages = links.filter((page) => !page.type);
-            this.prev = links.find((page) => page.type && page.type === 'previous');
-            this.next = links.find((page) => page.type && page.type === 'next');
-        }
     }
 
     setPage(currentPage, pageText) {
@@ -43,6 +27,12 @@ class Pagination extends Component {
     }
 
     render() {
+        const {links} = this.props.pagination;
+
+        this.pages = links.filter((page) => !page.type);
+        this.prev = links.find((page) => page.type && page.type === 'previous');
+        this.next = links.find((page) => page.type && page.type === 'next');
+
         return (
             <div className='pagination-search shown multiple-pages'>
                 {

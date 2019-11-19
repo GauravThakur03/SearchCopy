@@ -38,15 +38,11 @@ class QueryBar extends Component {
 
     onEnter(activeSuggestion, filteredSuggestions, e) {
         e.preventDefault();
-        if (this.state.showSuggestions) {
-            this.setState({
-                activeSuggestion: 0,
-                showSuggestions: false,
-                userInput: filteredSuggestions[activeSuggestion] || this.state.userInput
-            });
-        } else {
-            this.searchByQuery();
-        }
+        this.setState({
+            activeSuggestion: 0,
+            showSuggestions: false,
+            userInput: filteredSuggestions[activeSuggestion] || this.state.userInput
+        }, this.searchByQuery);
     }
 
     onUp(activeSuggestion) {
@@ -147,30 +143,30 @@ class QueryBar extends Component {
             id: 'SEARCH'
         });
 
-        let suggestionsListComponent;
+        let suggestionsListComponent, noSuggestions;
 
         if (showSuggestions) {
             if (filteredSuggestions.length) {
                 suggestionsListComponent = (
-                    <ul className='suggestions'>
+                    <div className='suggestions'>
                         {filteredSuggestions.map((suggestion, index) => {
                             const className = index === activeSuggestion ? 'suggestion-active' : '';
 
                             return (
-                                <li
+                                <div
                                     className={className}
                                     key={index}
                                     onClick={onClick}
                                     tabIndex={index}
                                 >
                                     {suggestion}
-                                </li>
+                                </div>
                             );
                         })}
-                    </ul>
+                    </div>
                 );
             } else {
-                suggestionsListComponent = (
+                noSuggestions = (
                     <div className='no-suggestions'>
                         <em><FormattedMessage id={'NO_SUGGESTIONS'}/></em>
                     </div>
@@ -189,6 +185,7 @@ class QueryBar extends Component {
                             type='text'
                             value={userInput}
                         />
+                        {!loading && suggestionsListComponent}
                     </span>
                     <div className='search-icon'>
                         <a
@@ -197,7 +194,7 @@ class QueryBar extends Component {
                         />
                     </div>
                 </form>
-                {!loading && suggestionsListComponent}
+                {!loading && noSuggestions}
             </div>
         );
     }

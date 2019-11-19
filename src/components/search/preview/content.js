@@ -15,11 +15,11 @@ export default class Content extends React.Component {
         const doc = event.target.contentDocument;
 
         if (doc) {
-            const node = doc.getElementsByClassName('featured-head')[0];
+            const node = doc.getElementsByClassName('featured-head')[0] || doc.getElementById('headerSection');
             const footerNode = doc.getElementsByTagName('footer')[0];
 
-            node.parentNode.removeChild(node);
-            footerNode.parentNode.removeChild(footerNode);
+            node && node.parentNode.removeChild(node);
+            footerNode && footerNode.parentNode.removeChild(footerNode);
         }
 
         this.setState({
