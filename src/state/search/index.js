@@ -7,6 +7,7 @@ import Settings from './settings';
 
 const Search = t.struct({
     binning: Binning,
+    loader: t.Number,
     pagination: Pagination,
     results: t.list(Result),
     settings: Settings,

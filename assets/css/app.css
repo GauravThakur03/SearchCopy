@@ -137,4 +137,63 @@
     visibility: visible;
 }
 
+.spinner {
+    text-align: center;
+}
+
+.spinner > .dotspace {
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    animation-fill-mode: both;
+    background-color: #367c2b;
+    border-radius: 100%;
+    display: inline-block;
+    height: 18px;
+    margin: .4em;
+    width: 18px;
+}
+
+.spinner .bounce1 {
+    animation-delay: -.64s;
+}
+
+.spinner .bounce2 {
+    animation-delay: -.32s;
+}
+
+.spinner .bounce3 {
+    animation-delay: -.16s;
+}
+
+@-webkit-keyframes bouncedelay { /* stylelint-disable-line at-rule-no-vendor-prefix */
+    0%,
+    80%,
+    100% {
+        transform: scale(.5);
+    }
+
+    40% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+
+@keyframes bouncedelay {
+    0%,
+    80%,
+    100% {
+        transform: scale(.5);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: .1;
+    }
+}
+
 /*Accordion end*/

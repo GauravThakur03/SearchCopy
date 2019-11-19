@@ -5,6 +5,7 @@ import AppliedFilterConnector from './applied-filter/applied-filter-connector';
 import ResultsConnector from './results-connector';
 import PaginationConnector from './pagination/pagination-connector';
 import ContextMessage from './context-message';
+import Spinner from './spinner';
 
 const ResultContainer = (props) => {
     return (
@@ -12,8 +13,9 @@ const ResultContainer = (props) => {
             <QueryBarConnector/>
             <AppliedFilterConnector/>
             <ContextMessage {...props}/>
-            <ResultsConnector/>
-            <PaginationConnector/>
+            <Spinner showLoader={props.loader} />
+            {!props.loader && <ResultsConnector/>}
+            {!props.loader && <PaginationConnector/>}
         </div>
     );
 };
