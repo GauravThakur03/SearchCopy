@@ -3053,9 +3053,7 @@ p.new-search-result-description {
     line-height: 16px!important;
     display: inline-block
 }
-.button-filter-tag:not(:first-child), .button-filters-clear {
-    margin-left: 7px!important;
-}
+
 .search-results-listing-component {
     margin-bottom: 20px!important;
     padding-left: 0!important;
@@ -3925,9 +3923,16 @@ html {
     word-break: normal;
     overflow-wrap: normal;
     word-wrap: normal;
-    -ms-word-break: initial
+    -ms-word-break: initial;
 }
-
+.ns-sr-icons a.open-new{
+    display:contents;
+}
+.ns-sr-icons a.preview-icon {
+    font-size:17px;
+    font-weight: normal;
+    line-height: inherit;
+}
 @media (min-width:992px), print {
     .preview-icon {
         margin-right: 15px
@@ -3951,8 +3956,15 @@ html {
     padding-top: 12.5px!important;
     padding-bottom: 12.5px!important
 }
-.ns-count-leaf{
+.ns-count-leaf, .ns-count-leaf label.content-type{
+    cursor:default !important;
+}
+.ns-count-leaf a{
     color:#333 !important;
+    cursor:default !important;
+}
+.ns-count-leaf label.content-type{
+    padding:0px !important;
 }
 @media (max-width:991px), print {
     .ns-results-count, .ns-sr-icons {
