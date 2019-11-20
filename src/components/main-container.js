@@ -35,8 +35,11 @@ class MainContainer extends Component {
     adjustHeightOfAside() {
         if (!this.state.toggleFilters) {
             const d = document.getElementById('headerSection').offsetHeight;
+            const p = document.getElementById('pin-wrapper').offsetHeight;
 
-            document.getElementById('filter-aside').style.height = `calc(100vh - ${d}px)`;
+            document.getElementById('filter-aside').style.height = `calc(100vh - ${d + p}px)`;
+            document.getElementById('aside-container-mobile').style.minHeight = `calc(100vh - ${d + p}px)`;
+
         }
     }
     render() {
@@ -45,7 +48,7 @@ class MainContainer extends Component {
                 <div className={`${this.state.toggleFilters ? 'show-filters' : ''} search-results-listing-template background-1`}>
                     <PinWrapper toggleFilters={this.toggleFilters}/>
                     <div className='container'>
-                        <div className='row relative'>
+                        <div className='row relative' id='aside-container-mobile'>
                             <BinningFilterConnector/>
                             <ResultContainer {...this.props}/>
                         </div>
