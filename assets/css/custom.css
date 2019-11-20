@@ -3239,7 +3239,7 @@ html {
 }
 
 .filter-bar-search-results-component .filter-bar-mobile .filter-col-1 .btn-filter-selector .button6 .btn-filter, .filter-bar-search-results-component .filter-bar-mobile .filter-col-1 .left-btn .button6 .btn-filter {
-    vertical-align: middle;
+    vertical-align:middle;
     display: block;
     font-size: 16px;
     line-height: 1;
@@ -3248,7 +3248,7 @@ html {
 
 .filter-bar-search-results-component .filter-bar-mobile .filter-col-1 .btn-filter-selector .button6 .btn-filter:before, .filter-bar-search-results-component .filter-bar-mobile .filter-col-1 .left-btn .button6 .btn-filter:before {
     font-family: jd_icon;
-    content: "î¤“";
+    content: "";
     font-size: 13px;
     margin-right: 6px
 }
@@ -3383,7 +3383,7 @@ html {
 
 .filter-bar-search-results-component .filter-bar-mobile .filter-row-2 .filter-col-1 .left-btn .button6 span:before, .filter-bar-search-results-component .filter-bar-mobile .filter-row-3 .filter-col-1 .left-btn .button6 span:before {
     font-family: jd_icon;
-    content: "î¤‚";
+    content: "";
     font-size: 13px;
     margin-right: 10px
 }
@@ -3443,14 +3443,14 @@ html {
 
 .filter-bar-search-results-component .filter-bar-desktop .filter-col-1 .btn-filter-selector .button6 span:before {
     font-family: jd_icon;
-    content: "î¤“";
+    content: "";
     font-size: 13px;
     margin-right: 10px
 }
 
 .filter-bar-search-results-component .filter-bar-desktop .filter-col-1 .btn-filter-selector .button6 span.fl-hide:after {
     font-family: jd_icon;
-    content: "î¤„";
+    content: "";
     color: #9b9b9b;
     font-size: 13px;
     margin-left: 10px
@@ -3458,7 +3458,7 @@ html {
 
 .filter-bar-search-results-component .filter-bar-desktop .filter-col-1 .btn-filter-selector .button6 span.fl-show:after {
     font-family: jd_icon;
-    content: "î¤";
+    content: "";
     color: #9b9b9b;
     font-size: 13px;
     margin-left: 10px
@@ -3552,7 +3552,7 @@ html {
 
 .filter-bar-search-results-component .filter-bar-desktop .filter-row-2 .filter-col-1 .btn-filter-selector .button6 span:before {
     font-family: jd_icon;
-    content: "î¤‚";
+    content: "";
     font-size: 13px;
     margin-right: 10px
 }
