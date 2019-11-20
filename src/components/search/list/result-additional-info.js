@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
-const ResultAdditionalInfo = ({list}) => {
+const ResultAdditionalInfo = ({ list }) => {
     return (
         <div className='new-search-result-additional-info'>
             <span>
-                <b>
-                    <FormattedMessage id={'MODEL_YEAR'}/>{':'}
-                </b> {list.year}
+
+                <FormattedMessage id={'MODEL_YEAR'} />{': '}
+                {list.year}
             </span>
         </div>
     );
