@@ -19,7 +19,7 @@ class Header extends Component {
             const locale = this.props.locale.split('_');
             const url = locale[1] === 'NA' ? `${headerURL}/${locale[1]}/header_onepage.html` : `${headerURL}/${locale[1]}/${locale[0]}/header_onepage.html`;
 
-            this.props.loadHeader(headerURL).then((html) => {
+            this.props.loadHeader(url).then((html) => {
                 this.setState({
                     content: html
                 });
@@ -33,7 +33,7 @@ class Header extends Component {
             const locale = this.props.locale.split('_');
             const url = locale[1] === 'NA' ? `${headerURL}/${locale[1]}/header_onepage.html` : `${headerURL}/${locale[1]}/${locale[0]}/header_onepage.html`;
 
-            this.props.loadHeader(headerURL).then((html) => this.setState({
+            this.props.loadHeader(url).then((html) => this.setState({
                 content: html
             }));
         }

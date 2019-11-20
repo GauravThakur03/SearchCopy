@@ -18,7 +18,7 @@ class Footer extends Component {
             const locale = this.props.locale.split('_');
             const url = locale[1] === 'NA' ? `${footerURL}/${locale[1]}/footer_onepage.html` : `${footerURL}/${locale[1]}/${locale[0]}/footer_onepage.html`;
 
-            this.props.loadFooter(footerURL).then((html) => this.setState({
+            this.props.loadFooter(url).then((html) => this.setState({
                 content: html
             }));
         }
@@ -29,7 +29,7 @@ class Footer extends Component {
             const locale = this.props.locale.split('_');
             const url = locale[1] === 'NA' ? `${footerURL}/${locale[1]}/footer_onepage.html` : `${footerURL}/${locale[1]}/${locale[0]}/footer_onepage.html`;
 
-            this.props.loadFooter(footerURL).then((html) => this.setState({
+            this.props.loadFooter(url).then((html) => this.setState({
                 content: html
             }));
         }
