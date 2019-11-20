@@ -167,7 +167,6 @@ textarea {
 }
 
 table {
-    border-collapse: collapse;
     border-spacing: 0
 }
 
@@ -255,7 +254,7 @@ table {
 @font-face {
     font-family: jd_sans_promedium;
     src: local(jd_sans_promedium), url(../fonts/JDSansPro/JDSansPro-Medium.eot);
-    src: local(jd_sans_promedium), url(../fonts/JDSansPro/JDSansPro-Medium.eot?#iefix) format('embedded-opentype'), url(../fonts/JDSansPro/JDSansPro-Medium.woff) format('woff'), url(../fonts/JDSansPro/JDSansPro-Medium.svg#webfont) format('svg');
+    src: local(jd_sans_promedium), url(../fonts/JDSansPro/JDSansPro-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/JDSansPro/JDSansPro-Medium.woff) format("woff"), url(../fonts/JDSansPro/JDSansPro-Medium.svg#webfont) format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -370,11 +369,11 @@ table {
     content: ""
 }
 
-.expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section .expand-collapse-component-item.active>h4:before, .expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section.collapsible.active>h3:before, .faq .faq-container .faq-section .faq-question.active h4:before, .filter-component .filters .filter.active h4:before, .filter-news-component .filters .filter.active h4:before, .filter-search-results-component .filters .filter-group .filter.active h4:before, .filter-special-offers-component .filters .filter-group .filter.active h4:before, .icon-jd_minus:before, .link-list-accordian .link-list-group.active h4:before, .option-summary-comp .selector.active .title:before {
+.expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section.collapsible.active>h3:before, .expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section .expand-collapse-component-item.active>h4:before, .faq .faq-container .faq-section .faq-question.active h4:before, .filter-component .filters .filter.active h4:before, .filter-news-component .filters .filter.active h4:before, .filter-search-results-component .filters .filter-group .filter.active h4:before, .filter-special-offers-component .filters .filter-group .filter.active h4:before, .icon-jd_minus:before, .link-list-accordian .link-list-group.active h4:before, .option-summary-comp .selector.active .title:before {
     content: ""
 }
 
-.expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section .expand-collapse-component-item>h4:before, .expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section.collapsible>h3:before, .faq .faq-container .faq-section .faq-question h4:before, .filter-component .filters .filter h4:before, .filter-news-component .filters .filter h4:before, .filter-search-results-component .filters .filter-group .filter h4:before, .filter-special-offers-component .filters .filter-group .filter h4:before, .icon-jd_plus:before, .link-list-accordian .link-list-group h4:before, .option-summary-comp .selector .title:before {
+.expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section.collapsible>h3:before, .expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section .expand-collapse-component-item>h4:before, .faq .faq-container .faq-section .faq-question h4:before, .filter-component .filters .filter h4:before, .filter-news-component .filters .filter h4:before, .filter-search-results-component .filters .filter-group .filter h4:before, .filter-special-offers-component .filters .filter-group .filter h4:before, .icon-jd_plus:before, .link-list-accordian .link-list-group h4:before, .option-summary-comp .selector .title:before {
     content: ""
 }
 
@@ -399,7 +398,7 @@ table {
 }
 
 body, html {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 17px;
     line-height: 26px;
     color: #333;
@@ -408,7 +407,6 @@ body, html {
     -ms-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    width: 100%;
     overflow-x: hidden
 }
 
@@ -426,7 +424,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+    font-weight: 700;
     margin: 16px 0 0;
     line-height: 1.2
 }
@@ -457,14 +455,16 @@ h5 {
 }
 
 p {
-    margin: 16px 0;
+    margin: 16px 0
+}
+
+ol, p, ul {
     line-height: 26px
 }
 
 ol, ul {
     margin-left: 0;
-    padding-left: 16px;
-    line-height: 26px
+    padding-left: 16px
 }
 
 ol ol, ol ul, ul ol, ul ul {
@@ -496,10 +496,8 @@ img, picture {
 }
 
 hr {
+    border: 0;
     border-bottom: 1px solid #e5e6e6;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
     margin: 16px 0
 }
 
@@ -534,19 +532,14 @@ blockquote p {
     margin: 0 auto 24px
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     blockquote p {
-        font-size: 30px!important
-    }
-}
-
-@media print, (min-width:768px) {
-    blockquote p {
+        font-size: 30px!important;
         font-size: 35px!important
     }
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     h1 {
         font-size: 45px
     }
@@ -572,11 +565,7 @@ blockquote p {
     }
 }
 
-.relative {
-    position: relative
-}
-
-.video-player-comp {
+.relative, .video-player-comp {
     position: relative
 }
 
@@ -598,7 +587,7 @@ blockquote p {
     pointer-events: none
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .video-player-comp.text-overlay .video-title.active {
         display: block;
         bottom: 50px;
@@ -646,26 +635,6 @@ blockquote p {
     height: 100%
 }
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px
-}
-
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto
-}
-
 body, html {
     padding: 0;
     margin: 0;
@@ -690,7 +659,7 @@ body {
     font-size: 5px
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .viewport {
         font-size: 10px
     }
@@ -751,7 +720,6 @@ input[type=email], input[type=text] {
 }
 
 .dropdown-select span {
-    text-overflow: ellipsis;
     display: block;
     white-space: nowrap;
     cursor: pointer;
@@ -759,7 +727,7 @@ input[type=email], input[type=text] {
     margin: auto 85px auto 20px
 }
 
-.dropdown-select span::before {
+.dropdown-select span:before {
     font-family: jd_icon;
     position: absolute;
     right: 15px;
@@ -768,7 +736,7 @@ input[type=email], input[type=text] {
     top: 50%
 }
 
-.block-content.primary.dark-1 .container .content .cta .button2, .block-content.primary.dark-2 .container .content .cta .button2, .button-drop, .button-filter-tag, .button-filters-clear, .button-push, .button1, .button2, .button3, .button4, .button5, .button6, .check-button, .country-selector .country-link, .dropdown-select, .event-list.nested .content .show-more-container .show-more, .filter-component .filters .clear-filters, .filter-news-component .filters .clear-filters, .filter-search-results-component .filters .clear-filters, .filter-special-offers-component .filters .clear-filters {
+.block-content.primary.dark-1 .container .content .cta .button2, .block-content.primary.dark-2 .container .content .cta .button2, .button1, .button2, .button3, .button4, .button5, .button6, .button-drop, .button-filter-tag, .button-filters-clear, .button-push, .check-button, .country-selector .country-link, .dropdown-select, .event-list.nested .content .show-more-container .show-more, .filter-component .filters .clear-filters, .filter-news-component .filters .clear-filters, .filter-search-results-component .filters .clear-filters, .filter-special-offers-component .filters .clear-filters {
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
@@ -776,7 +744,7 @@ input[type=email], input[type=text] {
     cursor: pointer
 }
 
-.block-content.primary.dark-1 .container .content .cta .button2, .block-content.primary.dark-2 .container .content .cta .button2, .button-drop, .button-push, .button1, .button2, .button5, .button6, .country-selector .country-link, .dropdown-select, .event-list.nested .content .show-more-container .show-more, .filter-component .filters .clear-filters, .filter-news-component .filters .clear-filters, .filter-search-results-component .filters .clear-filters, .filter-special-offers-component .filters .clear-filters {
+.block-content.primary.dark-1 .container .content .cta .button2, .block-content.primary.dark-2 .container .content .cta .button2, .button1, .button2, .button5, .button6, .button-drop, .button-push, .country-selector .country-link, .dropdown-select, .event-list.nested .content .show-more-container .show-more, .filter-component .filters .clear-filters, .filter-news-component .filters .clear-filters, .filter-search-results-component .filters .clear-filters, .filter-special-offers-component .filters .clear-filters {
     padding: 14px 30px;
     display: inline-block;
     text-align: center;
@@ -784,15 +752,16 @@ input[type=email], input[type=text] {
 }
 
 .button-push {
+    border: 2px solid #c2c2c2
+}
+
+.button-push, .button-push:hover {
     color: #367c2b;
-    border: 2px solid #c2c2c2;
     text-decoration: none
 }
 
 .button-push:hover {
-    background: #e5e6e6;
-    text-decoration: none;
-    color: #367c2b
+    background: #e5e6e6
 }
 
 .button-push:focus {
@@ -820,14 +789,10 @@ input[type=email], input[type=text] {
 .dropdown-input {
     padding: 14px 40px 14px 20px;
     background: 0;
-    border: 2px #367c2b solid
+    border: 2px solid #367c2b
 }
 
-.dropdown-input span {
-    color: #367c2b
-}
-
-.dropdown-input .dropdown-icon {
+.dropdown-input .dropdown-icon, .dropdown-input span {
     color: #367c2b
 }
 
@@ -986,25 +951,26 @@ body.auto-scrolling .filter-bar-component {
     height: 56px;
     display: block;
     float: right;
-    background-image: url("../images/logo/jd_logo_mobile.png");
+    background-image: url(../images/logo/jd_logo_mobile.png);
     background-repeat: no-repeat;
     background-size: 185px 56px;
     position: relative;
     left: 0;
     z-index: 660;
-    transition: left .5s ease-in-out
+    transition: left .5s ease-in-out;
+    margin-left: -15px
 }
 
 @media print {
     .nav-container .nav-logo {
         background: 0 0!important;
-        content: url("../images/logo/jd_logo_mobile.png")
+        content: url(../images/logo/jd_logo_mobile.png)
     }
 }
 
 @media(-webkit-min-device-pixel-ratio:2), (min--moz-device-pixel-ratio:2), (min-resolution:2dppx), (min-resolution:192dpi) {
     .nav-container .nav-logo {
-        background-image: url("../images/logo/jd_logo_mobile@2X.png")
+        background-image: url(../images/logo/jd_logo_mobile@2X.png)
     }
 }
 
@@ -1054,7 +1020,7 @@ body.auto-scrolling .filter-bar-component {
     height: 56px;
     color: #367c2b!important;
     font-size: 16px;
-    padding: 17px 17px 0 17px;
+    padding: 17px 17px 0;
     cursor: pointer
 }
 
@@ -1109,28 +1075,17 @@ body.auto-scrolling .filter-bar-component {
     font-family: jd_sans_probold;
     font-size: 18px;
     height: 60px;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px;
     border: 0
 }
 
-.nav-container .nav-mobile .search-input input::-ms-clear {
+.nav-container .nav-mobile .search-input input::-ms-clear, .nav-container .nav-mobile .search-input input::-ms-reveal {
     display: none;
     width: 0;
     height: 0
 }
 
-.nav-container .nav-mobile .search-input input::-ms-reveal {
-    display: none;
-    width: 0;
-    height: 0
-}
-
-.nav-container .nav-mobile .search-input input:focus {
-    outline: 0;
-    box-shadow: none
-}
-
-.nav-container .nav-mobile .search-input input:active {
+.nav-container .nav-mobile .search-input input:active, .nav-container .nav-mobile .search-input input:focus {
     outline: 0;
     box-shadow: none
 }
@@ -1147,9 +1102,9 @@ body.auto-scrolling .filter-bar-component {
     overflow-y: visible
 }
 
-@media all and (min-width:1025px) {
+@media (min-width:1025px) {
     .nav-container:not(.unscrolled) .nav-content {
-        box-shadow: #474747 1px 1px 5px -1px
+        box-shadow: 1px 1px 5px -1px #474747
     }
 }
 
@@ -1172,7 +1127,7 @@ body.auto-scrolling .filter-bar-component {
     color: #367c2b;
     text-decoration: none;
     text-align: left;
-    padding: 16px 20px 0 20px
+    padding: 16px 20px 0
 }
 
 .nav-container .nav-content .btn-back span {
@@ -1183,15 +1138,7 @@ body.auto-scrolling .filter-bar-component {
     color: #367c2b
 }
 
-.nav-container .nav-content .search-input {
-    display: none
-}
-
-.nav-container .nav-content .search {
-    display: none
-}
-
-.nav-container .nav-content .nav-aux {
+.nav-container .nav-content .nav-aux, .nav-container .nav-content .search, .nav-container .nav-content .search-input {
     display: none
 }
 
@@ -1212,19 +1159,19 @@ body.auto-scrolling .filter-bar-component {
     width: 100%;
     display: block;
     text-align: left;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     border-top: 1px solid #e5e6e6
 }
 
 .nav-container .nav-content .nav-tier1 li.border-bottom {
     border-bottom: 1px solid #e5e6e6;
-    margin: 0 0 20px 0
+    margin: 0 0 20px
 }
 
 .nav-container .nav-content .nav-tier1 li.mobile-link {
     display: block;
     border: 0;
-    padding: 0 20px 20px 20px
+    padding: 0 20px 20px
 }
 
 .nav-container .nav-content .nav-tier1 li a {
@@ -1262,9 +1209,9 @@ body.auto-scrolling .filter-bar-component {
 
 .nav-container .nav-content .nav-tier1 li .additional-link.active {
     color: #367c2b;
-    background: url("../images/image-icons/global-nav-arrow-white.png");
+    background: url(../images/image-icons/global-nav-arrow-white.png);
     background-repeat: no-repeat;
-    background-position: center right
+    background-position: 100%
 }
 
 .nav-container .nav-content .nav-tier2 {
@@ -1287,7 +1234,7 @@ body.auto-scrolling .filter-bar-component {
     width: 100%;
     display: block;
     text-align: left;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     border-bottom: 1px solid #e5e6e6
 }
 
@@ -1340,7 +1287,7 @@ body.auto-scrolling .filter-bar-component {
     left: 100%;
     background: #fff;
     margin: 0;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 30px 30px;
     position: absolute;
     transition: left .5s ease-in-out;
     border-top: 1px solid #e5e6e6;
@@ -1358,13 +1305,13 @@ body.auto-scrolling .filter-bar-component {
 
 .nav-container .nav-content .nav-tier3 ul {
     padding: 0;
-    margin: 0 0 20px 0
+    margin: 0 0 20px
 }
 
 .nav-container .nav-content .nav-tier3 li {
     width: 100%;
     list-style: none;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     text-align: left
 }
 
@@ -1375,7 +1322,7 @@ body.auto-scrolling .filter-bar-component {
 }
 
 .nav-container .nav-content .nav-tier3 .primary {
-    margin: 10px 0 15px 0;
+    margin: 10px 0 15px;
     text-align: left
 }
 
@@ -1404,7 +1351,7 @@ body.auto-scrolling .filter-bar-component {
     text-decoration: none;
     font-family: jd_sans_probold;
     font-size: 14px;
-    margin: 20px 0 5px 0
+    margin: 20px 0 5px
 }
 
 .nav-container .nav-content .nav-tier3 .header:first-of-type {
@@ -1427,27 +1374,25 @@ body.auto-scrolling .filter-bar-component {
     .nav-container.unscrolled .nav-logo {
         width: 253px;
         height: 81px;
-        background-size: 253px 81px
+        background-size: 253px 81px;
+        margin-left: -21px
     }
-    .nav-container.unscrolled .search-input {
-        height: 79px
-    }
-    .nav-container.unscrolled .search-input input {
+    .nav-container.unscrolled .search-input, .nav-container.unscrolled .search-input input {
         height: 79px
     }
     .nav-container.unscrolled .nav-content .nav-aux li a, .nav-container.unscrolled .nav-content .nav-tier1 li a {
         height: 80px;
-        padding: 28px 10px 0 10px
+        padding: 28px 10px 0
     }
     .nav-container.unscrolled .nav-content .nav-tier1 li a {
-        padding: 28px 18px 0 18px
+        padding: 28px 18px 0
     }
     .nav-container.unscrolled .nav-content .nav-tier3 {
         top: 80px
     }
     .nav-container.unscrolled .nav-content .search {
         height: 22px;
-        padding: 0 30px 0 30px;
+        padding: 0 30px;
         position: relative
     }
 }
@@ -1456,10 +1401,7 @@ body.auto-scrolling .filter-bar-component {
     .nav-container.nav-up {
         top: -57px
     }
-    .nav-container.nav-up .search-input {
-        height: 56px
-    }
-    .nav-container.nav-up .search-input input {
+    .nav-container.nav-up .search-input, .nav-container.nav-up .search-input input {
         height: 56px
     }
     .nav-container.nav-up .nav-tier3 {
@@ -1469,7 +1411,7 @@ body.auto-scrolling .filter-bar-component {
         width: 177px;
         height: 56px;
         float: right;
-        background-image: url("../images/logo/jd_logo_desktop.png");
+        background-image: url(../images/logo/jd_logo_desktop.png);
         background-size: 177px 56px
     }
     .nav-container .nav-mobile {
@@ -1487,7 +1429,7 @@ body.auto-scrolling .filter-bar-component {
     .nav-container .nav-content .search {
         height: 56px;
         color: #367c2b;
-        padding: 16px 30px 0 30px;
+        padding: 16px 30px 0;
         cursor: pointer;
         position: relative;
         display: block
@@ -1519,28 +1461,19 @@ body.auto-scrolling .filter-bar-component {
         width: 100%;
         border: 0;
         margin: 0;
-        padding: 0 20px 0 20px;
+        padding: 0 20px;
         text-transform: none;
         font-family: jd_sans_probold;
         font-size: 18px;
         pointer-events: none;
         border-left: 1px solid #e5e6e6
     }
-    .nav-container .nav-content .search-input input::-ms-clear {
+    .nav-container .nav-content .search-input input::-ms-clear, .nav-container .nav-content .search-input input::-ms-reveal {
         display: none;
         width: 0;
         height: 0
     }
-    .nav-container .nav-content .search-input input::-ms-reveal {
-        display: none;
-        width: 0;
-        height: 0
-    }
-    .nav-container .nav-content .search-input input:focus {
-        outline: 0;
-        box-shadow: none
-    }
-    .nav-container .nav-content .search-input input:active {
+    .nav-container .nav-content .search-input input:active, .nav-container .nav-content .search-input input:focus {
         outline: 0;
         box-shadow: none
     }
@@ -1551,7 +1484,7 @@ body.auto-scrolling .filter-bar-component {
         color: #666;
         text-align: left;
         position: relative;
-        padding: 20px 0 0 0
+        padding: 20px 0 0
     }
     .nav-container .nav-content .nav-aux {
         font-size: 16px;
@@ -1570,7 +1503,7 @@ body.auto-scrolling .filter-bar-component {
         color: #333;
         display: inline-block;
         height: 56px;
-        padding: 16px 10px 0 10px
+        padding: 16px 10px 0
     }
     .nav-container .nav-content .nav-tier1 {
         width: auto;
@@ -1611,7 +1544,7 @@ body.auto-scrolling .filter-bar-component {
         color: #333;
         display: inline-block;
         height: 56px;
-        padding: 16px 20px 0 20px
+        padding: 16px 20px 0
     }
     .nav-container .nav-content .nav-tier1 li a span {
         display: none
@@ -1629,7 +1562,7 @@ body.auto-scrolling .filter-bar-component {
         display: block;
         position: absolute;
         top: 64px;
-        padding: 30px 0 30px 0;
+        padding: 30px 0;
         margin: 0;
         opacity: 0;
         transition: opacity .5s ease-in-out, left .5s ease-in-out;
@@ -1652,13 +1585,13 @@ body.auto-scrolling .filter-bar-component {
     }
     .nav-container .nav-content .nav-tier2 li {
         list-style: none;
-        margin: 0 0 5px 0;
+        margin: 0 0 5px;
         padding: 0 0 0 30px;
         border: 0
     }
     .nav-container .nav-content .nav-tier2 li.seperator {
         width: 77%;
-        margin: 10px 30px 10px 30px;
+        margin: 10px 30px;
         height: 1px;
         background: #c2c2c2;
         display: block;
@@ -1688,9 +1621,9 @@ body.auto-scrolling .filter-bar-component {
     }
     .nav-container .nav-content .nav-tier2 .secondary-link.active {
         color: #367c2b;
-        background: url("../images/image-icons/global-nav-arrow-white.png");
+        background: url(../images/image-icons/global-nav-arrow-white.png);
         background-repeat: no-repeat;
-        background-position: center right
+        background-position: 100%
     }
     .nav-container .nav-content .nav-tier2 .secondary-link:hover {
         color: #367c2b
@@ -1708,7 +1641,7 @@ body.auto-scrolling .filter-bar-component {
         color: #367c2b;
         background: url(/assets/images/image-icons/global-nav-arrow-white.png);
         background-repeat: no-repeat;
-        background-position: center right
+        background-position: 100%
     }
     .nav-container .nav-content .nav-tier2 .additional-link:hover {
         color: #367c2b
@@ -1721,7 +1654,7 @@ body.auto-scrolling .filter-bar-component {
         display: block;
         position: absolute;
         left: 50%;
-        padding: 30px 30px 0 30px;
+        padding: 30px 30px 0;
         margin: 0;
         opacity: 0;
         transition: opacity .5s ease-in-out, left .5s ease-in-out;
@@ -1737,10 +1670,7 @@ body.auto-scrolling .filter-bar-component {
         overflow-x: hidden;
         z-index: 111
     }
-    .nav-container .nav-content .nav-tier3.active .content {
-        opacity: 1
-    }
-    .nav-container .nav-content .nav-tier3.active .primary-link {
+    .nav-container .nav-content .nav-tier3.active .content, .nav-container .nav-content .nav-tier3.active .primary-link {
         opacity: 1
     }
     .nav-container .nav-content .nav-tier3.active .primary-link:hover {
@@ -1766,12 +1696,12 @@ body.auto-scrolling .filter-bar-component {
     }
     .nav-container .nav-content .nav-tier3 ul {
         padding: 0;
-        margin: 0 0 20px 0
+        margin: 0 0 20px
     }
     .nav-container .nav-content .nav-tier3 li {
         width: 100%;
         list-style: none;
-        margin: 0 0 5px 0
+        margin: 0 0 5px
     }
     .nav-container .nav-content .nav-tier3 .primary {
         min-width: 400px;
@@ -1833,19 +1763,15 @@ body.auto-scrolling .filter-bar-component {
 
 @media(-webkit-min-device-pixel-ratio:2) and (min-width:1025px), (min-resolution:192dpi) and (min-width:1025px) {
     .nav-container .nav-logo {
-        background-image: url("../images/logo/jd_logo_desktop@2X.png")
+        background-image: url(../images/logo/jd_logo_desktop@2X.png)
     }
 }
 
 @media print {
     body {
-        padding: 0!important;
-        page-break-after: avoid
+        padding: 0!important
     }
-    body .wrapper {
-        page-break-after: avoid
-    }
-    body .wrapper div:last-child {
+    body, body .wrapper, body .wrapper div:last-child {
         page-break-after: avoid
     }
     #uniform-g-theme-selector-dropdown {
@@ -1887,7 +1813,7 @@ body.auto-scrolling .filter-bar-component {
     .table-bordered td, .table-bordered th {
         border: 1px solid #ddd!important
     }
-    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
         float: left
     }
     .col-sm-12 {
@@ -2045,11 +1971,7 @@ body.auto-scrolling .filter-bar-component {
     }
 }
 
-.hero .container .content {
-    position: relative
-}
-
-.hero .container .content .hero-background {
+.hero .container .content, .hero .container .content .hero-background {
     position: relative
 }
 
@@ -2080,7 +2002,7 @@ body.auto-scrolling .filter-bar-component {
     font-size: 40px
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .hero .container .content .hero-text h1 {
         font-size: 45px
     }
@@ -2093,7 +2015,7 @@ body.auto-scrolling .filter-bar-component {
     }
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .hero .container .content .hero-text.hero-top {
         top: 40px
     }
@@ -2128,7 +2050,7 @@ body.auto-scrolling .filter-bar-component {
 }
 
 .hero.with-border {
-    border-bottom: #eff0f0 solid 10px
+    border-bottom: 10px solid #eff0f0
 }
 
 .link-list-simple {
@@ -2153,7 +2075,7 @@ body.auto-scrolling .filter-bar-component {
     font-family: jd_sans_prosemibold
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .link-list-simple ul.space-head {
         margin-top: 38px
     }
@@ -2259,7 +2181,7 @@ body.auto-scrolling .filter-bar-component {
 
 @media screen and (min-width:992px) {
     .video-gallery .playlist .playlist-items {
-        padding: 24px 24px 8px 24px
+        padding: 24px 24px 8px
     }
 }
 
@@ -2271,7 +2193,7 @@ body.auto-scrolling .filter-bar-component {
 
 @media screen and (min-width:992px) {
     .video-gallery .playlist .playlist-items .playlist-item {
-        padding: 0 0 16px 0
+        padding: 0 0 16px
     }
 }
 
@@ -2351,12 +2273,12 @@ body.auto-scrolling .filter-bar-component {
     position: absolute;
     top: 50%;
     left: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%)
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .video-gallery .playlist .playlist-items .playlist-item .title {
         padding-left: 148px
     }
@@ -2439,7 +2361,7 @@ body.auto-scrolling .filter-bar-component {
     top: 0;
     left: 0;
     padding: 0 8px 0 0;
-    background: linear-gradient(to left, rgba(229, 230, 230, 0) 0, #e5e6e6 10%, #e5e6e6 100%);
+    background: linear-gradient(270deg, hsla(180, 2%, 90%, 0), #e5e6e6 10%, #e5e6e6);
     display: inline-block
 }
 
@@ -2453,7 +2375,7 @@ body.auto-scrolling .filter-bar-component {
     top: 0;
     right: 0;
     padding: 0 0 0 8px;
-    background: linear-gradient(to right, rgba(229, 230, 230, 0) 0, #e5e6e6 10%, #e5e6e6 100%);
+    background: linear-gradient(90deg, hsla(180, 2%, 90%, 0), #e5e6e6 10%, #e5e6e6);
     display: inline-block
 }
 
@@ -2463,7 +2385,7 @@ body.auto-scrolling .filter-bar-component {
 
 .nav-sticky .right-container .nav-cta {
     display: none;
-    padding: 8px 15px 8px 15px
+    padding: 8px 15px
 }
 
 .nav-sticky .nav-arrow {
@@ -2499,7 +2421,7 @@ body.auto-scrolling .filter-bar-component {
     overflow: hidden
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .nav-sticky.stuck {
         max-width: 1210px
     }
@@ -2523,7 +2445,7 @@ body.auto-scrolling .filter-bar-component {
     display: none
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .nav-sticky.nav-empty {
         display: block;
         max-width: 1210px
@@ -2564,7 +2486,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .expand-collapse-component .expand-collapse-component-container {
-    padding: 20px 0 0 0;
+    padding: 20px 0 0;
     position: relative
 }
 
@@ -2578,7 +2500,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     font-family: jd_sans_probold
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .expand-collapse-component .expand-collapse-component-container .btn-collapse-all.shown, .expand-collapse-component .expand-collapse-component-container .btn-expand-all.shown {
         display: block
     }
@@ -2642,7 +2564,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     padding-left: 25px;
     margin-top: 0;
     position: relative;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 400;
     cursor: pointer
 }
@@ -2727,7 +2649,6 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 
 .table-comp .overflow-container>table, .table-comp>table {
     width: 100%;
-    border: 0;
     margin: 0;
     table-layout: fixed;
     border: 1px solid #a3a3a3
@@ -2810,7 +2731,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     .table-comp .overflow-container>table>tbody>tr>td, .table-comp>table>tbody>tr>td {
         border: 0;
         position: relative;
-        padding-left: calc(50%+16px)
+        padding-left: calc(50% + 16px)
     }
     .table-comp .overflow-container>table>tbody>tr>td.not-title, .table-comp>table>tbody>tr>td.not-title {
         padding-left: 16px
@@ -2838,7 +2759,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
         text-transform: uppercase;
         border-right: 1px solid #c2c2c2
     }
-    .table-comp .overflow-container>table>tbody>tr>td:nth-of-type(even), .table-comp>table>tbody>tr>td:nth-of-type(even) {
+    .table-comp .overflow-container>table>tbody>tr>td:nth-of-type(2n), .table-comp>table>tbody>tr>td:nth-of-type(2n) {
         background: #e5e6e6
     }
     .table-comp .overflow-container>table>tbody>tr>td:nth-of-type(odd), .table-comp>table>tbody>tr>td:nth-of-type(odd) {
@@ -2861,7 +2782,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     .table-comp .overflow-container>table>thead>tr>th, .table-comp>table>thead>tr>th {
         font-size: 16px
     }
-    .table-comp .overflow-container>table:not(.table-reflow)>tbody>tr:nth-of-type(even), .table-comp .overflow-container>table:not(.table-reflow)>thead>tr:nth-of-type(even), .table-comp>table:not(.table-reflow)>tbody>tr:nth-of-type(even), .table-comp>table:not(.table-reflow)>thead>tr:nth-of-type(even) {
+    .table-comp .overflow-container>table:not(.table-reflow)>tbody>tr:nth-of-type(2n), .table-comp .overflow-container>table:not(.table-reflow)>thead>tr:nth-of-type(2n), .table-comp>table:not(.table-reflow)>tbody>tr:nth-of-type(2n), .table-comp>table:not(.table-reflow)>thead>tr:nth-of-type(2n) {
         background: #e5e6e6
     }
     .table-comp .overflow-container>table:not(.table-reflow)>tbody>tr:nth-of-type(odd), .table-comp .overflow-container>table:not(.table-reflow)>thead>tr:nth-of-type(odd), .table-comp>table:not(.table-reflow)>tbody>tr:nth-of-type(odd), .table-comp>table:not(.table-reflow)>thead>tr:nth-of-type(odd) {
@@ -2878,7 +2799,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     .table-comp .overflow-container>table.table-reflow>tbody>tr>td:nth-of-type(odd), .table-comp .overflow-container>table.table-reflow>thead>tr>td:nth-of-type(odd), .table-comp>table.table-reflow>tbody>tr>td:nth-of-type(odd), .table-comp>table.table-reflow>thead>tr>td:nth-of-type(odd) {
         background: #e5e6e6
     }
-    .table-comp .overflow-container>table.table-reflow>tbody>tr>td:nth-of-type(even), .table-comp .overflow-container>table.table-reflow>thead>tr>td:nth-of-type(even), .table-comp>table.table-reflow>tbody>tr>td:nth-of-type(even), .table-comp>table.table-reflow>thead>tr>td:nth-of-type(even) {
+    .table-comp .overflow-container>table.table-reflow>tbody>tr>td:nth-of-type(2n), .table-comp .overflow-container>table.table-reflow>thead>tr>td:nth-of-type(2n), .table-comp>table.table-reflow>tbody>tr>td:nth-of-type(2n), .table-comp>table.table-reflow>thead>tr>td:nth-of-type(2n) {
         background: #fff
     }
     .table-comp .overflow-container>table.table-reflow>thead, .table-comp>table.table-reflow>thead {
@@ -2999,7 +2920,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     .table-comp .overflow-container.overflow-container-reflow .sticky-col tr td:nth-of-type(odd) {
         background: #e5e6e6
     }
-    .table-comp .overflow-container.overflow-container-reflow .sticky-col tr td:nth-of-type(even) {
+    .table-comp .overflow-container.overflow-container-reflow .sticky-col tr td:nth-of-type(2n) {
         background: #fff
     }
 }
@@ -3007,7 +2928,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 .search-results-listing-component {
     padding: 0;
     background: #fff;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
     display: none
 }
 
@@ -3016,10 +2937,10 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .search-results-listing-component .image-holder {
-    padding: 0 0 20px 0
+    padding: 0 0 20px
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .search-results-listing-component .image-holder {
         padding: 20px
     }
@@ -3028,19 +2949,20 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 .search-results-listing-component .image-holder img {
     width: 100%;
     height: auto;
+    max-height: 250px
 }
 
 .search-results-listing-component .copy {
-    padding: 0 20px 20px 20px
+    padding: 0 20px 20px
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .search-results-listing-component .copy {
         padding: 20px 20px 0 0
     }
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .search-results-listing-component .copy h3 {
         margin-top: 0
     }
@@ -3072,9 +2994,9 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     bottom: 60px
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .filter-search-results-component {
-        margin: 8px 0 16px 0;
+        margin: 8px 0 16px;
         padding: 0
     }
 }
@@ -3088,7 +3010,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .filter-search-results-component .filters .filter-group {
-    margin: 0 0 1px 0;
+    margin: 0 0 1px;
     padding: 16px 10px;
     background-color: #fff
 }
@@ -3102,7 +3024,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     box-sizing: border-box;
     position: relative;
     background-color: #fff;
-    margin: 0 0 1px 0;
+    margin: 0 0 1px;
     padding: 0;
     cursor: pointer;
     transition: .5s
@@ -3195,11 +3117,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     color: #9b9b9b
 }
 
-.filter-search-results-component .filters .filter-group .filter ul li.disabled .checker, .filter-search-results-component .filters .filter-group .filter ul li.disabled .radio {
-    cursor: default
-}
-
-.filter-search-results-component .filters .filter-group .filter ul li.disabled .checker input, .filter-search-results-component .filters .filter-group .filter ul li.disabled .checker span, .filter-search-results-component .filters .filter-group .filter ul li.disabled .radio input, .filter-search-results-component .filters .filter-group .filter ul li.disabled .radio span {
+.filter-search-results-component .filters .filter-group .filter ul li.disabled .checker, .filter-search-results-component .filters .filter-group .filter ul li.disabled .checker input, .filter-search-results-component .filters .filter-group .filter ul li.disabled .checker span, .filter-search-results-component .filters .filter-group .filter ul li.disabled .radio, .filter-search-results-component .filters .filter-group .filter ul li.disabled .radio input, .filter-search-results-component .filters .filter-group .filter ul li.disabled .radio span {
     cursor: default
 }
 
@@ -3214,12 +3132,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     height: 4px
 }
 
-.filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-base {
-    background: #e5e6e6;
-    border: 0
-}
-
-.filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-background {
+.filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-background, .filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-base {
     background: #e5e6e6;
     border: 0
 }
@@ -3312,7 +3225,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 
 .filter-search-results-component .filters .clear-filters {
     box-sizing: border-box;
-    padding: 10px 20px 12px 20px;
+    padding: 10px 20px 12px;
     line-height: 1;
     margin-top: 5px;
     cursor: pointer;
@@ -3320,7 +3233,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .filter-search-results-component .filters .clear-filters:after {
-    content: 'x';
+    content: "x";
     font-size: 18px;
     margin-left: 15px
 }
@@ -3330,7 +3243,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .filter-tags-search-results-component {
-    margin: 8px 0 8px 0;
+    margin: 8px 0;
     width: 100%
 }
 
@@ -3341,7 +3254,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 .search-bar-component {
     position: relative;
     border-bottom: 1px solid #c2c2c2;
-    margin: 24px 0 20px 0;
+    margin: 24px 0 20px;
     padding-bottom: 20px
 }
 
@@ -3422,7 +3335,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     z-index: 660;
     transition: left .5s ease-in-out;
     background: none!important;
-    font-family: jd_sans_promedium, "JohnDeereSans.Medium", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: jd_sans_promedium, JohnDeereSans\.Medium, Helvetica Neue, Helvetica, Arial, sans-serif
 }
 
 .nav-container .nav-title {
@@ -3485,11 +3398,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 @media screen and (min-width:1025px) {
-    .nav-container.unscrolled .nav-content .search {
-        padding-left: 0;
-        padding-right: 0
-    }
-    .nav-container .nav-content .search {
+    .nav-container .nav-content .search, .nav-container.unscrolled .nav-content .search {
         padding-left: 0;
         padding-right: 0
     }
@@ -3503,7 +3412,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 @media screen and (min-width:1025px) {
-    .nav-container, .nav-container .nav-title, .nav-container .nav-content, .nav-container .nav-title .title {
+    .nav-container, .nav-container .nav-content, .nav-container .nav-title, .nav-container .nav-title .title {
         height: auto
     }
     .nav-container.unscrolled:after {
@@ -3545,10 +3454,10 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
         right: 0!important
     }
     .green-bar, .yellow-bar {
-        float: right;
+        float: left;
         height: 100%;
         z-index: 1000;
-        position: absolute;
+        position: relative;
         display: none
     }
     .nav-container .green-bar, .nav-container .yellow-bar {
@@ -3559,16 +3468,14 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
         left: 0
     }
     .nav-container:not(.unscrolled) .yellow-bar {
-        width: 5px;
-        left: 10px
+        width: 5px
     }
     .nav-container.unscrolled .green-bar {
         width: 15px;
         left: 0
     }
     .nav-container.unscrolled .yellow-bar {
-        width: 6px;
-        left: 15px
+        width: 6px
     }
     .green-bar {
         background: #367c2b
@@ -3613,6 +3520,9 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     float: left
 }
 
+.search-input #search {
+    display: none
+}
 .search-results-listing-template {
     width: 100%;
     overflow: hidden
@@ -3621,7 +3531,6 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 .search-results-listing-template .no-search-results-results {
     display: none
 }
-
 .search-results-listing-template .no-search-results-results.shown {
     display: block
 }
@@ -3640,15 +3549,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     margin-bottom: 16px
 }
 
-.search-results-listing-template .template-panel.main-content .filter-tags-search-results-component {
-    display: none
-}
-
-.search-results-listing-template .template-panel.left-rail .filter-tags-search-results-component h4:last-child {
-    display: none
-}
-
-.search-results-listing-template .template-panel.left-rail .filter-tags-search-results-component .button-filters-clear {
+.search-results-listing-template .template-panel.left-rail .filter-tags-search-results-component .button-filters-clear, .search-results-listing-template .template-panel.left-rail .filter-tags-search-results-component h4:last-child, .search-results-listing-template .template-panel.main-content .filter-tags-search-results-component {
     display: none
 }
 
@@ -3689,9 +3590,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
         -ms-transform: none;
         transform: none;
         width: auto;
-        padding-bottom: 0
-    }
-    .search-results-listing-template .template-panel.left-rail {
+        padding-bottom: 0;
         width: 25%;
         padding-top: 16px
     }
@@ -3708,11 +3607,11 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 
 .search-results-listing-template .product-listing-filter-result {
     display: block;
-    margin: 16px 0 -16px 0;
+    margin: 16px 0 -16px;
     color: #666
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .search-results-listing-template .product-listing-filter-result {
         display: none
     }
@@ -3750,17 +3649,11 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     border: 2px solid transparent;
     text-decoration: none;
     padding: 12px 16px;
-    margin: 2px;
+    margin-left: 2px !important;
     background: 0
 }
 
-.button-filters-clear span {
-    vertical-align: middle;
-    display: inline-block;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 8px
-}
+
 
 .button-filters-clear:focus, .button-filters-clear:hover {
     color: #367c2b;
@@ -3795,10 +3688,6 @@ div.checker:last-child, div.radio:last-child {
 
 div.checker:focus, div.radio:focus {
     outline: 0
-}
-
-div.checker:focus span, div.radio:focus span {
-    color: #367c2b
 }
 
 div.checker:focus span, div.checker:hover span, div.radio:focus span, div.radio:hover span {
@@ -3915,7 +3804,7 @@ div.checker.radio span.checked, div.radio.radio span.checked {
     font-family: jd_sans_probold
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .pagination-news .pagination-state, .pagination-reviews .pagination-state, .pagination-search .pagination-state, .pagination-special-offers .pagination-state {
         display: inline-block
     }
@@ -3937,7 +3826,7 @@ div.checker.radio span.checked, div.radio.radio span.checked {
     margin: 0 15px 0 25px
 }
 
-@media print, (min-width:768px) {
+@media (min-width:768px), print {
     .pagination-news .pagination-numbers, .pagination-reviews .pagination-numbers, .pagination-search .pagination-numbers, .pagination-special-offers .pagination-numbers {
         display: none
     }
@@ -3979,10 +3868,9 @@ html.lock-scroll, html.lock-scroll body {
     overflow: hidden
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width:991px) {
     html.lock-scroll-small, html.lock-scroll-small body {
         height: 100%;
         overflow: hidden
     }
 }
-

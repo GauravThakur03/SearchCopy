@@ -31,13 +31,10 @@ const BinningFilter = (props) => {
                                 <div className='content'>
                                     <fieldset>
                                         <ul className='fancy-checkbox-group'>
-                                            <li>
-                                                <span
-                                                    className='content-type'
-                                                    style={countLabel}
-                                                >
-                                                    {props.totalResults} <FormattedMessage id='RESULTS'/>
-                                                </span>
+                                            <li className='ns-count-leaf'>
+                                                <label class="content-type">
+                                                    <a>{props.totalResults} <FormattedMessage id='RESULTS'/></a>
+                                                </label>
                                             </li>
                                         </ul>
                                     </fieldset>

@@ -116,11 +116,11 @@
     overflow: hidden;
     -webkit-transition: height .6s;
     transition: height .6s;
-    border: 1px solid transparent;
 }
 
 .acdn-content.active {
-    height: 614px;
+    height: auto;
+    padding-left:20px;
 }
 
 .ns-hide {
@@ -135,6 +135,9 @@
 }
 .ns-iframe-wrapper.ns-visible{
     visibility: visible;
+}
+.vivbold {
+	font-weight: 600;
 }
 
 /*Accordion end*/

@@ -30,7 +30,7 @@ class AppContainer extends Component {
             >
                 <Fragment>
                     <div className={'wrapper clearfix'}>
-                        <HeaderConnector {...this.state}/>
+                        {/* <HeaderConnector {...this.state}/> */}
                         <MainContainer
                             {...this.props}
                             {...this.state}
