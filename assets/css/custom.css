@@ -3926,7 +3926,7 @@ html {
     -ms-word-break: initial;
 }
 .ns-sr-icons a.open-new{
-    display:contents;
+    height:0px;
 }
 .ns-sr-icons a.preview-icon {
     font-size:17px;
@@ -4219,7 +4219,7 @@ input {
     position: absolute;
     background: #fff;
     border-radius: .125rem;
-    z-index: 1000;
+    z-index: 599;
     text-align: left;
 }
 
@@ -4234,7 +4234,7 @@ input {
 }
 
 .suggestions div {
-    padding: 0px 20px 3px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 @media print, (max-width:1024px) {

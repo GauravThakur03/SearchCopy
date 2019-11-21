@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { func, bool } from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default class IFrame extends React.Component {
     constructor(props) {
@@ -26,8 +26,8 @@ export default class IFrame extends React.Component {
 }
 
 IFrame.propTypes = {
-    onLoad: func,
+    onLoad: PropTypes.func,
     src: PropTypes.string,
-    active: bool,
-    loaded: bool
+    active: PropTypes.bool,
+    loaded: PropTypes.bool
 };

@@ -14,7 +14,6 @@ export default class Content extends React.Component {
 
     iframeLoaded(event) {
         const doc = event.target.contentDocument;
-debugger;
         if (doc) {
             const node = doc.getElementsByClassName('featured-head')[0] || doc.getElementById('headerSection');
             const footerNode = doc.getElementsByTagName('footer')[0];
