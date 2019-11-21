@@ -3699,7 +3699,8 @@ html {
     display: block;
     padding-left: 25px;
     line-height: 1.2;
-    cursor: pointer
+    cursor: pointer;
+    font-weight:normal;
 }
 
 .filter-search-results-component .filters .filter-group .filter ul li label a {

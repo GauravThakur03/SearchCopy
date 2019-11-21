@@ -3102,13 +3102,6 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
     margin-bottom: 0
 }
 
-.filter-search-results-component .filters .filter-group .filter ul li label {
-    position: relative;
-    display: block;
-    padding-left: 25px;
-    line-height: 1.2
-}
-
 .filter-search-results-component .filters .filter-group .filter ul li label a {
     color: #666;
     text-decoration: none
