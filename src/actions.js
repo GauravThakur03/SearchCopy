@@ -3,5 +3,6 @@ export const SET_NAVIGATION = 'SET_NAVIGATION';
 export const SET_RESULTS = 'SET_RESULTS';
 export const SET_APPLIED_SELECTION = 'SET_APPLIED_SELECTION';
 export const SET_PARAMS = 'SET_PARAMS';
+export const SET_LOADER = 'SET_LOADER';
 export const CLEAR_FILTERS = 'CLEAR_FILTERS';
 export const SETTINGS = 'SETTINGS';

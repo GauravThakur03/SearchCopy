@@ -62,11 +62,14 @@ class Pagination extends Component {
                     }
                     <a/>
                 </div>
-                <div className='pagination-state'>
-                    <div className='page-current'>{this.props.pagination.navigation.currentPage}</div>
-                    <FormattedMessage id={'OF'}/>
-                    <div className='page-last'>{this.pages.length}</div>
-                </div>
+                {
+                    this.pages.length ? <div className='pagination-state'>
+                        <div className='page-current'>{this.props.pagination.navigation.currentPage}</div>
+                        <FormattedMessage id={'OF'}/>
+                        <div className='page-last'>{this.pages.length}</div>
+                    </div>
+                    : null
+                }
                 {
                     this.next ? <PaginationState
                         changePage={this.setPage}

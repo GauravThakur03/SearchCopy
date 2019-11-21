@@ -4,6 +4,7 @@ import {
     SET_NAVIGATION,
     SET_RESULTS,
     SET_APPLIED_SELECTION,
+    SET_LOADER,
     SET_PARAMS,
     SETTINGS
 } from '../actions';
@@ -16,6 +17,11 @@ export function loadXML() {
     return (dispatch, getState) => {
         const state = getState().search;
         const query = buildQueryString(state);
+
+        dispatch({
+            loader: state.loader + 1,
+            type: SET_LOADER
+        });
 
         return loadSearch(query)
             .then((data) => {
@@ -40,6 +46,10 @@ export function loadXML() {
             .catch((error) => {
                 return error;
             }).then(() => {
+                dispatch({
+                    loader: getState().search.loader - 1,
+                    type: SET_LOADER
+                });
                 setTimeout(() => {
                     ele.classList.add('available');
                 });

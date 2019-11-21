@@ -12,6 +12,7 @@ function findLocale(state) {
 
 function mapStateToProps(state) {
     return {
+        loader: state.search.loader,
         locale: query['country_site'] || findLocale(state),
         messages: state.search.settings.translations,
         query

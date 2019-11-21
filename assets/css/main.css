@@ -958,7 +958,7 @@ body.auto-scrolling .filter-bar-component {
     left: 0;
     z-index: 660;
     transition: left .5s ease-in-out;
-    margin-left: -15px
+    
 }
 
 @media print {
@@ -1412,7 +1412,8 @@ body.auto-scrolling .filter-bar-component {
         height: 56px;
         float: right;
         background-image: url(../images/logo/jd_logo_desktop.png);
-        background-size: 177px 56px
+        background-size: 177px 56px;
+        margin-left: -15px;
     }
     .nav-container .nav-mobile {
         display: none
@@ -3099,13 +3100,6 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 
 .filter-search-results-component .filters .filter-group .filter ul li:last-child {
     margin-bottom: 0
-}
-
-.filter-search-results-component .filters .filter-group .filter ul li label {
-    position: relative;
-    display: block;
-    padding-left: 25px;
-    line-height: 1.2
 }
 
 .filter-search-results-component .filters .filter-group .filter ul li label a {
