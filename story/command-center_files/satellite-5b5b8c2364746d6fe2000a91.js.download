@@ -1,0 +1,28 @@
+if(document.querySelectorAll('.expand-collapse-component-item.shown h4').length>0)
+{
+	var h4Arry = document.querySelectorAll('.expand-collapse-component-item.shown h4');
+  for(var j=0;h4Arry.length>j;j++)
+  {
+    h4Arry[j].addEventListener('click',function(e){
+      _satellite.setVar('accClicked',this.innerText);
+      if(e.target.parentElement.className.search('active')>-1)
+      {
+        _satellite.track('accordion open');
+      }else{
+      _satellite.track('accordion close');
+      }
+      
+  });
+  }
+}
+if(document.querySelectorAll('.expand-collapse-component-item.shown.active h4').length>0)
+{
+	var h4Arry = document.querySelectorAll('.expand-collapse-component-item.shown.active h4');
+  for(var j=0;h4Arry.length>j;j++)
+  {
+    h4Arry[j].addEventListener('click',function(e){
+		_satellite.track('accordion close');
+  });
+  }
+}
+

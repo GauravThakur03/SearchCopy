@@ -1,0 +1,65 @@
+@font-face { font-family: JDSansMd; src: url(JDSansMd.woff) format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: JDSansLt; src: url(JDSansLt.woff) format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: JDSansBd; src: url(JDSansBd.woff) format("truetype"); font-weight: normal; font-style: normal; }
+.wrapper { margin: 0px auto; padding: 0px;}
+.header { background: rgb(255, 255, 255); filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#DDDDDD');
+box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15); -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15); }
+#navigationBar { background: rgb(255, 255, 255); filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#DDDDDD');
+box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15); -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15); }
+.header div.headerSpace {min-height: 84px;}
+.header div.mobileheaderSpace { height: 84px; padding: 0;}
+.brandbar-green-top { background: rgb(17, 97, 33); height: 15px; clear: both; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f8a36', endColorstr='#116121', GradientType=1 );
+}
+.brandbar-yellow-bottom { background: rgb(234, 188, 8); height: 5px; clear: both; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eabc08', endColorstr='#eabc08', GradientType=1 );
+}
+.logo { 
+	background: url(../img/deere_logo.png) no-repeat left; 
+	width: 200px; 
+	height: 38px; 
+	margin-top: 20px;
+}
+.title {
+    height: 36px;
+    color: rgb(54, 124, 43);
+    line-height: 36px;
+    font-family: Calibri, Verdana, san-serif;
+    font-size: 30px;
+}
+.right { float: right; }
+.left { float: left; }
+.pointer { cursor: pointer; }
+.inline { display: inline-block; }
+.grey { color: rgb(153, 153, 153); }
+.green { color: rgb(54, 124, 43); }
+a { color: rgb(54, 124, 43); }
+.paddingTop20 { padding-top: 20px; }
+.align-content > div { vertical-align: middle; display: table-cell; }
+.navigationLinks { background: rgb(241, 241, 241); margin: 0px; padding: 0px; border: 0px currentColor; width: 100%; height: 40px; color: rgb(136, 136, 136); text-decoration: none; filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#DDDDDD');
+box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15); -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15); }
+.navigationLinks ul { margin: 0px; padding: 0px; }
+#navigation li:hover { outline: 0px !important; }
+#navigation:focus { outline: 0px !important; }
+#navigation li { padding: 5px 3px 9px; font-size: 16px; margin-right: 40px; float: left; display: inline-block; }
+ul#navigation { padding-top: 5px; }
+#navigation li.active { padding: 4px 3px 9px; color: rgb(69, 69, 69); border-bottom-color: rgb(54, 124, 43); border-bottom-width: 3px; border-bottom-style: solid; }
+#navigation li:first-child a { color: rgb(69, 69, 69); text-decoration: none; }
+#navigation li a { color: rgb(136, 136, 136); text-decoration: none; }
+#navigation li .caret{ padding:1px;}
+#navigation li { border-bottom-color: transparent; border-bottom-width: 3px; border-bottom-style: solid; }
+#navigation li:hover a { color: rgb(69, 69, 69); }
+#navigation ul > li.last { padding-bottom: 0px; }
+#navigation ul > li { padding: 0px 0px 3px; }
+#navigation > li > .extra { display: none;z-index:9999; }
+#navigation > li:hover > .extra { padding: 15px 0px; margin-top: 5px; margin-left: -3px; display: block; position: absolute; min-width: 200px; }
+#navigation > li:hover > .extra > ul { float: left; }
+#navigation > li > .extra ul { padding: 0px 30px; }
+#navigation > li > .extra ul li { margin: 0px; float: none; display: block; }
+.borderRight { border-right-color: rgb(204, 204, 204); border-right-width: 1px; border-right-style: solid; }
+.width520 { width: 520px; }
+.width250 { width: 250px; }
+.box { background: rgb(255, 255, 255); border-radius: 3px; z-index: 1000; box-shadow: 0px 2px 5px rgba(50,58,69,0.07); -moz-box-shadow: 0 2px 5px rgba(50, 58, 69, 0.07); }
+.icon-caret { background: url("../img/dropdown_arrow.png") no-repeat 0px; width: 10px; height: 5px; display: inline-block; }
+.caret { background: url("../img/images/dropdown_arrow.png") no-repeat 0px; width: 10px; height: 5px; display: inline-block; }
+.positionLeft14P { left: 14%; }
+.fontBoldBlack { color: rgb(0, 0, 0); font-size: 14px !important; font-weight: 600; }
+.positionLeft14P { left: 4%; }

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import IFrame from './iframe'
 
 export default class Content extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ export default class Content extends React.Component {
 
     iframeLoaded(event) {
         const doc = event.target.contentDocument;
-
+debugger;
         if (doc) {
             const node = doc.getElementsByClassName('featured-head')[0] || doc.getElementById('headerSection');
             const footerNode = doc.getElementsByTagName('footer')[0];
@@ -30,22 +31,16 @@ export default class Content extends React.Component {
     render() {
         return (
             <div className={`acdn-content ${this.props.activeClass}`}>
-                {
-                    this.props.active
-                        ? (
-                            <div className={this.state.loaded ? 'ns-iframe-wrapper ns-visible' : 'ns-iframe-wrapper'}>
-                                <iframe
-                                    frameBorder='0'
-                                    height='614'
-                                    onLoad={this.iframeLoaded}
-                                    src={this.props.list.url}
-                                    width='100%'
-                                >
-                                    {'Either data not found at given url or This browser does not support object.'}
-                                </iframe>
-                            </div>
-                        ) : null
-                }
+                <div className={this.state.loaded ? 'ns-iframe-wrapper ns-visible' : 'ns-iframe-wrapper'}>
+                    <IFrame
+                        onLoad={this.iframeLoaded}
+                        src={this.props.list.url}
+                        active={this.props.active}
+                        loaded={this.state.loaded}
+                    >
+                        {'Something went wrong.'}
+                    </IFrame>
+                </div>
             </div>
         );
     }

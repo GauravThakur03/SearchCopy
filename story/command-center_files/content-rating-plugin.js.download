@@ -1,0 +1,286 @@
+(function ($) {
+    var label = {
+        "en_NA": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+        "de_DE": {
+            "helpful": "Diese Informationen waren hilfreich.",
+            "notHelpful": "Diese Informationen waren nicht hilfreich.",
+            "thanks": "Vielen Dank! Wie kann diese Seite noch verbessert werden? (optional)",
+            "charactersLeft": "Verf&uuml;gbare Zeichen:",
+            "thanksForFeedBack": "Vielen Dank f&uuml;r Ihr Feedback.",
+            "send": "Abschicken",
+            "close": "Schlie&szlig;en"
+        },
+      	"en_AI": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+        "en_AU": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+        "en_CF": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+       	"en_GB": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+      	"en_IN": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+    	"en_NT": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+  		"en_R1": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+  		"en_R3": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+  		"en_ZA": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+  		"es_AR": {
+            "helpful": "Esta informaci&oacute;n ha sido &uacute;til",
+            "notHelpful": "Esta informaci&oacute;n no ha sido &uacute;til",
+            "thanks": "&iexcl;Gracias! &iquest;Qu&eacute; podemos hacer para mejorar esta p&aacute;gina? (opcional)",
+            "charactersLeft": "Caracteres restantes:",
+            "thanksForFeedBack": "Gracias por sus comentarios.",
+            "send": "Enviar",
+            "close": "Cerrar"
+        },
+  		"es_ES": {
+            "helpful": "Esta informaci&oacute;n fue &uacute;til.",
+            "notHelpful": "Esta informaci&oacute;n no fue &uacute;til.",
+            "thanks": "&iexcl;Gracias! &iquest;Qu&eacute; podemos hacer para mejorar esta p&aacute;gina? (opcional)",
+            "charactersLeft": "Caracteres restantes:",
+            "thanksForFeedBack": "Gracias por sus comentarios.",
+            "send": "Enviar",
+            "close": "Cerrar"
+        },
+  		"es_UY": {
+            "helpful": "Esta informaci&oacute;n ha sido &uacute;til",
+            "notHelpful": "Esta informaci&oacute;n no ha sido &uacute;til",
+            "thanks": "&iexcl;Gracias! &iquest;Qu&eacute; podemos hacer para mejorar esta p&aacute;gina? (opcional)",
+            "charactersLeft": "Caracteres restantes:",
+            "thanksForFeedBack": "Gracias por sus comentarios.",
+            "send": "Enviar",
+            "close": "Cerrar"
+        },
+  		"fr_CA": {
+            "helpful": "Cette information &eacute;tait utile",
+            "notHelpful": "Cette information n&rsquo;&eacute;tait pas utile",
+            "thanks": "Merci ! Comment pouvons-nous am&eacute;liorer cette page ? (facultatif)",
+            "charactersLeft": "Nombre de caract&egrave;res restants :",
+            "thanksForFeedBack": "Merci pour vos commentaires.",
+            "send": "Envoyer",
+            "close": "Fermer"
+        },
+  		"fr_FR": {
+            "helpful": "Cette information &eacute;tait utile",
+            "notHelpful": "Cette information n&rsquo;&eacute;tait pas utile",
+            "thanks": "Merci ! Comment pouvons-nous am&eacute;liorer cette page ? (facultatif)",
+            "charactersLeft": "Nombre de caract&egrave;res restants :",
+            "thanksForFeedBack": "Merci pour vos commentaires.",
+            "send": "Envoyer",
+            "close": "Fermer"
+        },
+ 		"fr_ZA": {
+            "helpful": "This information was helpful",
+            "notHelpful": "This information was not helpful",
+            "thanks": "Thanks! What can we do to improve this page? (optional)",
+            "charactersLeft": "Characters left:",
+            "thanksForFeedBack": "Thanks for the feedback.",
+            "send": "Send",
+            "close": "Close"
+        },
+  		"it_IT": {
+            "helpful": "Queste informazioni sono state utili",
+            "notHelpful": "Queste informazioni non sono state utili",
+            "thanks": "Grazie! Cosa possiamo fare per migliorare questa pagina? (opzionale)",
+            "charactersLeft": "Caratteri rimasti:",
+            "thanksForFeedBack": "Grazie per i commenti.",
+            "send": "Invia",
+            "close": "Chiudi"
+        },
+  		"nl_NL": {
+            "helpful": "Deze informatie was nuttig",
+            "notHelpful": "Deze informatie was niet nuttig",
+            "thanks": "Bedankt! Hoe kunnen we deze pagina verbeteren? (optioneel)",
+            "charactersLeft": "Beschikbare tekens:",
+            "thanksForFeedBack": "Bedankt voor de feedback.",
+            "send": "Verzenden",
+            "close": "Sluiten"
+        },
+  		"pl_PL": {
+            "helpful": "Ta informacja by&#322;a pomocna",
+            "notHelpful": "Ta informacja nie by&#322;a pomocna",
+            "thanks": "Dzi&#281;kujemy! Co mo&#380;emy zrobi&#263;, aby ulepszy&#263; t&#281; stron&#281;? (opcja)",
+            "charactersLeft": "Liczba znak&oacute;w:",
+            "thanksForFeedBack": "Dzi&#281;kujemy za Twoj&#261; opini&#281;.",
+            "send": "Wy&#347;lij",
+            "close": "Zamknij"
+        },
+  		"pt_BR": {
+            "helpful": "Esta informa&ccedil;&atilde;o foi &uacute;til",
+            "notHelpful": "Esta informa&ccedil;&atilde;o n&atilde;o foi &uacute;til",
+            "thanks": "Obrigado! O que podemos fazer para melhorar esta p&aacute;gina? (opcional)",
+            "charactersLeft": "Caracteres restantes:",
+            "thanksForFeedBack": "Agradecemos o seu coment&aacute;rio.",
+            "send": "Enviar",
+            "close": "Encerrar"
+        },
+  		"pt_PT": {
+            "helpful": "Esta informa&ccedil;&atilde;o foi &uacute;til",
+            "notHelpful": "Esta informa&ccedil;&atilde;o n&atilde;o foi &uacute;til",
+            "thanks": "Obrigado! O que podemos fazer para melhorar esta p&aacute;gina? (opcional)",
+            "charactersLeft": "Caracteres restantes:",
+            "thanksForFeedBack": "Obrigado pelo feedback.",
+            "send": "Enviar",
+            "close": "Fechar"
+        },
+  		"ru_RU": {
+            "helpful": "&#1069;&#1090;&#1072; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1103; &#1087;&#1086;&#1084;&#1086;&#1075;&#1083;&#1072;",
+            "notHelpful": "&#1069;&#1090;&#1072; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1103; &#1085;&#1077; 			&#1087;&#1086;&#1084;&#1086;&#1075;&#1083;&#1072;",
+            "thanks": "&#1057;&#1087;&#1072;&#1089;&#1080;&#1073;&#1086;! &#1063;&#1090;&#1086; &#1084;&#1099; &#1084;&#1086;&#1078;&#1077;&#1084; &#1089;&#1076;&#1077;&#1083;&#1072;&#1090;&#1100; &#1076;&#1083;&#1103; &#1091;&#1083;&#1091;&#1095;&#1096;&#1077;&#1085;&#1080;&#1103; &#1101;&#1090;&#1086;&#1081; &#1089;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1099;? (&#1086;&#1087;&#1094;&#1080;&#1086;&#1085;&#1072;&#1083;&#1100;&#1085;&#1086;)",
+            "charactersLeft": "&#1054;&#1089;&#1090;&#1072;&#1083;&#1086;&#1089;&#1100; &#1089;&#1080;&#1084;&#1074;&#1086;&#1083;&#1086;&#1074;:",
+            "thanksForFeedBack": "&#1041;&#1083;&#1072;&#1075;&#1086;&#1076;&#1072;&#1088;&#1080;&#1084; &#1079;&#1072; &#1086;&#1090;&#1079;&#1099;&#1074;.",
+            "send": "&#1054;&#1090;&#1087;&#1088;&#1072;&#1074;&#1080;&#1090;&#1100;",
+            "close": "&#1047;&#1072;&#1082;&#1088;&#1099;&#1090;&#1100;"
+        },
+  		"sv_SE": {
+            "helpful": "Den h&auml;r informationen var till hj&auml;lp",
+            "notHelpful": "Den h&auml;r informationen var inte till hj&auml;lp",
+            "thanks": "Tack! Vad kan vi g&ouml;ra f&ouml;r att f&ouml;rb&auml;ttra den h&auml;r webbsidan? (tillval)",
+            "charactersLeft": "Tecken kvar:",
+            "thanksForFeedBack": "Tack f&ouml;r feedbacken.",
+            "send": "Skicka",
+            "close": "St&auml;ng"
+        },
+  		"tr_TR": {
+            "helpful": "Bu bilgi faydal&#305; oldu",
+            "notHelpful": "Bu bilgi faydal&#305; olmad&#305;",
+            "thanks": "Te&#351;ekk&uuml;rler! Bu sayfay&#305; iyile&#351;tirmek i&ccedil;in ne yapabiliriz? (opsiyonel)",
+            "charactersLeft": "Kalan karakter say&#305;s&#305;:",
+            "thanksForFeedBack": "Geri bildirim i&ccedil;in te&#351;ekk&uuml;r ederiz.",
+            "send": "G&ouml;nder",
+            "close": "Kapat"
+        },
+  		"zh_CN": {
+            "helpful": "&#27492;&#20449;&#24687;&#23545;&#24744;&#24456;&#26377;&#24110;&#21161;",
+            "notHelpful": "&#27492;&#20449;&#24687;&#23545;&#24744;&#27809;&#26377;&#24110;&#21161;",
+            "thanks": "&#35874;&#35874;&#65281;&#22914;&#20309;&#25913;&#21892;&#26412;&#39029;&#38754;&#65311;&#65288;&#21487;&#36873;&#65289;",
+            "charactersLeft": "&#21097;&#20313;&#23383;&#31526;&#25968;&#65306;",
+            "thanksForFeedBack": "&#24863;&#35874;&#24744;&#30340;&#21453;&#39304;&#12290;",
+            "send": "&#21457;&#36865;",
+            "close": "&#20851;&#38381;"
+        }
+  		
+    };
+
+    $.fn.contentRatingComponent = function () {
+//return;
+        //var userLang = navigator.language || navigator.userLanguage;
+        var userLang = $("meta[name=language]").prop("content");
+        var lang = label[userLang];
+        return this.each(function () {
+            $(this).css({ "display": "table", "padding": "20px 0px" });
+            var tpl_1 = '<div class="new_btn_container"><button type="button" class="btn_new uxf-btn__toggle thumb" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="material-icons">thumb_up_outline</i><span>' + lang.helpful + '</span></button></div>' +
+                '<div class="new_btn_container margin-top-20"><button type="button" class="btn_new uxf-btn__toggle thumb" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="material-icons">thumb_down</i><span>' + lang.notHelpful + '</span></button></div>';
+
+            var commentsContent = '<div class="comments"><span>' + lang.thanks + '</span><span class="close-btn" title="'+lang.close+'"><i class="material-icons">clear</i></span>' +
+                '<textarea maxLength="256"/>' +
+                '<div><button class="btn_action btn-default send-btn" type="button" disabled>' + lang.send + '</button><span class="character-count-container">' + lang.charactersLeft + ' <span class="count">256</span></span></div>';
+            var thanks = '<p>' + lang.thanksForFeedBack + '</p></div>';
+            $(this).append(tpl_1);
+
+            //Register click on thumbs up/down buttons
+            var _this = $(this);
+            _this.on("click", "button.thumb", function () {
+                _this.empty();
+                _this.css({ "display": "block" });
+                _this.append(commentsContent);
+            });
+
+            //Register click on send/close buttons
+            _this.on("click", ".send-btn,.close-btn", function () {
+                _this.empty();
+                _this.append(thanks);
+            });
+
+            _this.on('input propertychange', 'textarea', function () {
+                var $count = _this.find('.count'),
+                    current_val = $(this).val().length,
+                    left = 256 - current_val;
+                    $count.text(left);
+                    if(current_val > 0){
+                        $(".send-btn").removeClass("btn-default").addClass("btn-primary").prop("disabled","");
+                    }else{
+                        $(".send-btn").removeClass("btn-primary").addClass("btn-default").prop("disabled","disabled");;
+                    }
+
+            });
+        });
+
+    };
+
+}(jQuery));

@@ -1,0 +1,1155 @@
+#JDO_Accordion a:link {
+	color: rgb(54, 124, 43); text-decoration: none;
+}
+#JDO_Accordion a:visited {
+	color: rgb(54, 124, 43);
+}
+#JDO_Accordion h3 {
+	margin-top: 4px;
+}
+#JDO_Accordion h4 {
+	margin-top: 0px;
+}
+#JDO_Accordion h4.ui-accordion-header {
+	padding-bottom: 3px !important; padding-left: 10px; margin-top: 1px !important;
+}
+#JDO_Accordion h3 a {
+	font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 100% !important; font-weight: normal !important;
+}
+#JDO_Accordion h4 a {
+	font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 100% !important; font-weight: bold !important;
+}
+#JDO_Accordion h4 a {
+	padding-left: 8px !important; font-size: 113%;
+}
+#JDO_Accordion h3.ui-state-default a {
+	color: rgb(102, 102, 102) !important;
+}
+#JDO_Accordion .ui-state-default {
+	border: 0px currentColor; padding-bottom: 0px !important; margin-bottom: 2px; background-image: url("/img/AccordionBG.png") !important; background-repeat: repeat !important;
+}
+#JDO_Accordion .ui-state-active {
+	border: 0px currentColor; margin-bottom: 0px !important; background-image: url("/img/AccordionBGActive.png") !important; background-repeat: repeat !important;
+}
+#JDO_Accordion h3.ui-state-active a {
+	color: rgb(0, 0, 0) !important;
+}
+#JDO_Accordion .ui-widget-content {
+	border: 0px transparent !important; background-image: none !important; background-color: rgb(255, 255, 255) !important;
+}
+#JDO_Accordion .ui-accordion-content {
+	border: 0px currentColor; padding-left: 19px !important; background-image: url("Images/AccordionBGExpanded.png") !important; background-repeat: repeat-x !important;
+}
+#JDO_Accordion .ui-accordion .ui-accordion-content {
+	top: 0px !important; margin-bottom: 2px;
+}
+#JDO_Accordion .ui-accordion-header {
+	border: 0px currentColor !important;
+}
+div#JDO_Alerts_Container {
+	width: 942px; margin-bottom: 15px; position: relative; min-width: 500px;
+}
+div#JDO_Alerts_Container div#JDO_Alerts_ShowHide {
+	float: right;
+}
+div#JDO_Alerts_Container div#JDO_Alerts_ShowHide a {
+	color: rgb(54, 124, 43) !important;
+}
+div#JDO_Alerts_Container div div.Alert {
+	margin: 8px auto 0px; padding: 4px 10px; border: 1px solid currentColor; width: 920px; position: relative; min-height: 20px;
+}
+div.Alert table {
+	position: relative;
+}
+div.Alert table tr {
+	position: relative;
+}
+div.Alert table tr td {
+	position: relative;
+}
+div.JDO_Alerts_Icon {
+	background-position: center; margin: 0px auto; width: 28px; height: 28px; vertical-align: middle; float: left; background-repeat: no-repeat;
+}
+div.JDO_Alerts_Icon span {
+	display: none;
+}
+div.JDO_Alerts_Message {
+	color: rgb(69, 69, 69) !important; line-height: 16px; vertical-align: middle; float: left; min-width: 500px; background-repeat: repeat;
+}
+div.JDO_Alerts_Message h2 {
+	color: rgb(51, 51, 51) !important; font-size: 13px !important; font-weight: bold;
+}
+div#JDO_Alerts_Container div div.JDO_Alerts_Critical {
+	background: rgb(255, 234, 233); border-color: rgb(255, 196, 196);
+}
+div.JDO_Alerts_Message a {
+	color: rgb(55, 123, 43) !important; text-decoration: underline !important;
+}
+div.JDO_Alerts_Message a:hover {
+	color: rgb(0, 0, 0) !important;
+}
+div#JDO_Alerts_Container div div.JDO_Alerts_Critical div.JDO_Alerts_Icon {
+	background-image: url("Images/Alerts_Critical.png");
+}
+div#JDO_Alerts_Container div div.JDO_Alerts_Warning {
+	background: rgb(255, 255, 204); border-color: rgb(250, 242, 146);
+}
+div#JDO_Alerts_Container div div.JDO_Alerts_Warning div.JDO_Alerts_Icon {
+	background-image: url("Images/Alerts_Warning.png");
+}
+div#JDO_Alerts_Container div div.JDO_Alerts_Informational {
+	background: rgb(247, 247, 247); border-color: rgb(229, 229, 230);
+}
+div#JDO_Alerts_Container div div.JDO_Alerts_Informational div.JDO_Alerts_Icon {
+	background-image: url("Images/Alerts_Info.png");
+}
+div#JDO_Alerts_Container div div div.JDO_Alerts_Message h2 {
+	font-size: 135%; font-weight: bold; margin-bottom: 5px;
+}
+div#JDO_Alerts_Container div div div.JDO_Alerts_Message p {
+	overflow: hidden; clear: both; font-size: 100%; display: inline;
+}
+#JDO_Announcements_List {
+	width: 100%; margin-top: 5px;
+}
+.JDO_Announcements_List-item {
+	width: 96%; line-height: 18px !important; padding-bottom: 5px; padding-left: 5px; margin-bottom: 5px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted; float: left; display: block;
+}
+#JDO_Announcements_List br {
+	margin: 0px; padding: 0px; line-height: 1px; font-size: 0px;
+}
+.JDO_Announcements_List-item-text-container {
+	
+}
+div.JDO_Announcements_List-item-Text-title a {
+	color: rgb(54, 124, 43); font-size: 12px; text-decoration: none;
+}
+div.JDO_Announcements_List-item-Text-title a:hover {
+	text-decoration: underline;
+}
+span.JDO_Announcements_List-item-Text-published {
+	margin: 4px 0px 0px; display: block;
+}
+span.JDO_Announcements_List-item-Text-commentslink a {
+	margin: 6px 0px 0px; color: rgb(54, 124, 43); text-decoration: none;
+}
+span.JDO_Announcements_List-item-Text-commentslink a:hover {
+	text-decoration: underline;
+}
+#AnnouncementsCommentsCreate {
+	width: 700px;
+}
+#AnnouncementsCommentsCreate label {
+	width: 250px;
+}
+#AnnouncementsCommentsCreate label.error {
+	color: red; margin-left: 5px;
+}
+#AnnouncementsCommentsCreate input.submit {
+	margin-left: 0px;
+}
+div#JDO_CompanyCalendar_List {
+	width: 100%;
+}
+div.JDO_CompanyCalendarItem {
+	width: inherit; height: auto; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted; display: block;
+}
+#JDO_CompanyCalendar_List hr {
+	padding: 5px 0px; border: 1px currentColor; color: rgb(204, 204, 204); background-color: rgb(204, 204, 204);
+}
+div.JDO_CompanyCalendarItem div.JDO_CompanyCalendarMonthContainer {
+	margin: 0px 10px 0px 0px; border: 2px solid rgb(204, 204, 204); width: 28px; height: 28px; float: left;
+}
+div.JDO_CompanyCalendarItem div.JDO_CompanyCalendarMonthContainer div.JDO_CompanyCalendarMonth {
+	height: 13px; text-align: center; color: rgb(102, 102, 102); text-transform: uppercase; font-size: 85%; background-color: rgb(249, 211, 1);
+}
+div.JDO_CompanyCalendarItem div.JDO_CompanyCalendarMonthContainer div.JDO_CompanyCalendarDay {
+	height: 16px; text-align: center; color: rgb(102, 102, 102); font-size: 90%; vertical-align: bottom; background-color: rgb(255, 255, 255);
+}
+div.JDO_CompanyCalendarItem div.JDO_CompanyCalendarMessageContainer {
+	width: auto; height: 18px;
+}
+div.JDO_CompanyCalendarItem div.JDO_CompanyCalendarMessageContainer a {
+	color: rgb(54, 124, 43); font-weight: normal; text-decoration: none !important;
+}
+div.JDO_CompanyCalendarItem div.JDO_CompanyCalendarMessageContainer a span:hover {
+	text-decoration: underline !important;
+}
+div.JDO_CompanyCalendarItem div.JDO_CompanyCalendarMessageContainer a:hover {
+	text-decoration: underline !important;
+}
+.marL5 {
+	margin-left: 5px;
+}
+#JDO_ExecutiveFocus_List {
+	width: 180px;
+}
+#JDO_ExecutiveFocus_List-item {
+	width: 180px; display: inline-block;
+}
+#JDO_ExecutiveFocus_List-item-image-container {
+	overflow: hidden; padding-top: 4px; padding-right: 10px; vertical-align: top; float: left; max-width: 180px;
+}
+#JDO_ExecutiveFocus_List-item-image {
+	border: 0px currentColor; width: auto; max-width: 180px;
+}
+#JDO_ExecutiveFocus_List-item-text-container {
+	width: 180px; overflow: hidden; padding-top: 10px; max-width: 180px;
+}
+#JDO_ExecutiveFocus_List-item-Text {
+	
+}
+#JDO_ExecutiveFocus_List-item-Text-Name {
+	font-weight: bold;
+}
+#JDO_ExecutiveFocus_List-item-Text-Title {
+	
+}
+#JDO_ExecutiveFocus_List-item-Text-Division {
+	
+}
+#JDO_ExecutiveFocus_List-item-Biography {
+	padding-top: 10px;
+}
+#JDO_ExecutiveFocus_List-item-Organization {
+	
+}
+#JDO_FeaturedAudio_List {
+	width: 100%;
+}
+.JDO_FeaturedAudio_List-item {
+	
+}
+.JDO_FeaturedAudio_List-item-image-container {
+	
+}
+.JDO_FeaturedAudio_List-item-image {
+	
+}
+.JDO_FeaturedAudio_List-item-text-container {
+	
+}
+.JDO_FeaturedAudio_List-item-Text-title {
+	margin: 5px 0px; color: rgb(64, 64, 64); font-weight: bold; text-decoration: none; display: block; position: relative;
+}
+#JDO_FeaturedNews_List {
+	width: 100%;
+}
+#JDO_FeaturedNews_List-item {
+	width: 100%; padding-bottom: 6px; margin-top: 6px; margin-bottom: 6px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; display: inline-block;
+}
+#JDO_FeaturedNews_List-item-image-container {
+	overflow: hidden; padding-top: 4px; padding-right: 10px; padding-bottom: 6px; vertical-align: top; float: left; max-width: 130px;
+}
+#JDO_FeaturedNews_List-item-image {
+	border: 0px currentColor; width: auto; max-width: 130px;
+}
+#JDO_FeaturedNews_List-item-text-container {
+	width: 336px; overflow: hidden; padding-top: 4px; float: left; max-width: 336px;
+}
+#JDO_FeaturedNews_List-item-Text-title {
+	font-weight: bold; text-decoration: none;
+}
+#JDO_FeaturedNews_List-item-Text-ArticleAbstract {
+	padding-top: 4px; padding-bottom: 4px;
+}
+#JDO_FeaturedNews_List-item-Text-author {
+	font-weight: bold;
+}
+#JDO_FeaturedNews_List-item-Text-published {
+	
+}
+#JDO_FeaturedNews_List-item-Text-recommended {
+	color: rgb(54, 124, 43); text-decoration: none;
+}
+#JDO_FeaturedNews_List-item-Text-commentslink {
+	text-decoration: none;
+}
+.JDO_FeaturedNews_List-item-Text-seperator {
+	
+}
+table.commentsTable {
+	padding-bottom: 7px; margin-top: 15px; margin-bottom: 7px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+table.commentsTable td span.commentTxt {
+	color: rgb(51, 51, 51) !important; font-size: 15px; word-wrap: break-word;
+}
+table.commentsTable td {
+	color: rgb(141, 141, 141) !important; font-size: 12px; font-weight: normal !important; text-decoration: none;
+}
+table.commentsTable td span {
+	color: rgb(141, 141, 141) !important; font-size: 12px; font-weight: normal !important; text-decoration: none;
+}
+table.commentsTable td a:link {
+	color: rgb(141, 141, 141) !important; font-size: 12px; font-weight: normal !important; text-decoration: none;
+}
+table.commentsTable td a:hover {
+	color: rgb(0, 0, 0) !important;
+}
+table.commentsTable td {
+	padding: 0px; line-height: 16px;
+}
+table.commentsTable td.labelTxt span {
+	margin: 0px 0px 0px 12px; padding: 0px 0px 0px 12px; line-height: 12px; border-left-color: rgb(141, 141, 141); border-left-width: 1px; border-left-style: solid; float: left; display: inline-block;
+}
+table.commentsTable td.labelTxt span:first-child {
+	margin: 0px; padding: 0px; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+#CenterZone #NewsCommentsCreate table.commentsTable td.labelTxt span:first-child {
+	margin: 0px; padding: 0px; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+#JDO_FeaturedVideo_List {
+	width: 100%;
+}
+.JDO_FeaturedVideo_List-item {
+	width: 100%; padding-bottom: 6px; margin-top: 6px; margin-bottom: 6px; display: block;
+}
+.JDO_FeaturedVideo_List-item-image-container {
+	overflow: hidden; padding-top: 4px; padding-right: 10px; padding-bottom: 6px; vertical-align: top; float: left; word-wrap: break-word; max-width: 130px;
+}
+.JDO_FeaturedVideo_List-item-image {
+	border: 0px currentColor; width: auto; max-width: 130px;
+}
+.JDO_FeaturedVideo_List-item-text-container {
+	width: auto; overflow: hidden; padding-top: 4px; padding-left: 4px; display: block;
+}
+.JDO_FeaturedVideo_List-item-Text-title {
+	margin: 0px 0px 5px; font-weight: bold; text-decoration: none; display: block;
+}
+.JDO_FeaturedVideo_List-item-Text-AbstractText {
+	width: auto; overflow: hidden; padding-left: 4px; display: block;
+}
+.JDO_FeaturedVideo_List-item-footer {
+	width: auto; overflow: hidden; padding-left: 4px; display: block;
+}
+#JDO_GenericContentA_List {
+	width: 100%;
+}
+#JDO_GenericContentA_List-item {
+	width: 100%; padding-bottom: 6px; margin-top: 6px; margin-bottom: 6px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; display: inline-block;
+}
+#JDO_GenericContentA_List-item-image-container {
+	overflow: hidden; padding-top: 4px; padding-right: 10px; padding-bottom: 6px; vertical-align: top; float: left; max-width: 130px;
+}
+.JDO_GenericContentA_List-item-image {
+	border: 0px currentColor; width: auto; max-width: 130px;
+}
+#JDO_GenericContentA_List-item-text-container {
+	width: 480px; overflow: hidden; padding-top: 4px; float: left; max-width: 380px;
+}
+#JDO_GenericContentA_List-item-Text-title {
+	font-weight: bold; text-decoration: none;
+}
+.JDO_GenericContentA_List-itemseperator {
+	border: currentColor; color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);
+}
+#JDO_GenericContentB_List {
+	width: 100%;
+}
+#JDO_GenericContentB_List-item {
+	width: 100%; padding-bottom: 3px; margin-top: 4px; margin-bottom: 3px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; display: inline-block;
+}
+#JDO_GenericContentB_List-item-text-container {
+	width: 100%; overflow: hidden; padding-top: 4px; padding-bottom: 4px; float: left; word-wrap: break-word;
+}
+#JDO_GenericContentB_List-item-Text-title {
+	color: rgb(64, 64, 64); font-weight: bold;
+}
+#JDO_GenericContentB_List-item-Text-CopyText {
+	padding-bottom: 4px;
+}
+#JDO_GenericContentB_List-item-Text-Download {
+	padding-top: 4px;
+}
+#JDO_GenericContentB_List-item-Text-Download-Icon {
+	
+}
+#JDO_GenericContentB_List-item-Text-Download-Link {
+	
+}
+.JDO_GenericContentB_List-itemseperator {
+	border-width: 1px medium medium; border-style: solid none none; border-color: rgb(204, 204, 204) currentColor currentColor; color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);
+}
+#JDO_Hero_Container {
+	margin: 0px; padding: 0px;  height: 374px; position: relative;
+}
+#JDO_Hero_Container #banner {
+	margin: 0px; padding: 0px;  height: 374px; list-style-type: none;
+}
+#JDO_Hero_Container #banner li {
+	width: 943px !important; height: 374px !important; list-style-type: none;
+}
+#JDO_Hero_Container #banner img {
+	 height: 374px; 
+}
+#JDO_Hero_Container #banner #JDO_Message_Container {
+	width: 295px; height: 374px; float: left;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Vertical_Overlay {
+	width: 12px; height: 374px; margin-left: -12px; filter: alpha(opacity=40); position: absolute; z-index: 60; opacity: 0.4; background-repeat: no-repeat;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Hero_Message_Inner {
+	padding: 20px; width: auto; height: 374px;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Hero_Message_Inner h2 {
+	color: rgb(51, 51, 51) !important; line-height: 28px !important; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 28px !important; font-weight: bold;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Hero_Message_Inner h2 a {
+	color: rgb(51, 51, 51) !important; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 28px !important; font-weight: bold;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Hero_Message_Inner p {
+	margin: 0px !important; color: rgb(51, 51, 51); line-height: 16px; padding-top: 6px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 16px; font-weight: normal;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Hero_Message_Inner a {
+	color: rgb(54, 124, 43); font-size: 90%; text-decoration: none;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Hero_Message_Inner a:hover {
+	text-decoration: underline;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Hero_Message_Inner .FeaturedContentLink {
+	left: 0px; bottom: 0px; padding-top: 6px; position: relative;
+}
+#JDO_Hero_Container #banner #JDO_Message_Container #JDO_Hero_Message_Inner .FeaturedContentLink a {
+	font-size: 14px; font-weight: bold;
+}
+#LeftSubZone .clearall {
+	height: 0px; line-height: 0 !important; clear: both; font-size: 0px;
+}
+#pager {
+	text-align: center; right: 10px; bottom: 10px; font-size: 11px; display: block; position: absolute; z-index: 20;
+}
+#pager a {
+	border: 1px solid rgb(102, 102, 102); width: 24px; height: 24px; text-align: center; color: rgb(102, 102, 102); line-height: 23px !important; font-size: 13px; font-weight: bold; text-decoration: none; margin-right: 5px; vertical-align: middle; float: left; display: block; z-index: 20; background-color: rgb(255, 255, 255);
+}
+#pager a.pauseButton {
+	color: rgb(255, 255, 255) !important; line-height: 22px !important; font-size: 13px; font-weight: bold; background-color: rgb(102, 102, 102);
+}
+#pager a.pauseButton:hover {
+	text-decoration: none;
+}
+#pager a:hover {
+	background: rgb(54, 124, 43); color: rgb(255, 255, 255) !important; text-decoration: none !important; cursor: pointer;
+}
+#pager a.activeSlide {
+	background: rgb(54, 124, 43); color: rgb(255, 255, 255) !important;
+}
+.JDO_Vertical_Overlay_Green {
+	background-image: url("../JDOnline/Images/Carousel/JDO_Green_Grad.png");
+}
+.JDO_Vertical_Overlay_Yellow {
+	width: 522px;  background-size:522px;background-image: url("../../../../images/JDO_Yellow_Grad.png"); background-repeat: repeat-x;
+}
+.JDO_Vertical_Overlay_Gray {
+	background-image: url("../../../../images/Carousel/JDO_Gray_Grad.png");
+}
+#JDO_News_List {
+	width: 500px;
+}
+.JDO_News_List-item {
+	padding: 5px 0px 5px 5px; width: 100%; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted; display: inline-block;
+}
+.JDO_News_List-item-image-container {
+	overflow: hidden; padding-top: 4px; padding-right: 10px; vertical-align: top; float: left; max-width: 90px;
+}
+.JDO_News_List-item-image {
+	border: 0px currentColor; width: auto; max-width: 90px;
+}
+.JDO_News_List-item-text-container {
+	overflow: hidden; padding-top: 4px; float: left;
+}
+.JDO_News_List-item-Text-title {
+	text-decoration: none;
+}
+.JDO_News_List-item-Text-title a.jd-link {
+	font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-weight: normal;
+}
+#JDO_News_List #JDO_News_List-item-links span {
+	margin: 0px 0px 0px 6px; padding: 0px 0px 0px 6px; line-height: 12px; border-left-color: rgb(187, 187, 187); border-left-width: 2px; border-left-style: solid; float: left;
+}
+#JDO_News_List #JDO_News_List-item-links span:first-child {
+	margin: 0px !important; padding: 0px; line-height: 12px; border-left-color: currentColor !important; border-left-width: 0px !important; border-left-style: none !important;
+}
+#JDO_News_List #JDO_News_List-item-links span span {
+	margin: 0px !important; padding: 0px; line-height: 12px; border-left-color: currentColor !important; border-left-width: 0px !important; border-left-style: none !important;
+}
+#JDO_Announcements_List #JDO_Announcements_List-item-links {
+	margin: 4px 0px 0px;
+}
+#JDO_Announcements_List #JDO_Announcements_List-item-links span {
+	margin: 0px; padding: 0px; line-height: 12px; border-left-color: currentColor; border-left-width: 0px; border-left-style: none; float: left;
+}
+#JDO_Announcements_List #JDO_Announcements_List-item-links span:first-child {
+	margin: 0px !important; padding: 0px; line-height: 12px; border-left-color: currentColor !important; border-left-width: 0px !important; border-left-style: none !important;
+}
+#JDO_News_List #JDO_News_List-item-links span span {
+	margin: 0px !important; padding: 0px; line-height: 12px; border-left-color: currentColor !important; border-left-width: 0px !important; border-left-style: none !important;
+}
+.JDO_News_List-item-Text-author {
+	font-weight: bold;
+}
+#JDO_News_List span.JDO_News_List-item-Text-author {
+	font-weight: normal !important;
+}
+#JDO_News_List span.JDO_News_List-item-Text-author a:link {
+	color: rgb(51, 51, 51) !important; font-weight: normal !important;
+}
+#JDO_News_List span.JDO_News_List-item-Text-author a:visited {
+	color: rgb(51, 51, 51) !important; font-weight: normal !important;
+}
+.JDO_News_List-item-Text-published {
+	
+}
+.JDO_News_List-item-Text-recommended {
+	color: rgb(54, 124, 43); text-decoration: none;
+}
+.JDO_News_List-item-Text-commentslink {
+	color: rgb(54, 124, 43); text-decoration: none;
+}
+.JDO_News_List-item-Text-seperator {
+	width: auto;
+}
+#JDO_News_List .JDO_News_List-item-Text-commentslink a.jd-link {
+	font-size: 13px !important;
+}
+#JDO_Announcements_List .JDO_Announcements_List-item-Text-commentslink a.jd-link {
+	font-size: 13px !important;
+}
+#news_comments_list {
+	
+}
+#NewsCommentsCreate {
+	width: 700px;
+}
+#CenterZone #NewsCommentsCreate {
+	width: 498px;
+}
+#CenterZone #NewsCommentsCreate textarea {
+	margin: 1px 0px 8px; font-size: 15px;
+}
+#NewsCommentsCreate label {
+	width: 250px;
+}
+#NewsCommentsCreate label.error {
+	color: red; margin-left: 5px;
+}
+#NewsCommentsCreate input.submit {
+	margin-left: 0px;
+}
+.JDO_NewsComment_Writer {
+	color: rgb(54, 124, 43);
+}
+.JDO_Stock_Container2 {
+	padding: 4px; border: 1px solid rgb(204, 204, 204);
+}
+.JDO_Stock_Container2 table.stockTable {
+	width: 100%;
+}
+.JDO_Stock_Container2 table.stockTable td {
+	padding: 1px; color: rgb(54, 124, 43) !important; line-height: 18px; font-size: 15px !important; font-weight: bold;
+}
+.JDO_Stock_Container2 table.stockTable td:first-child {
+	color: rgb(51, 51, 51) !important;
+}
+.JDO_Stock_Container2 table.stockTable td b {
+	padding: 0px 0px 0px 18px; color: rgb(51, 51, 51) !important;
+}
+.JDO_Stock_Container2 table.stockTable td span {
+	color: rgb(54, 124, 43); font-size: 12px !important; font-weight: normal !important;
+}
+.JDO_Stock_Container2 table.stockTable td a {
+	color: rgb(54, 124, 43); text-decoration: none;
+}
+.JDO_Stock_Container2 table.stockTable td a:hover {
+	color: rgb(0, 0, 0);
+}
+.floatL {
+	float: left;
+}
+.stkArrow {
+	line-height: 18px; font-size: 21px; margin-left: 2px;
+}
+.stkArrow {
+	line-height: 12px; font-size: 24px;
+}
+#JDO_RelatedLink_List {
+	width: 185px;
+}
+#JDO_RelatedLink_List-item {
+	width: 185px; display: inline-block;
+}
+#JDO_RelatedLink_List-item-text-container {
+	width: 185px; overflow: hidden; padding-top: 5px; padding-bottom: 5px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; float: left; position: relative;
+}
+#JDO_RelatedLink_List-item-text-container div {
+	margin-bottom: 3px;
+}
+#JDO_RelatedLink_List-item-text-container a {
+	color: rgb(54, 124, 43);
+}
+td.JDOnline_SiteMap_Level0 {
+	background-position: bottom; height: 25px; color: rgb(51, 51, 51); text-transform: uppercase; font-weight: bold; background-image: url("Images/header_bg_repeat.jpg"); background-repeat: repeat-x;
+}
+td.JDOnline_SiteMap_Level0 span {
+	font-size: 13px; margin-top: 3px; display: block;
+}
+.JDOnline_SiteMap_Level1 {
+	padding: 2px 2px 8px 0px; width: 200px; float: left;
+}
+.JDOnline_SiteMap_Level1 span {
+	padding: 2px 2px 4px 0px; display: block;
+}
+span.JDOnline_SiteMap_Level1_Title {
+	padding: 5px 2px 8px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 12px;
+}
+.JDOnline_SiteMap_Level2 a:link {
+	color: green; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif;
+}
+.JDOnline_SiteMap_Level2 a:visited {
+	color: green; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif;
+}
+#JDO_TopRecommended_List {
+	width: 185px; margin-top: 5px;
+}
+#JDO_TopRecommended_List-item {
+	width: 185px; display: inline-block;
+}
+#JDO_TopRecommended_List-item-text-container {
+	width: 185px; overflow: hidden; padding-top: 5px; padding-bottom: 5px; font-weight: bold; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; float: left; position: relative;
+}
+#JDO_TopRecommended_List-item-text-container div {
+	margin-bottom: 3px;
+}
+#JDO_TopRecommended_List a {
+	color: rgb(54, 124, 43);
+}
+.JDO_Recommend {
+	float: right;
+}
+.JDO_Recommend img {
+	margin: 2px; float: left; display: inline;
+}
+.JDO_Recommend a {
+	margin: 2px; float: left; display: inline;
+}
+div#JDOnline_GlobalHeader {
+	background: url("Images/JohnDeereHeaderGray.png") repeat-x left top; width: 100%; height: 102px; padding-top: 0px; position: relative; min-width: 990px;
+}
+div#JDOnline_BrandingBar {
+	background-position: top; width: 100%; height: 20px; bottom: 0px; position: absolute; min-width: 942px; background-image: url("Images/JohnDeereHeaderGreenYellowBar.png"); background-repeat: repeat-x;
+}
+div#JDOnline_GlobalHeader div.Wrapper {
+	height: 102px;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft a {
+	color: rgb(54, 124, 43) !important; font-size: 13px !important;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft .ms-SPLink {
+	color: rgb(54, 124, 43) !important;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft .ms-welcomeMenu {
+	padding: 0px !important;
+}
+div#JDOnline_GlobalHeader div.Wrapper div.s4-trc-container-menu {
+	margin: 0px !important;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft ul#UtilityMenu {
+	margin: 48px 0px 0px; padding: 0px; text-align: left; list-style-type: none;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft ul#UtilityMenu li {
+	margin-right: 20px; display: inline; list-style-image: none;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft ul#UtilityMenu li span.ms-viewselector-arrow {
+	top: -2px; width: 7px !important; height: 4px !important; text-indent: -6666px !important; display: block; cursor: pointer; background-image: url("Images/userDropdownArrow.png");
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft ul#UtilityMenu li span.ms-viewselector-arrow img {
+	display: none;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft {
+	margin: 0px; padding: 0px; left: 0px; height: 100%; text-align: left; float: left; position: relative;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderRight {
+	width: 200px; height: 100%; text-align: left; right: 0px; float: right; position: relative;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderRight div#CompanyLogo {
+	width: 204px; height: 46px; right: 0px; bottom: 30px; clear: both; position: absolute;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderRight div#CompanyLogo a {
+	width: inherit; height: inherit; display: block;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft h1#JDOnline_SiteLogo {
+	background-position: left; width: 250px; height: 27px; bottom: 57px; position: absolute; background-image: url("Images/jdonline.png"); background-repeat: no-repeat;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft h1#JDOnline_SiteLogo a {
+	width: inherit; height: inherit; display: block;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft ul#UtilityMenu .ms-welcomeMenu {
+	margin: 0px !important;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft h1#JDOnline_SiteLogo a span {
+	display: none;
+}
+#JDOnline_GlobalHeader #UtilityMenu .ms-welcomeMenu .ms-SpLinkButtonActive {
+	border: 1px solid transparent !important;
+}
+.ms-SpLinkButtonActive.ms-welcomeMenu {
+	border: 1px solid transparent !important;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft .ms-SpLinkButtonActive a.ms-menu-a {
+	color: rgb(0, 0, 0) !important; text-decoration: underline !important;
+}
+div#JDOnline_GlobalHeader div.Wrapper div#JDOnline_GlobalHeaderLeft .ms-SpLinkButtonActive a.ms-menu-a:hover {
+	color: rgb(0, 0, 0) !important; text-decoration: underline !important;
+}
+#JDOnline_GlobalMenu_Horizontal a.mnu-hover {
+	background-position: center 84%; color: rgb(255, 255, 255); background-image: url("Images/JDMenuArrow.png"); background-repeat: no-repeat;
+}
+#JDOnline_GlobalMenu_HorizontalBg {
+	background: url("Images/navBg.png") repeat-x left top; width: 100%; height: 40px; min-width: 990px;
+}
+#JDOnline_GlobalMenu_HorizontalDIV div.Wrapper div#JDOnline_GlobalHeaderLeft h1#JDOnline_SiteLogo {
+	margin: 0px; width: 630px; height: 30px; float: left; display: block;
+}
+#JDOnline_SearchHld {
+	width: 312px; height: 29px; margin-top: 6px; float: right; display: block;
+}
+.s4-search input {
+	background: rgb(255, 255, 255) !important; border-width: 1px 0px 1px 1px !important; border-style: solid none solid solid !important; border-color: rgb(207, 207, 207) currentColor rgb(207, 207, 207) rgb(207, 207, 207) !important; margin: 0px !important; padding: 0px 3px !important; height: 20px !important; color: rgb(102, 102, 102); line-height: 19px !important; font-size: 12px !important;
+}
+a.searchImg {
+	background: url("Images/gosearch15.png") no-repeat left top; border: currentColor; width: 25px; height: 22px; text-indent: -6666px; text-decoration: none; float: left; display: block;
+}
+a.searchImg:hover {
+	background: url("Images/gosearch15.png") no-repeat left bottom; cursor: pointer;
+}
+#JDOnline_GlobalMenu_Horizontal div {
+	border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); margin: 5px 25px; width: 0px; height: 25px; float: left;
+}
+#JDOnline_GlobalMenu_Horizontal a {
+	margin: auto; padding: 5px 0px 10px; color: rgb(69, 69, 69) !important; line-height: 25px; font-size: 16px !important; vertical-align: middle; float: left; display: block; cursor: pointer;
+}
+#JDOnline_GlobalMenu_Horizontal a:first-child {
+	padding-top: 4px !important;
+}
+#JDOnline_GlobalMenu_Horizontal a:hover {
+	color: rgb(69, 69, 69) !important; text-decoration: none !important;
+}
+#JDOnline_GlobalMenu_Horizontal a img {
+	vertical-align: middle;
+}
+.JDOnline_GlobalMenu_DDAreaBg {
+	background-position: bottom; top: 137px; width: 100%; display: none; position: absolute; z-index: 100; min-height: 165px; background-image: url("Images/JDO_MenuBG.png"); background-repeat: repeat-x; background-color: rgb(49, 142, 57);
+}
+.JDOnline_GlobalMenu_DDArea {
+	margin: auto; width: 942px; overflow: hidden;
+}
+div.mnu-table table {
+	padding: 0px; border-collapse: collapse; border-spacing: 0;
+}
+.JDOnline_GlobalMenu_DDArea div.mnu-col {
+	margin: 0px; padding: 0px 0px 15px; float: left; display: block; min-width: 120px;
+}
+.JDOnline_GlobalMenu_DDArea div span.mnu-head {
+	padding: 0px 0px 2px 2px; color: rgb(255, 222, 0); font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 15px !important; margin-top: 14px; display: block; cursor: default;
+}
+.JDOnline_GlobalMenu_DDArea div a {
+	padding: 2px 6px 2px 0px; color: rgb(255, 255, 255) !important; clear: left; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 13px !important; display: block; cursor: pointer;
+}
+.JDOnline_GlobalMenu_DDArea div a:hover {
+	padding: 2px 6px 2px 0px; color: rgb(255, 255, 255) !important; clear: left; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 13px !important; display: block; cursor: pointer;
+}
+.JDOnline_GlobalMenu_DDArea div a:visited {
+	padding: 2px 6px 2px 0px; color: rgb(255, 255, 255) !important; clear: left; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 13px !important; display: block; cursor: pointer;
+}
+.ms-WPBody .JDOnline_GlobalMenu_DDArea div a {
+	padding: 2px 6px 2px 0px; color: rgb(255, 255, 255) !important; clear: left; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 13px !important; display: block; cursor: pointer;
+}
+.ms-WPBody .JDOnline_GlobalMenu_DDArea div a:hover {
+	padding: 2px 6px 2px 0px; color: rgb(255, 255, 255) !important; clear: left; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 13px !important; display: block; cursor: pointer;
+}
+.ms-WPBody JDOnline_GlobalMenu_DDArea div a:visited {
+	padding: 2px 6px 2px 0px; color: rgb(255, 255, 255) !important; clear: left; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 13px !important; display: block; cursor: pointer;
+}
+.JDOnline_GlobalMenu_DDArea div.mnu-line {
+	margin: 20px 6px 0px; padding: 0px 0px 20px; width: 3px; float: left; background-image: url("Images/TopMenuVerticalBar.png"); background-repeat: repeat-y;
+}
+.ms-dlgBorder {
+	border: 1px solid rgb(51, 51, 51) !important;
+}
+.ms-dlgTitle {
+	background-color: rgb(51, 51, 51);
+}
+#ctl00_PlaceHolderMain_ctl00_EditModePanel3_ctl02_RichHtmlField .ms-rtestate-write {
+	width: 448px; height: 120px !important; overflow: auto; min-height: 120px !important;
+}
+#ctl00_PlaceHolderMain_ctl00_EditModePanel3_ctl02_RichHtmlField .ms-selectorlink {
+	width: 448px; height: 120px !important; line-height: 120px !important;
+}
+#ctl00_PlaceHolderMain_ctl00_EditModePanel3_ctl02_RichHtmlField .ms-selectorlink a {
+	line-height: 120px !important;
+}
+.edit-mode-panel .captioned-image {
+	display: none;
+}
+.edit-mode-panel .ms-formfieldcontainer {
+	margin: 0px !important;
+}
+.edit-mode-panel .date-line {
+	margin: 0px !important; padding: 1px 0px !important;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+#wrapperdiv {
+	height: 100% !important;
+}
+.OutWrapper {
+	height: 100% !important;
+}
+body #wrapperdiv #s4-workspace {
+	height: 100%; overflow: auto !important; min-height: 84% !important;
+}
+.JDO_Footer {
+	width: 100%; height: 160px; clear: both; min-width: 990px; background-image: url("Images/footer_bg_repeat.png"); background-repeat: repeat-x;
+}
+div#s4-bodyContainer {
+	margin: 0px 0px -160px; width: 100%; height: auto !important; min-height: 100%;
+}
+#ct100_MSO_ContentDiv {
+	padding: 0px 0px 160px; width: 100%;
+}
+.JDO_Footer span {
+	right: 50%; bottom: 8px; color: rgb(221, 221, 221) !important; position: absolute;
+}
+div#s4-bodyContainer .push {
+	height: 160px; clear: both;
+}
+.JDOnline_Footer_Enclose {
+	margin: auto; padding: 0px; height: 160px; overflow: hidden; font-size: 13px; border-bottom-color: rgb(119, 119, 119); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.JDOnline_Footer_Section {
+	margin: 20px 50px 10px 0px; color: rgb(238, 238, 238); float: left;
+}
+.JDOnline_Footer_Header {
+	padding: 5px; width: 100%; text-align: left; font-weight: bold; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.JDOnline_Footer_Detail {
+	padding: 5px; text-align: left; margin-left: 5px; float: left;
+}
+.JDO_Footer .JDOnline_Footer_Detail a {
+	padding: 2px; color: rgb(221, 221, 221) !important; text-decoration: underline; display: block;
+}
+.JDO_Footer .JDOnline_Footer_Detail a:visited {
+	padding: 2px; color: rgb(221, 221, 221) !important; text-decoration: underline; display: block;
+}
+.JDO_Footer .JDOnline_Footer_Detail a:link {
+	padding: 2px; color: rgb(221, 221, 221) !important; text-decoration: underline; display: block;
+}
+.ms-WPBody .JDO_Footer .JDOnline_Footer_Detail a:hover {
+	padding: 2px; color: rgb(221, 221, 221) !important; text-decoration: underline; display: block;
+}
+.ms-WPBody .JDO_Footer .JDOnline_Footer_Detail a:visited {
+	padding: 2px; color: rgb(221, 221, 221) !important; text-decoration: underline; display: block;
+}
+.ms-WPBody .JDO_Footer .JDOnline_Footer_Detail a:link {
+	padding: 2px; color: rgb(221, 221, 221) !important; text-decoration: underline; display: block;
+}
+.footerHld {
+	text-align: center;
+}
+.footerHld ul.footerLinks {
+	list-style: none; padding: 25px 0px 15px; overflow: hidden;
+}
+.footerHld ul.footerLinks li {
+	border-left-color: rgb(151, 151, 151); border-left-width: 1px; border-left-style: solid; float: left; display: inline-block;
+}
+.footerHld ul.footerLinks li:first-child {
+	border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.footerHld ul.footerLinks li a {
+	padding: 0px 14px; color: rgb(221, 221, 221) !important; line-height: 15px !important; font-size: 13px; float: left;
+}
+.footerHld ul.footerLinks li a:link {
+	padding: 0px 14px; color: rgb(221, 221, 221) !important; line-height: 15px !important; font-size: 13px; float: left;
+}
+.footerHld ul.footerLinks li a:visited {
+	padding: 0px 14px; color: rgb(221, 221, 221) !important; line-height: 15px !important; font-size: 13px; float: left;
+}
+.footerHld ul.footerLinks li a:hover {
+	text-decoration: underline;
+}
+.footerHld .copyrightText {
+	padding: 15px 0px 25px; color: rgb(151, 151, 151); font-size: 13px; border-top-color: rgb(151, 151, 151); border-top-width: 1px; border-top-style: solid;
+}
+.marL10 {
+	margin-left: 10px;
+}
+a.RecommendedToggleOff {
+	color: rgb(204, 204, 204) !important; text-decoration: none;
+}
+a.RecommendedToggleOn {
+	color: rgb(54, 124, 43) !important; text-decoration: none;
+}
+table.eventHld {
+	padding: 0px 0px 10px; color: rgb(51, 51, 51); font-size: 15px !important; border-bottom-color: currentColor !important; border-bottom-width: medium !important; border-bottom-style: none !important;
+}
+table.eventHld td {
+	padding: 0px 0px 4px;
+}
+table.eventHld td span.eventTitle {
+	color: rgb(53, 123, 43); font-size: 17px; font-weight: bold;
+}
+table.eventHld td a {
+	color: rgb(53, 123, 43);
+}
+table.eventHld td a:link {
+	color: rgb(53, 123, 43);
+}
+table.eventHld td a:visited {
+	color: rgb(53, 123, 43);
+}
+table.eventHld td a:hover {
+	text-decoration: underline;
+}
+input.ms-ButtonHeightWidth {
+	margin-top: 6px !important; margin-right: 6px !important;
+}
+table.eventHld .ms-formbody {
+	border: currentColor !important;
+}
+table.eventHld .marT10 {
+	margin-top: 10px;
+}
+.marT10 {
+	margin-top: 10px;
+}
+.padB10 {
+	padding-bottom: 10px;
+}
+table.eventHld td .categories {
+	color: rgb(153, 153, 153); font-style: italic;
+}
+#WebPartWPQ1 table tr table tr.ms-viewheadertr th {
+	color: rgb(54, 124, 43) !important;
+}
+table.announHld {
+	padding: 0px; color: rgb(51, 51, 51); font-size: 15px !important; border-bottom-color: currentColor !important; border-bottom-width: medium !important; border-bottom-style: none !important;
+}
+table.announHld td {
+	padding: 0px 0px 4px;
+}
+table.announHld td span.announTitle {
+	color: rgb(53, 123, 43); font-size: 17px; font-weight: bold;
+}
+table.announHld td a {
+	color: rgb(53, 123, 43);
+}
+table.announHld td a:link {
+	color: rgb(53, 123, 43);
+}
+table.announHld td a:visited {
+	color: rgb(53, 123, 43);
+}
+table.announHld td a:hover {
+	text-decoration: underline;
+}
+input.ms-ButtonHeightWidth {
+	margin-top: 6px !important; margin-right: 6px !important;
+}
+table.announHld .ms-formbody {
+	border: currentColor !important;
+}
+table.announHld .marT10 {
+	margin-top: 10px;
+}
+.marT10 {
+	margin-top: 10px;
+}
+.padB10 {
+	padding-bottom: 10px;
+}
+table.announHld td .categories {
+	color: rgb(153, 153, 153); font-style: italic;
+}
+.JDOnline_GlobalMenu_DDArea div.mnu-col {
+	min-width: 93px;
+}
+.JDOnline_GlobalMenu_DDArea div span.mnu-head {
+	font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 13px !important;
+}
+.JDOnline_GlobalMenu_DDArea div a {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.JDOnline_GlobalMenu_DDArea div a:hover {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.JDOnline_GlobalMenu_DDArea div a:visited {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.ms-WPBody .JDOnline_GlobalMenu_DDArea div a {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.ms-WPBody .JDOnline_GlobalMenu_DDArea div a:hover {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.ms-WPBody JDOnline_GlobalMenu_DDArea div a:visited {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.JDOnline_GlobalMenu_DDArea div.mnu-line {
+	margin: 20px 3px 0px;
+}
+.JDOnline_GlobalMenu_DDArea div.mnu-col {
+	min-width: 93px;
+}
+.JDOnline_GlobalMenu_DDArea div span.mnu-head {
+	font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 13px !important;
+}
+.JDOnline_GlobalMenu_DDArea div a {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.JDOnline_GlobalMenu_DDArea div a:hover {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.JDOnline_GlobalMenu_DDArea div a:visited {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.ms-WPBody .JDOnline_GlobalMenu_DDArea div a {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.ms-WPBody .JDOnline_GlobalMenu_DDArea div a:hover {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.ms-WPBody JDOnline_GlobalMenu_DDArea div a:visited {
+	padding: 2px 4px 2px 0px; font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif; font-size: 11px !important;
+}
+.JDOnline_GlobalMenu_DDArea div.mnu-line {
+	margin: 20px 3px 0px;
+}
+* {
+	font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif;
+}
+#ctl00_PlaceHolderMain_UploadDocumentSection a#ctl00_PlaceHolderMain_UploadDocumentSection_ctl03_UploadMultipleLink {
+	display: none;
+}
+ul.ms-MenuUIUL li#mp1_0_7 {
+	display: none !important;
+}
+div#ctl00_MSOTlPn_EditorZone_JDOnlineProperties .ms-formfieldvaluecontainer .ms-inputuserfield {
+	border: 1px solid rgb(68, 68, 68);
+}
+#JDO_News_List .JDO_News_List-item .JDO_News_List-item-Text-title a.jd-link {
+	font-weight: bold;
+}
+#accordionMenu div span a {
+	font-family: Calibri, "Helvetica Neue", Arial, Sans-Serif !important;
+}
+#accordionMenu .ui-state-active {
+	border-color: transparent !important;
+}
+#accordionMenu .ui-widget-content .ui-state-active {
+	border-color: transparent !important;
+}
+#accordionMenu .ui-widget-header .ui-state-active {
+	border-color: transparent !important;
+}
+.StockTickerHld {
+	padding-left: 5px; margin-top: 5px;
+}
+table.s4-wpTopTable td.ms-WPBorder div.ms-rtestate-write {
+	height: 200px; overflow-y: auto;
+}
+.custom-breadcrumb {
+	padding: 12px 0px;
+}
+.custom-breadcrumb span {
+	font-size: 14px; font-weight: bold;
+}
+span.heading2 {
+	padding: 6px 0px; width: 942px; color: rgb(51, 51, 51); clear: both; font-size: 18px; font-weight: 500; float: left;
+}
+span.heading2 a {
+	color: rgb(0, 102, 0);
+}
+#JDO_Accordion p {
+	margin: 0px; padding: 0px; line-height: 21px;
+}
+.ui-accordion .ui-accordion-header a {
+	padding-left: 18px !important;
+}
+.article-content a:link {
+	text-decoration: underline !important;
+}
+.article-content a:hover {
+	color: rgb(102, 153, 102) !important;
+}
+.Inner-Container {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container p {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container input {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container span {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container font {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container font > span {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container p > span {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container span > p {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container font > p {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container p > font {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container div > p {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container table {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container tr {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container td {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container th {
+	font-weight: bold !important;
+}
+.Inner-Container td {
+	padding: 2px !important;
+}
+.Inner-Container div > span {
+	margin: 0px !important; padding: 0px !important; color: rgb(51, 51, 51) !important; line-height: 18px !important; font-family: Calibri !important; font-size: 15px !important;
+}
+.Inner-Container img {
+	padding: 3px 6px !important;
+}
+.btmborder {
+	margin: 0px 10px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+table.commentsTable td img {
+	max-height: 100px !important; max-width: 75px !important;
+}
+.article-content p {
+	font-family: Calibri !important;
+}
+span {
+	font-family: Calibri !important;
+}
+.byline:hover {
+	color: rgb(0, 0, 0) !important; text-decoration: underline !important;
+}

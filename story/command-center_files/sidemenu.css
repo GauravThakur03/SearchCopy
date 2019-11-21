@@ -1,0 +1,74 @@
+.c-button, .c-menu__close { -moz-appearance: none; appearance: none; border-radius: none; -webkit-appearance: none; font-size: 14px; box-shadow: none; }
+.c-button:focus, .c-menu__close:focus { outline: 0; }
+.c-mask, .c-menu { position: fixed; height: auto; overflow-y: auto; }
+.o-wrapper { transition: transform .3s; }
+.c-menu, .o-wrapper { -webkit-transition: -webkit-transform .3s; }
+
+@media all and (min-width:480px) {
+.o-container { padding: 0 24px; }
+}
+
+@media all and (min-width:720px) {
+.o-container { padding: 0 48px; }
+}
+.o-header { margin: 0; padding: 0; }
+.o-header-nav { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; background-color: #67b5d1; }
+.o-header-nav__link { padding: 12px; color: #fff; }
+.o-header-nav__link:hover { color: #fff; background-color: #3184a1; }
+.o-header__title { margin: 24px; padding: 0; color: #818181; font-size: 28px; font-weight: 300; text-align: center; }
+
+@media all and (min-width:480px) {
+.o-header__title { margin: 36px; font-size: 42px; }
+}
+.o-sub-nav { margin: 0 0 24px; padding: 0; }
+.o-sub-nav__items { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; list-style: none; margin: 0; padding: 0; }
+.o-sub-nav__item { margin: 0; padding: 4px; }
+.o-sub-nav__link { display: block; margin: 0; padding: 4px 24px; border: 2px solid #67b5d1; }
+.o-sub-nav__item.active .o-sub-nav__link, .o-sub-nav__link:hover { color: #fff; background-color: #67b5d1; }
+.o-footer { padding: 12px 0; text-align: center; }
+
+@media all and (min-width:480px) {
+.o-footer { padding: 24px 0; }
+}
+
+@media all and (min-width:720px) {
+.o-sub-nav { margin: 0 0 48px; }
+.o-footer { padding: 48px 0; }
+}
+.c-menu { z-index: 200; background-color:rgba(0, 0, 0, 0.6); transition: transform .3s; margin: 0 !important; }
+.c-menu__items { list-style: none; margin: 0; padding: 0; }
+.c-menu--slide-left { width: 100%; height: 100%; }
+
+@media all and (min-width:320px) {
+.c-menu--slide-left { min-width: 100%; }
+}
+.c-menu--slide-left .c-menu__item { position: relative; display: block; padding: 10px 28px; margin: 0; color: #eee; border-bottom: 1px solid #333; background-color:rgba(0, 0, 0, 0.8); }
+.c-menu--slide-left .c-menu__itemsub {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    background-color:rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    min-height: 350px;
+}
+.c-menu--slide-left .c-menu__itemsub a { color: #FFF; font-weight: bold; }
+.c-menu--slide-left .c-menu__item a { color: #eee; }
+.c-menu--slide-left .c-menu__item:first-child { border-top: none; }
+.c-menu--slide-left .c-menu__item:last-child { border-bottom: none; }
+.c-menu--slide-left .c-menu__link { display: block; padding: 12px 24px; color: #fff; }
+.c-menu--slide-left { display: block; width: 100% }
+.c-menu--slide-left { top: 144px; left: 0; -webkit-transform: translateX(-100%); -ms-transform: translateX(-100%); transform: translateX(-100%); }
+
+@media all and (min-width:320px) {
+.c-menu--push-left, .c-menu--slide-left { -webkit-transform: translateX(-3000px); -ms-transform: translateX(-3000px); transform: translateX(-3000px); }
+}
+.c-menu--slide-left.is-active { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+.c-mask, body.has-active-menu { overflow: hidden; }
+.c-menu__close { color: #fff; background-color: #333; border: none; cursor: pointer; position: absolute; right: 5%; top: 1%; z-index: 9999; }
+.c-mask { z-index: 100; top: 0; left: 0; width: 0; height: 0; opacity: 0; -webkit-transition: opacity .3s, width 0s .3s, height 0s .3s; transition: opacity .3s, width 0s .3s, height 0s .3s; }
+.c-mask.is-active { width: 100%; height: 100%; opacity: .2; -webkit-transition: opacity .3s; transition: opacity .3s; }
+.c-buttons { margin-bottom: 48px; text-align: center; }
+.c-button { display: inline-block; margin: 4px; padding: 12px 24px; color: #67b5d1; background: 0 0; border: 2px solid #67b5d1; cursor: pointer; }
+.c-button:disabled { opacity: .3; cursor: not-allowed; }
