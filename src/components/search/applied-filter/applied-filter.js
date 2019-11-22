@@ -24,8 +24,8 @@ const AppliedFilter = (props) => {
                     <button
                         className='button-filter-tag year'
                         key={key}
-                        type='button'
                         onClick={remove(filter)}
+                        type='button'
                     >
                         {translatedFilter.label}
                         <span

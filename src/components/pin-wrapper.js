@@ -4,7 +4,10 @@ import {FormattedMessage} from 'react-intl';
 
 const PinWrapper = (props) => {
     return (
-        <div className='pin-wrapper' id='pin-wrapper'>
+        <div
+            className='pin-wrapper'
+            id='pin-wrapper'
+        >
             <div className='filter-bar-search-results-component'>
                 <div className='filter-bar-mobile'>
                     <div className='relative'>

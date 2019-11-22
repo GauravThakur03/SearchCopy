@@ -11,7 +11,7 @@ class AppContainer extends Component {
         super(props);
 
         this.state = {
-            locale: this.props.query['country_site'] || 'en_GB'
+            locale: this.props.query.country_site || 'en_GB'
         };
     }
 
@@ -30,7 +30,7 @@ class AppContainer extends Component {
             >
                 <Fragment>
                     <div className={'wrapper clearfix'}>
-                       <HeaderConnector {...this.state}/>
+                        <HeaderConnector {...this.state}/>
                         <MainContainer
                             {...this.props}
                             {...this.state}

@@ -26,6 +26,43 @@ class Pagination extends Component {
         document.documentElement.scrollTop = 0;
     }
 
+    createLinks() {
+        let links = null;
+
+        if (this.pages) {
+            links = this.pages.map((link, key) => {
+                const page = Math.ceil(link.end / this.props.pagination.navigation.perPage);
+                const isCurrent = this.props.pagination.navigation.currentPage === page ? 'current' : '';
+
+                return (
+                    <a
+                        key={key}
+                        onClick={this.setPage.bind(null, page, link.text)}
+                        value={page}
+                    >
+                        <span className={`page-link active ${isCurrent}`}>{page}</span>
+                    </a>
+                );
+            });
+        }
+        return links;
+    }
+
+    createNextOrPrevLinks(isShow, linkType) {
+        let link = null;
+
+        if (isShow) {
+            link = (
+                <PaginationState
+                    changePage={this.setPage}
+                    currentPage={this.props.pagination.navigation.currentPage}
+                    state={linkType}
+                />
+            );
+        }
+        return link;
+    }
+
     render() {
         const {links} = this.props.pagination;
 
@@ -35,31 +72,10 @@ class Pagination extends Component {
 
         return (
             <div className='pagination-search shown multiple-pages'>
-                {
-                    this.prev ? <PaginationState
-                        changePage={this.setPage}
-                        currentPage={this.props.pagination.navigation.currentPage}
-                        state={'pagination-prev'}
-                    /> : null
-                }
+                {this.createNextOrPrevLinks(this.prev, 'pagination-prev')}
                 <div className='pagination-numbers'>
                     <a/>
-                    {
-                        this.pages && this.pages.map((link, key) => {
-                            const page = Math.ceil(link.end / this.props.pagination.navigation.perPage);
-                            const isCurrent = this.props.pagination.navigation.currentPage === page ? 'current' : '';
-
-                            return (
-                                <a
-                                    key={key}
-                                    onClick={this.setPage.bind(null, page, link.text)}
-                                    value={page}
-                                >
-                                    <span className={`page-link active ${isCurrent}`}>{page}</span>
-                                </a>
-                            );
-                        })
-                    }
+                    { this.createLinks()}
                     <a/>
                 </div>
                 {
@@ -68,16 +84,9 @@ class Pagination extends Component {
                         <FormattedMessage id={'OF'}/>
                         <div className='page-last'>{this.pages.length}</div>
                     </div>
-                    : null
-                }
-                {
-                    this.next ? <PaginationState
-                        changePage={this.setPage}
-                        currentPage={this.props.pagination.navigation.currentPage}
-                        state={'pagination-next'}
-                    />
                         : null
                 }
+                {this.createNextOrPrevLinks(this.next, 'pagination-next')}
             </div>
         );
     }

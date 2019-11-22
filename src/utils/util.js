@@ -72,7 +72,7 @@ export function generateSearchList(document) {
     const match = ['title', 'year', 'snippet', 'url', 'description', 'country_site', 'base_codes', 'search_image'];
 
     list.map((doc) => {
-        let content = doc.content.reduce((accumulator, item) => {
+        const content = doc.content.reduce((accumulator, item) => {
             if (match.includes(item._name)) {
                 return getAccumulator(item, accumulator);
             }
@@ -101,35 +101,19 @@ export function sortModel(bins) {
 }
 
 export const sortBy = (key, reverse) => {
+    const moveSmaller = reverse ? 1 : -1;
+    const moveLarger = reverse ? -1 : 1;
 
-  // Move smaller items towards the front
-  // or back of the array depending on if
-  // we want to sort the array in reverse
-  // order or not.
-  const moveSmaller = reverse ? 1 : -1;
-
-  // Move larger items towards the front
-  // or back of the array depending on if
-  // we want to sort the array in reverse
-  // order or not.
-  const moveLarger = reverse ? -1 : 1;
-
-  /**
-   * @param  {*} a
-   * @param  {*} b
-   * @return {Number}
-   */
-  return (a, b) => {
-    if (a[key] < b[key]) {
-      return moveSmaller;
-    }
-    if (a[key] > b[key]) {
-      return moveLarger;
-    }
-    return 0;
-  };
-}; 
- 
+    return (a, b) => {
+        if (a[key] < b[key]) {
+            return moveSmaller;
+        }
+        if (a[key] > b[key]) {
+            return moveLarger;
+        }
+        return 0;
+    };
+};
 
 export function refactorKeys(binningSet) {
     return recursiveKeyModifier(binningSet);
@@ -139,9 +123,11 @@ export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
     const totalResults = Number(Array.isArray(vce['added-source']) ? vce['added-source'][0]['added-source']['_total-results'] : vce['added-source']['added-source']['_total-results']);
 
-
     if (!vce.list) {
-        const list = {per: 25, num: totalResults};
+        const list = {
+            num: totalResults,
+            per: 25
+        };
         const navigation = defaultState().navigation;
         const results = [];
 
@@ -158,11 +144,9 @@ export function sendResponse(xml) {
         list,
         navigation
     } = refactorObject(vce);
-    const locale = results.length && results[0].countrySite ? results[0].countrySite : 'en_NA';
 
     return {
         list,
-        locale,
         navigation,
         results,
         totalResults
@@ -177,17 +161,21 @@ export function buildQuery(filters) {
 
 export function buildQueryString(search) {
     const binningValues = Object.values(search.binning.appliedFilters);
-    const { country_site, ...urlParams} = search.urlParams;
+    const {
+        countrySite,
+        ...urlParams
+    } = search.urlParams;
 
-    binningValues.push(`country_site==${country_site}`); 
+    binningValues.push(`country_site==${countrySite}`);
 
     const isModelYear = binningValues.find((value) => value.includes('year'));
 
-    isModelYear && binningValues.push('year==All');
+    if (isModelYear) {
+        binningValues.push('year==All');
+    }
 
-    const binningParam = buildQuery(binningValues);
     const binning = {
-        'binning-state': binningParam,
+        'binning-state': buildQuery(binningValues),
         'content-type': 'text/xml'
     };
     const params = {
@@ -226,7 +214,7 @@ export function getQuery() {
 }
 
 export function onHeaderLoad() {
-    if ($("#headerSection").length > 0) {
+    if ($('#headerSection').length > 0) {
         APP.global();
         splashMsgInit();
         topNavigation();

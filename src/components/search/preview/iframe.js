@@ -6,28 +6,27 @@ export default class IFrame extends React.Component {
         super(props);
     }
 
-    shouldComponentUpdate(nextProps, nextState) {
+    shouldComponentUpdate() {
         return !this.props.loaded;
     }
 
     render() {
-        return (this.props.active &&
-            <iframe
-                frameBorder='0'
-                height='614'
-                onLoad={this.props.onLoad}
-                src={this.props.src}
-                width='100%'
-            >
-                {this.props.children}
-            </iframe>
-        );
+        return this.props.active ? <iframe
+            frameBorder='0'
+            height='614'
+            onLoad={this.props.onLoad}
+            src={this.props.src}
+            width='100%'
+        >
+            {this.props.children}
+        </iframe> : null;
     }
 }
 
 IFrame.propTypes = {
-    onLoad: PropTypes.func,
-    src: PropTypes.string,
     active: PropTypes.bool,
-    loaded: PropTypes.bool
+    children: PropTypes.string,
+    loaded: PropTypes.bool,
+    onLoad: PropTypes.func,
+    src: PropTypes.string
 };
