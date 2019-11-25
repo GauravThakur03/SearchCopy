@@ -25,7 +25,7 @@ class FilterGroup extends Component {
     render() {
         const filters = Object.assign([], this.props.filters);
 
-        this.props.category === 'MODEL_YEAR' ? sortModel(filters) : filters.sort(sortBy('label')); 
+        this.props.category === 'MODEL_YEAR' ? sortModel(filters) : filters.sort(sortBy('label'));
 
         return (
             <div className='filter-group'>

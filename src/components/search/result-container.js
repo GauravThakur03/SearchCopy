@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import QueryBarConnector from './query/query-bar-connector';
 import AppliedFilterConnector from './applied-filter/applied-filter-connector';
@@ -13,7 +14,7 @@ const ResultContainer = (props) => {
             <QueryBarConnector/>
             <AppliedFilterConnector/>
             <ContextMessage {...props}/>
-            <Spinner showLoader={props.loader} />
+            <Spinner showLoader={Boolean(props.loader)}/>
             {!props.loader && <ResultsConnector/>}
             {!props.loader && <PaginationConnector/>}
         </div>
@@ -21,3 +22,7 @@ const ResultContainer = (props) => {
 };
 
 export default ResultContainer;
+
+ResultContainer.propTypes = {
+    loader: PropTypes.number
+};

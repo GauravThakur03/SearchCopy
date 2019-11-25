@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {injectIntl, intlShape} from 'react-intl'; 
+import {injectIntl, intlShape} from 'react-intl';
 
 /* eslint-disable react/no-danger */
 const ResultDiscription = ({
@@ -9,7 +9,7 @@ const ResultDiscription = ({
 }) => {
     const baseCodes = intl.formatMessage({
         id: 'BASECODES'
-    }); 
+    });
     const value = list.baseCodes ? `<span><b>${baseCodes}: </b>${list.baseCodes.join(',')}` : list.snippet;
 
     return (

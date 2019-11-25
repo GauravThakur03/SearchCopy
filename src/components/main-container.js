@@ -39,16 +39,19 @@ class MainContainer extends Component {
 
             document.getElementById('filter-aside').style.height = `calc(100vh - ${d + p}px)`;
             document.getElementById('aside-container-mobile').style.minHeight = `calc(100vh - ${d + p}px)`;
-
         }
     }
+
     render() {
         return (
             <div className='plc-toc'>
                 <div className={`${this.state.toggleFilters ? 'show-filters' : ''} search-results-listing-template background-1`}>
                     <PinWrapper toggleFilters={this.toggleFilters}/>
                     <div className='container'>
-                        <div className='row relative' id='aside-container-mobile'>
+                        <div
+                            className='row relative'
+                            id='aside-container-mobile'
+                        >
                             <BinningFilterConnector/>
                             <ResultContainer {...this.props}/>
                         </div>

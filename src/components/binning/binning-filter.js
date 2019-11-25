@@ -5,13 +5,6 @@ import {FormattedMessage} from 'react-intl';
 import FilterGroup from './filter-group';
 
 const BinningFilter = (props) => {
-    const countLabel = {
-        'paddingLeft': '0px'
-    };
-    const color = {
-        'color': '#333'
-    };
-
     return (
         <aside
             className='template-panel left-rail col-lg-6'
@@ -32,7 +25,7 @@ const BinningFilter = (props) => {
                                     <fieldset>
                                         <ul className='fancy-checkbox-group'>
                                             <li className='ns-count-leaf'>
-                                                <label class="content-type">
+                                                <label className='content-type'>
                                                     <a>{props.totalResults} <FormattedMessage id='RESULTS'/></a>
                                                 </label>
                                             </li>
