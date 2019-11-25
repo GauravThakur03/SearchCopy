@@ -274,7 +274,6 @@
 .titleTxt {
     color: #367c2b;
     font-size: 18px;
-    font-weight: 700;
     line-height: 18px;
     margin: 11px 0!important;
     font-family: jd_sans_probold
@@ -2634,6 +2633,9 @@ table#panel-row td.panel-col {
 }
 
 @media screen and (min-width:1025px) {
+    .wrapper {
+        overflow-x:hidden;
+    }
     .nav-container .nav-content .nav-tier1 li a {
         height: 54px
     }
@@ -3866,10 +3868,10 @@ html {
     background: #fff!important
 }
 
-.button6:focus, .button6:hover {
+/* .button6:focus, .button6:hover {
     background: #464646!important;
     color: #fff!important
-}
+} */
 
 @media screen and (max-width:767px) {
     html.lock-scroll-small, html.lock-scroll-small body {
