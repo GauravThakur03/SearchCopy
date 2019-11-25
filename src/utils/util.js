@@ -162,7 +162,7 @@ export function buildQuery(filters) {
 export function buildQueryString(search) {
     const binningValues = Object.values(search.binning.appliedFilters);
     const {
-        countrySite,
+        country_site: countrySite,
         ...urlParams
     } = search.urlParams;
 
