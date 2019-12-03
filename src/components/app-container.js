@@ -17,9 +17,10 @@ class AppContainer extends Component {
 
     componentDidMount() {
         if (this.state.locale) {
-            this.props.loadConfigurations(this.state.locale);
+            this.props.loadConfigurations(this.state.locale).then(() => {
+                this.props.loadXML(this.props.query);
+            });
         }
-        this.props.loadXML(this.props.query);
     }
 
     render() {

@@ -142,9 +142,10 @@ export function configurations(locale) {
                 });
 
                 ele.classList.add('available');
+                return true;
             })
             .catch((error) => {
-                return error;
+                return Promise.reject(error);
             });
     };
 }
