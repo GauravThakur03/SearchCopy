@@ -10,8 +10,24 @@ function findLocale(state) {
     return state.search.results.length ? state.search.results[0].countrySite : '';
 }
 
+function setSubTypeFilter(contentType, dispatch, subType) {
+    if (subType) {
+        const value = contentType.filter((type) => type.key === subType)[0].value;
+
+        const filter = {
+            key: subType,
+            value
+        };
+
+        dispatch(applyFilter(filter));
+    } else {
+        dispatch(loadXML());
+    }
+}
+
 function mapStateToProps(state) {
     return {
+        contentType: state.search.settings.contentType,
         loader: state.search.loader,
         locale: query.country_site || findLocale(state),
         messages: state.search.settings.translations,
@@ -22,10 +38,11 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         loadConfigurations: (locale) => {
-            dispatch(configurations(locale));
+            return dispatch(configurations(locale));
         },
-        loadXML: (urlParams) => {
+        loadXML: (urlParams, contentType) => {
             const {
+                sub_type: subType,
                 year,
                 ...queryParams
             } = urlParams;
@@ -41,10 +58,18 @@ function mapDispatchToProps(dispatch) {
 
                 dispatch(applyFilter(filter));
             } else {
-                dispatch(loadXML());
+                setSubTypeFilter(contentType, dispatch, subType);
             }
         }
     };
 }
 
-export default reduxConnect(mapStateToProps, mapDispatchToProps)(AppContainer);
+const mergeProps = (stateProps, dispatchProps) => ({
+    ...stateProps,
+    ...dispatchProps,
+    loadXML: (urlParams) => {
+        dispatchProps.loadXML(urlParams, stateProps.contentType);
+    }
+});
+
+export default reduxConnect(mapStateToProps, mapDispatchToProps, mergeProps)(AppContainer);
