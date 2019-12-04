@@ -183,7 +183,7 @@ export function buildQueryString(search) {
         ...binning
     };
 
-    const queryString = Object.keys(params).map((key) => `${key}=${key === 'binning-state' ? params[key] : encodeURI(params[key])}`).join('&');
+    const queryString = Object.keys(params).map((key) => `${key}=${key === 'binning-state' || 'products' ? params[key] : encodeURI(params[key])}`).join('&');
 
     return queryString;
 }
