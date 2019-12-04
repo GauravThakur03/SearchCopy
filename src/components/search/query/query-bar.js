@@ -124,25 +124,7 @@ class QueryBar extends Component {
         }
     }
 
-    render() {
-        const {
-            onChange,
-            onClick,
-            onKeyDown,
-            searchByQuery,
-            state: {
-                activeSuggestion,
-                filteredSuggestions,
-                loading,
-                showSuggestions,
-                userInput
-            }
-        } = this;
-
-        const placeHolder = this.props.intl.formatMessage({
-            id: 'SEARCH'
-        });
-
+    displaySuggestion(showSuggestions, filteredSuggestions, activeSuggestion) {
         let suggestionsListComponent, noSuggestions;
 
         if (showSuggestions) {
@@ -156,7 +138,7 @@ class QueryBar extends Component {
                                 <div
                                     className={className}
                                     key={index}
-                                    onClick={onClick}
+                                    onClick={this.onClick}
                                     tabIndex={index}
                                 >
                                     {suggestion}
@@ -173,6 +155,34 @@ class QueryBar extends Component {
                 );
             }
         }
+        return {
+            noSuggestions,
+            suggestionsListComponent
+        };
+    }
+
+    render() {
+        const {
+            onChange,
+            onKeyDown,
+            searchByQuery,
+            state: {
+                activeSuggestion,
+                filteredSuggestions,
+                loading,
+                showSuggestions,
+                userInput
+            }
+        } = this;
+
+        const placeHolder = this.props.intl.formatMessage({
+            id: 'SEARCH'
+        });
+
+        const {
+            noSuggestions,
+            suggestionsListComponent
+        } = this.displaySuggestion(showSuggestions, filteredSuggestions, activeSuggestion);
 
         return (
             <div className='search-bar-component'>
@@ -183,7 +193,7 @@ class QueryBar extends Component {
                             onKeyDown={onKeyDown}
                             placeholder={placeHolder}
                             type='text'
-                            value={userInput}
+                            value={userInput || this.props.query}
                         />
                         {!loading && suggestionsListComponent}
                     </span>
