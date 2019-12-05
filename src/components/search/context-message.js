@@ -15,7 +15,7 @@ class ContextMessage extends Component {
 
         ['year', 'products'].forEach((k) => delete params[k]);
 
-        window.location.href = `/sales/salesmanual/ssi/searchResults.html?${Object.keys(params).map((key) => `${key}=${params[key]}`).join('&')}`;
+        window.location.href = `/sales/salesmanual/searchResults.html?${Object.keys(params).map((key) => `${key}=${params[key]}`).join('&')}`;
     }
 
     render() {
