@@ -121,7 +121,7 @@ export function refactorKeys(binningSet) {
 
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
-    const totalResults = Number(Array.isArray(vce['added-source']) ? vce['added-source'][0]['added-source']['_total-results'] : vce['added-source']['added-source']['_total-results']);
+    const totalResults = Number(Array.isArray(vce['added-source']) ? vce['added-source'][0]['added-source']['added-source']['_total-results'] : vce['added-source']['added-source']['_total-results']);
 
     if (!vce.list) {
         const list = {
@@ -183,7 +183,7 @@ export function buildQueryString(search) {
         ...binning
     };
 
-    const queryString = Object.keys(params).map((key) => `${key}=${key === 'binning-state' ? params[key] : encodeURI(params[key])}`).join('&');
+    const queryString = Object.keys(params).map((key) => `${key}=${key === 'binning-state' || 'products' ? params[key] : encodeURI(params[key])}`).join('&');
 
     return queryString;
 }

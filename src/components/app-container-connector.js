@@ -50,9 +50,10 @@ function mapDispatchToProps(dispatch) {
             dispatch(saveQuery(queryParams));
 
             if (year) {
-                const model = `year==${year.replace(/\D/g, '')}`;
+                const decodeYear = decodeURIComponent(year).replace(/\D/g, '');
+                const model = `year==${decodeYear}`;
                 const filter = {
-                    key: year.replace(/\D/g, ''),
+                    key: decodeYear,
                     value: model
                 };
 

@@ -36,6 +36,18 @@ class QueryBar extends Component {
         };
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.query !== this.props.query) {
+            this.updateQuery();
+        }
+    }
+
+    updateQuery() {
+        this.setState({
+            userInput: this.props.query
+        });
+    }
+
     onEnter(activeSuggestion, filteredSuggestions, e) {
         e.preventDefault();
         this.setState({
@@ -124,25 +136,7 @@ class QueryBar extends Component {
         }
     }
 
-    render() {
-        const {
-            onChange,
-            onClick,
-            onKeyDown,
-            searchByQuery,
-            state: {
-                activeSuggestion,
-                filteredSuggestions,
-                loading,
-                showSuggestions,
-                userInput
-            }
-        } = this;
-
-        const placeHolder = this.props.intl.formatMessage({
-            id: 'SEARCH'
-        });
-
+    displaySuggestion(showSuggestions, filteredSuggestions, activeSuggestion) {
         let suggestionsListComponent, noSuggestions;
 
         if (showSuggestions) {
@@ -156,7 +150,7 @@ class QueryBar extends Component {
                                 <div
                                     className={className}
                                     key={index}
-                                    onClick={onClick}
+                                    onClick={this.onClick}
                                     tabIndex={index}
                                 >
                                     {suggestion}
@@ -173,6 +167,34 @@ class QueryBar extends Component {
                 );
             }
         }
+        return {
+            noSuggestions,
+            suggestionsListComponent
+        };
+    }
+
+    render() {
+        const {
+            onChange,
+            onKeyDown,
+            searchByQuery,
+            state: {
+                activeSuggestion,
+                filteredSuggestions,
+                loading,
+                showSuggestions,
+                userInput
+            }
+        } = this;
+
+        const placeHolder = this.props.intl.formatMessage({
+            id: 'SEARCH'
+        });
+
+        const {
+            noSuggestions,
+            suggestionsListComponent
+        } = this.displaySuggestion(showSuggestions, filteredSuggestions, activeSuggestion);
 
         return (
             <div className='search-bar-component'>
