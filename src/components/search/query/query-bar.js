@@ -36,6 +36,18 @@ class QueryBar extends Component {
         };
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.query !== this.props.query) {
+            this.updateQuery();
+        }
+    }
+
+    updateQuery() {
+        this.setState({
+            userInput: this.props.query
+        });
+    }
+
     onEnter(activeSuggestion, filteredSuggestions, e) {
         e.preventDefault();
         this.setState({
@@ -193,7 +205,7 @@ class QueryBar extends Component {
                             onKeyDown={onKeyDown}
                             placeholder={placeHolder}
                             type='text'
-                            value={userInput || this.props.query}
+                            value={userInput}
                         />
                         {!loading && suggestionsListComponent}
                     </span>
