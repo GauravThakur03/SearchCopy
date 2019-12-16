@@ -12,7 +12,7 @@ const AppliedFilter = (props) => {
     };
 
     const remove = (filter) => () => {
-        props.removeFilter(filter);
+        props.removeFilter(filter, props.query);
     };
 
     return props.appliedFilters.length ? <div className='filter-tags-search-results-component'>

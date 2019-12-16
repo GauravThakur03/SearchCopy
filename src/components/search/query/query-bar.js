@@ -26,7 +26,7 @@ class QueryBar extends Component {
             loading: false,
             showSuggestions: false,
             // What the user has entered
-            userInput: this.props.query
+            userInput: this.props.query.trim()
         };
 
         this.keyStroke = {
@@ -44,7 +44,7 @@ class QueryBar extends Component {
 
     updateQuery() {
         this.setState({
-            userInput: this.props.query
+            userInput: this.props.query.trim()
         });
     }
 

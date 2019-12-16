@@ -11,15 +11,21 @@ class AppContainer extends Component {
         super(props);
 
         this.state = {
-            locale: this.props.query.country_site || 'en_GB'
+            locale: this.props.query.country_site || 'en_NA'
         };
     }
 
     componentDidMount() {
         if (this.state.locale) {
             this.props.loadConfigurations(this.state.locale).then(() => {
-                this.props.loadXML(this.props.query);
+                this.loadSearchCollection();
             });
+        }
+    }
+
+    loadSearchCollection() {
+        if (this.props.query.query) {
+            this.props.loadXML(this.props.query);
         }
     }
 

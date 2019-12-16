@@ -8,7 +8,7 @@ class Filter extends Component {
     }
 
     handleChange = (bin) => () => {
-        this.props.onFilter(bin);
+        this.props.onFilter(bin, this.props.query);
     }
 
     render() {
@@ -43,7 +43,8 @@ class Filter extends Component {
 Filter.propTypes = {
     appliedFilter: PropTypes.object,
     bin: PropTypes.object,
-    onFilter: PropTypes.func
+    onFilter: PropTypes.func,
+    query: PropTypes.string
 };
 
 export default Filter;

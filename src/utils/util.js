@@ -207,7 +207,9 @@ export function getQuery() {
     return location.search.slice(1).split('&').reduce((acc, value) => {
         const kv = value.split('=');
 
-        acc[kv[0]] = kv[1];
+        if (kv[1] && kv[1] !== 'null' && kv[1].trim() !== 'undefined') {
+            acc[kv[0]] = kv[1];
+        }
 
         return acc;
     }, {});
