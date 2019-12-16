@@ -14,6 +14,7 @@ class QueryBar extends Component {
 
     constructor(props) {
         super(props);
+        this.queryForm = React.createRef();
         this.onDown = this.onDown.bind(this);
         this.onEnter = this.onEnter.bind(this);
         this.onUp = this.onUp.bind(this);
@@ -132,6 +133,7 @@ class QueryBar extends Component {
 
     searchByQuery = () => {
         if (this.state.userInput.length) {
+            callDTMSearch(this.queryForm.current, 'modelSearch');
             this.props.changeQuery(this.state.userInput);
         }
     }
@@ -198,7 +200,10 @@ class QueryBar extends Component {
 
         return (
             <div className='search-bar-component'>
-                <form name='search-form'>
+                <form
+                    name='search-form'
+                    ref={this.queryForm}
+                >
                     <span className='twitter-typeahead'>
                         <input
                             onChange={onChange}
