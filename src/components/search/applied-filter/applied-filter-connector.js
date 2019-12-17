@@ -24,9 +24,9 @@ function mapDispatchToProps(dispatch) {
                 dispatch(clearFilter());
             } else {
                 dispatch(applyFilter(filter));
-                if (query) {
-                    dispatch(loadXML());
-                }
+            }
+            if (query) {
+                dispatch(loadXML());
             }
         }
     };

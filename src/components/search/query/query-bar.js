@@ -9,6 +9,7 @@ class QueryBar extends Component {
         changeQuery: PropTypes.func,
         intl: intlShape.isRequired,
         loadSuggestion: PropTypes.func,
+        page: PropTypes.oneOfType([PropTypes.string, PropTypes.boolean]),
         query: PropTypes.string
     };
 
@@ -133,7 +134,9 @@ class QueryBar extends Component {
 
     searchByQuery = () => {
         if (this.state.userInput.length) {
-            callDTMSearch(this.queryForm.current, 'modelSearch');
+            const page = this.props.page ? this.props.page : 'siteSearch';
+
+            callDTMSearch(this.queryForm.current, page);
             this.props.changeQuery(this.state.userInput);
         }
     }

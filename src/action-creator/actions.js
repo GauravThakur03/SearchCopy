@@ -125,7 +125,6 @@ export function clearFilter() {
         dispatch({
             type: CLEAR_FILTERS
         });
-        dispatch(loadXML());
     };
 }
 

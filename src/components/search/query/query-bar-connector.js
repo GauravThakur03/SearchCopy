@@ -5,6 +5,7 @@ import {loadXML, saveQuery, loadSuggestion} from '../../../action-creator/action
 
 function mapStateToProps(state) {
     return {
+        page: state.search.urlParams.page || false,
         query: state.search.urlParams.query || ''
     };
 }
