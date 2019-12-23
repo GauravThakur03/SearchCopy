@@ -209,6 +209,7 @@ class QueryBar extends Component {
                 >
                     <span className='twitter-typeahead'>
                         <input
+                            name={'query'}
                             onChange={onChange}
                             onKeyDown={onKeyDown}
                             placeholder={placeHolder}
