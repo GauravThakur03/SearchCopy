@@ -117,7 +117,6 @@ export function applyFilter({
                 currentPage: 1
             }));
         }
-        dispatch(loadXML());
     };
 }
 
@@ -126,7 +125,6 @@ export function clearFilter() {
         dispatch({
             type: CLEAR_FILTERS
         });
-        dispatch(loadXML());
     };
 }
 

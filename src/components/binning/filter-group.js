@@ -46,6 +46,7 @@ class FilterGroup extends Component {
                                             bin={bin}
                                             key={index}
                                             onFilter={this.props.onFilter}
+                                            query={this.props.query}
                                         />);
                                     })
                                 }
@@ -69,7 +70,8 @@ FilterGroup.propTypes = {
     filters: PropTypes.array,
     moreLess: PropTypes.bool,
     moreLessLimit: PropTypes.string,
-    onFilter: PropTypes.func
+    onFilter: PropTypes.func,
+    query: PropTypes.string
 };
 
 export default FilterGroup;

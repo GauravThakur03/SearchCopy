@@ -163,6 +163,7 @@ export function buildQueryString(search) {
     const binningValues = Object.values(search.binning.appliedFilters);
     const {
         country_site: countrySite,
+        page,
         ...urlParams
     } = search.urlParams;
 
@@ -175,7 +176,7 @@ export function buildQueryString(search) {
     }
 
     const binning = {
-        'binning-state': buildQuery(binningValues),
+        'binning-state': buildQuery(binningValues, page),
         'content-type': 'text/xml'
     };
     const params = {
@@ -207,7 +208,9 @@ export function getQuery() {
     return location.search.slice(1).split('&').reduce((acc, value) => {
         const kv = value.split('=');
 
-        acc[kv[0]] = kv[1];
+        if (kv[1] && kv[1] !== 'null' && kv[1].trim() !== 'undefined') {
+            acc[kv[0]] = kv[1];
+        }
 
         return acc;
     }, {});

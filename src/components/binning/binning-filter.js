@@ -39,12 +39,14 @@ const BinningFilter = (props) => {
                             category={'PRODUCT_CATEGORY'}
                             filters={props.binning.productCategory}
                             onFilter={props.onFilter}
+                            query={props.query}
                         />
                         <FilterGroup
                             appliedFilter={props.appliedFilter}
                             category={'CONTENT_TYPE'}
                             filters={props.binning.contentType}
                             onFilter={props.onFilter}
+                            query={props.query}
                         />
                         <FilterGroup
                             appliedFilter={props.appliedFilter}
@@ -53,6 +55,7 @@ const BinningFilter = (props) => {
                             moreLess={true}
                             moreLessLimit='4'
                             onFilter={props.onFilter}
+                            query={props.query}
                         />
                     </div>
                 </div>
@@ -65,6 +68,7 @@ BinningFilter.propTypes = {
     appliedFilter: PropTypes.object,
     binning: PropTypes.object,
     onFilter: PropTypes.func,
+    query: PropTypes.string,
     totalResults: PropTypes.number
 };
 

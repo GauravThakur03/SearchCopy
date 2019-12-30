@@ -9,11 +9,13 @@ class QueryBar extends Component {
         changeQuery: PropTypes.func,
         intl: intlShape.isRequired,
         loadSuggestion: PropTypes.func,
+        page: PropTypes.oneOfType([PropTypes.string, PropTypes.boolean]),
         query: PropTypes.string
     };
 
     constructor(props) {
         super(props);
+        this.queryForm = React.createRef();
         this.onDown = this.onDown.bind(this);
         this.onEnter = this.onEnter.bind(this);
         this.onUp = this.onUp.bind(this);
@@ -26,7 +28,7 @@ class QueryBar extends Component {
             loading: false,
             showSuggestions: false,
             // What the user has entered
-            userInput: this.props.query
+            userInput: this.props.query.trim()
         };
 
         this.keyStroke = {
@@ -44,7 +46,7 @@ class QueryBar extends Component {
 
     updateQuery() {
         this.setState({
-            userInput: this.props.query
+            userInput: this.props.query.trim()
         });
     }
 
@@ -132,6 +134,9 @@ class QueryBar extends Component {
 
     searchByQuery = () => {
         if (this.state.userInput.length) {
+            const page = this.props.page ? this.props.page : 'siteSearch';
+
+            callDTMSearch(this.queryForm.current, page);
             this.props.changeQuery(this.state.userInput);
         }
     }
@@ -198,9 +203,13 @@ class QueryBar extends Component {
 
         return (
             <div className='search-bar-component'>
-                <form name='search-form'>
+                <form
+                    name='search-form'
+                    ref={this.queryForm}
+                >
                     <span className='twitter-typeahead'>
                         <input
+                            name={'query'}
                             onChange={onChange}
                             onKeyDown={onKeyDown}
                             placeholder={placeHolder}

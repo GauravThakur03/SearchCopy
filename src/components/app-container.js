@@ -11,15 +11,38 @@ class AppContainer extends Component {
         super(props);
 
         this.state = {
-            locale: this.props.query.country_site || 'en_GB'
+            locale: this.props.query.country_site || 'en_NA'
         };
     }
 
     componentDidMount() {
         if (this.state.locale) {
+            this.loadScipts();
             this.props.loadConfigurations(this.state.locale).then(() => {
-                this.props.loadXML(this.props.query);
+                this.loadSearchCollection();
             });
+        }
+    }
+
+    loadScipts() {
+        const topAnalytics = document.createElement('script');
+        const bottomAnalytics = document.createElement('script');
+
+        const topUrl = `/sales/salesmanual/ssi/NA/analytics/top_analytics_${this.state.locale}.js`;
+        const bottomUrl = `/sales/salesmanual/ssi/NA/analytics/bottom_analytics_${this.state.locale}.js`;
+
+        topAnalytics.setAttribute('src', topUrl);
+        topAnalytics.setAttribute('type', 'text/javascript');
+        document.head.appendChild(topAnalytics);
+
+        bottomAnalytics.setAttribute('src', bottomUrl);
+        bottomAnalytics.setAttribute('type', 'text/javascript');
+        document.body.appendChild(bottomAnalytics);
+    }
+
+    loadSearchCollection() {
+        if (this.props.query.query) {
+            this.props.loadXML(this.props.query);
         }
     }
 

@@ -20,8 +20,29 @@ function setSubTypeFilter(contentType, dispatch, subType) {
         };
 
         dispatch(applyFilter(filter));
+    }
+}
+
+function processQuery(dispatch, contentType) {
+    const {
+        sub_type: subType,
+        year,
+        ...queryParams
+    } = query;
+
+    dispatch(saveQuery(queryParams));
+
+    if (year) {
+        const decodeYear = decodeURIComponent(year).replace(/\D/g, '');
+        const model = `year==${decodeYear}`;
+        const filter = {
+            key: decodeYear,
+            value: model
+        };
+
+        dispatch(applyFilter(filter));
     } else {
-        dispatch(loadXML());
+        setSubTypeFilter(contentType, dispatch, subType);
     }
 }
 
@@ -37,30 +58,12 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        loadConfigurations: (locale) => {
+        loadConfigurations: (locale, contentType) => {
+            processQuery(dispatch, contentType);
             return dispatch(configurations(locale));
         },
-        loadXML: (urlParams, contentType) => {
-            const {
-                sub_type: subType,
-                year,
-                ...queryParams
-            } = urlParams;
-
-            dispatch(saveQuery(queryParams));
-
-            if (year) {
-                const decodeYear = decodeURIComponent(year).replace(/\D/g, '');
-                const model = `year==${decodeYear}`;
-                const filter = {
-                    key: decodeYear,
-                    value: model
-                };
-
-                dispatch(applyFilter(filter));
-            } else {
-                setSubTypeFilter(contentType, dispatch, subType);
-            }
+        loadXML: () => {
+            dispatch(loadXML());
         }
     };
 }
@@ -68,8 +71,8 @@ function mapDispatchToProps(dispatch) {
 const mergeProps = (stateProps, dispatchProps) => ({
     ...stateProps,
     ...dispatchProps,
-    loadXML: (urlParams) => {
-        dispatchProps.loadXML(urlParams, stateProps.contentType);
+    loadConfigurations: (locale) => {
+        return dispatchProps.loadConfigurations(locale, stateProps.contentType);
     }
 });
 

@@ -24,6 +24,7 @@ class Header extends Component {
                     content: html
                 });
                 onHeaderLoad();
+                this.loadAutoComplete();
             });
         }
     }
@@ -33,10 +34,21 @@ class Header extends Component {
             const locale = this.props.locale.split('_');
             const url = locale[1] === 'NA' ? `${headerURL}/${locale[1]}/header_onepage.html` : `${headerURL}/${locale[1]}/${locale[0]}/header_onepage.html`;
 
-            this.props.loadHeader(url).then((html) => this.setState({
-                content: html
-            }));
+            this.props.loadHeader(url).then((html) => {
+                this.setState({
+                    content: html
+                });
+                this.loadAutoComplete();
+            });
         }
+    }
+
+    loadAutoComplete() {
+        const autoCompleteBuild = document.createElement('script');
+
+        autoCompleteBuild.setAttribute('src', '/sales/salesmanual/ssi/NA/assets/js/build.js');
+        autoCompleteBuild.setAttribute('type', 'text/javascript');
+        document.body.appendChild(autoCompleteBuild);
     }
 
     render() {
