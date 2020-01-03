@@ -1,6 +1,6 @@
 import {connect as reduxConnect} from 'react-redux';
 
-import {clearFilter} from '../action-creator/actions';
+import {clearFilter, loadXML} from '../action-creator/actions';
 
 import PinWrapper from './pin-wrapper';
 
@@ -14,6 +14,7 @@ function mapDispatchToProps(dispatch) {
     return {
         clearFilter: () => {
             dispatch(clearFilter());
+            dispatch(loadXML());
         }
     };
 }
