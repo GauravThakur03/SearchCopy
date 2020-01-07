@@ -2,9 +2,7 @@ import {
     SET_PARAMS
 } from '../../actions';
 
-const defaultState = {
-    'v:project': 'deere-vsn-project'
-};
+const defaultState = {};
 
 function setSelection(state, action) {
     return action.removePagination ? action.params : {
