@@ -19,8 +19,8 @@ class AppContainer extends Component {
         if (this.state.locale) {
             this.loadScipts();
             this.props.loadConfigurations(this.state.locale).then(() => {
-                this.loadSearchCollection();
                 this.props.processQuery();
+                this.loadSearchCollection();
             });
         }
     }
