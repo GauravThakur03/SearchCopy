@@ -3914,8 +3914,6 @@ html {
 }
 
 .ns-sr-icons {
-    display: flex;
-    flex-direction: row-reverse;
     user-select: none;
     z-index: 1;
     padding-left: 15px;
@@ -3938,7 +3936,7 @@ html {
 }
 @media (min-width:992px), print {
     .preview-icon {
-        margin-right: 15px
+        margin-right: 39px;
     }
 }
 
