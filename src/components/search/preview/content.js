@@ -12,10 +12,24 @@ export default class Content extends React.Component {
         this.iframeLoaded = this.iframeLoaded.bind(this);
     }
 
-    remove(node, footerNode) {
-        if (node && footerNode) {
-            node.parentNode.removeChild(node);
+    removeHeaderAndFooter(headerNode, footerNode) {
+        if (headerNode) {
+            headerNode.parentNode.removeChild(headerNode);
+        }
+        if (footerNode) {
             footerNode.parentNode.removeChild(footerNode);
+        }
+    }
+
+    isTitleNode(doc) {
+        return doc.getElementById('title-field-prep-equipment') || doc.getElementById('title-product-launch-center') || doc.getElementsByClassName('section-title ')[0];
+    }
+
+    removeTitle(doc) {
+        const titleNode = this.isTitleNode(doc);
+
+        if (titleNode) {
+            titleNode.parentNode.removeChild(titleNode);
         }
     }
 
@@ -23,10 +37,11 @@ export default class Content extends React.Component {
         const doc = event.target.contentDocument;
 
         if (doc) {
-            const node = doc.getElementsByClassName('featured-head')[0] || doc.getElementById('headerSection');
+            const headerNode = doc.getElementsByClassName('featured-head')[0] || doc.getElementById('headerSection');
             const footerNode = doc.getElementsByTagName('footer')[0];
 
-            this.remove(node, footerNode);
+            this.removeHeaderAndFooter(headerNode, footerNode);
+            this.removeTitle(doc);
         }
 
         this.setState({
