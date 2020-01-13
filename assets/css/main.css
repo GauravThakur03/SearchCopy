@@ -3376,6 +3376,9 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
         max-height: calc(100vh - 81px);
         overflow-y: auto!important
     }
+    .nav-container .nav-content .nav-tier3:not(.active) {
+        display: none;
+    }
     .nav-container .nav-content .nav-tier2 li {
         margin-bottom: 10px
     }
