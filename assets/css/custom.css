@@ -3214,6 +3214,9 @@ html {
 .filter-bar-search-results-component .filter-bar-mobile .filter-row .row>div .button6>span{
     align-self: center;
 }
+.filter-bar-search-results-component .filter-bar-mobile .filter-row-1{
+    width:100%;
+}
 .filter-bar-search-results-component .filter-bar-mobile .filter-row-2, .filter-bar-search-results-component .filter-bar-mobile .filter-row-3 {
     position: absolute;
     width: 100%;
