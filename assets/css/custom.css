@@ -3186,9 +3186,11 @@ html {
 .filter-bar-search-results-component {
     color: #fff;
     z-index: 100;
-    overflow: hidden;
     position: relative;
     transition: margin-top .5s ease-in-out
+}
+.filter-bar-mobile>.relative{
+    display: flex;
 }
 
 @media screen and (min-width:992px) {
@@ -3198,9 +3200,23 @@ html {
 }
 
 .filter-bar-search-results-component .filter-bar-mobile .filter-row {
-    padding: 0 20px
+    padding: 0 20px;
 }
-
+.filter-bar-search-results-component .filter-bar-mobile .filter-row .row{
+    display: flex;
+}
+.filter-bar-search-results-component .filter-bar-mobile .filter-row .row>div,
+.filter-bar-search-results-component .filter-bar-mobile .filter-row .row>div>div, 
+.filter-bar-search-results-component .filter-bar-mobile .filter-row .row>div .button6{
+    display: flex;
+    align-self: stretch;
+}
+.filter-bar-search-results-component .filter-bar-mobile .filter-row .row>div .button6>span{
+    align-self: center;
+}
+.filter-bar-search-results-component .filter-bar-mobile .filter-row-1{
+    width:100%;
+}
 .filter-bar-search-results-component .filter-bar-mobile .filter-row-2, .filter-bar-search-results-component .filter-bar-mobile .filter-row-3 {
     position: absolute;
     width: 100%;
