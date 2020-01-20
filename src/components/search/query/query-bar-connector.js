@@ -15,7 +15,7 @@ function mapDispatchToProps(dispatch) {
         changeQuery: (query) => {
             dispatch(saveQuery({
                 query
-            }));
+            }, true));
             dispatch(loadXML());
         },
         loadSuggestion: (searchTerm) => {
