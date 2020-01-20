@@ -58,12 +58,14 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        loadConfigurations: (locale, contentType) => {
-            processQuery(dispatch, contentType);
+        loadConfigurations: (locale) => {
             return dispatch(configurations(locale));
         },
         loadXML: () => {
             dispatch(loadXML());
+        },
+        processQuery: (contentType) => {
+            processQuery(dispatch, contentType);
         }
     };
 }
@@ -72,7 +74,10 @@ const mergeProps = (stateProps, dispatchProps) => ({
     ...stateProps,
     ...dispatchProps,
     loadConfigurations: (locale) => {
-        return dispatchProps.loadConfigurations(locale, stateProps.contentType);
+        return dispatchProps.loadConfigurations(locale);
+    },
+    processQuery: () => {
+        dispatchProps.processQuery(stateProps.contentType);
     }
 });
 

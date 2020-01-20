@@ -2,13 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 
+/* eslint-disable react/no-danger */
 const ResultAdditionalInfo = ({list}) => {
     return (
         <div className='new-search-result-additional-info'>
-            <span>
-                <FormattedMessage id={'MODEL_YEAR'}/>{': '}
-                {list.year}
-            </span>
+            <FormattedMessage id={'MODEL_YEAR'}/>{': '}
+            <span
+                dangerouslySetInnerHTML={
+                    {
+                        __html: list.year
+                    }
+                }
+            />
         </div>
     );
 };

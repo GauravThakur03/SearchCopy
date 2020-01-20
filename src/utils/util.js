@@ -176,8 +176,7 @@ export function buildQueryString(search) {
     }
 
     const binning = {
-        'binning-state': buildQuery(binningValues, page),
-        'content-type': 'text/xml'
+        'binning-state': buildQuery(binningValues, page)
     };
     const params = {
         ...urlParams,

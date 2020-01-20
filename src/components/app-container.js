@@ -19,6 +19,7 @@ class AppContainer extends Component {
         if (this.state.locale) {
             this.loadScipts();
             this.props.loadConfigurations(this.state.locale).then(() => {
+                this.props.processQuery();
                 this.loadSearchCollection();
             });
         }
@@ -73,6 +74,7 @@ AppContainer.propTypes = {
     loadXML: PropTypes.func,
     locale: PropTypes.string,
     messages: PropTypes.object,
+    processQuery: PropTypes.func,
     query: PropTypes.object
 };
 

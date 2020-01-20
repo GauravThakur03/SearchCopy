@@ -28,7 +28,7 @@ class QueryBar extends Component {
             loading: false,
             showSuggestions: false,
             // What the user has entered
-            userInput: this.props.query.trim()
+            userInput: decodeURIComponent(this.props.query.trim())
         };
 
         this.keyStroke = {
@@ -46,7 +46,7 @@ class QueryBar extends Component {
 
     updateQuery() {
         this.setState({
-            userInput: this.props.query.trim()
+            userInput: decodeURIComponent(this.props.query.trim())
         });
     }
 
@@ -137,7 +137,7 @@ class QueryBar extends Component {
             const page = this.props.page ? this.props.page : 'siteSearch';
 
             callDTMSearch(this.queryForm.current, page);
-            this.props.changeQuery(this.state.userInput);
+            this.props.changeQuery(encodeURIComponent(this.state.userInput));
         }
     }
 

@@ -18,7 +18,7 @@ class Pagination extends Component {
         const vState = `${this.root}${text}`;
         const pagination = {
             currentPage,
-            'v:state': vState
+            'v:state': encodeURI(vState)
         };
 
         this.props.onPageChange(pagination);
