@@ -119,9 +119,21 @@ export function refactorKeys(binningSet) {
     return recursiveKeyModifier(binningSet);
 }
 
+export function getQuery() {
+    return location.search.slice(1).split('&').reduce((acc, value) => {
+        const kv = value.split('=');
+
+        if (kv[1] && kv[1] !== 'null' && kv[1].trim() !== 'undefined') {
+            acc[kv[0]] = kv[1];
+        }
+
+        return acc;
+    }, {});
+}
+
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
-    const totalResults = Number(Array.isArray(vce['added-source']) ? vce['added-source'][0]['added-source']['added-source']['_total-results'] : vce['added-source']['added-source']['_total-results']);
+    const totalResults = Number(vce.binning['binning-set'].find((bin) => bin._label === 'country_site').bin.find((country) => country._label === getQuery().country_site)._ndocs);
 
     if (!vce.list) {
         const list = {
@@ -203,24 +215,14 @@ export function generateSettings(settings) {
     }, {});
 }
 
-export function getQuery() {
-    return location.search.slice(1).split('&').reduce((acc, value) => {
-        const kv = value.split('=');
-
-        if (kv[1] && kv[1] !== 'null' && kv[1].trim() !== 'undefined') {
-            acc[kv[0]] = kv[1];
-        }
-
-        return acc;
-    }, {});
-}
-
 export function onHeaderLoad() {
+    const screenWidth = 1024;
+
     if ($('#headerSection').length > 0) {
         APP.global();
         splashMsgInit();
         topNavigation();
-        if ($(window).width() > 1024) {
+        if ($(window).width() > screenWidth) {
             headerAlignment();
         } else {
             headerAlignmentMobile();
