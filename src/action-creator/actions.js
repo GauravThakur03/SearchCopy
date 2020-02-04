@@ -69,17 +69,43 @@ export function loadHeaderAndFooterByLocale(url) {
     };
 }
 
-export function saveQuery(params) {
-    return {
-        params,
-        type: SET_PARAMS
-    };
-}
-
 export function updatePagination(navigation) {
     return {
         navigation,
         type: SET_NAVIGATION
+    };
+}
+
+export function saveQuery(params, removePagination) {
+    return (dispatch, getState) => {
+        const urlParams = getState().search.urlParams;
+
+        if (removePagination) {
+            const savedParams = Object.keys(urlParams).reduce((object, param) => {
+                if (param !== 'v:state') {
+                    object[param] = urlParams[param];
+                }
+                return object;
+            }, {});
+
+            const parameters = {
+                ...savedParams,
+                ...params
+            };
+
+            dispatch({
+                params: parameters,
+                removePagination: true,
+                type: SET_PARAMS
+            });
+            dispatch(updatePagination({
+                currentPage: 1
+            }));
+        }
+        dispatch({
+            params,
+            type: SET_PARAMS
+        });
     };
 }
 
