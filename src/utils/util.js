@@ -133,7 +133,7 @@ export function getQuery() {
 
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
-    const totalResults = Number(vce.binning['binning-set'].find((bin) => bin._label === 'country_site').bin.find((country) => country._label === getQuery().country_site)._ndocs);
+    const totalResults = vce.list ? Number(vce.binning['binning-set'].find((bin) => bin._label === 'country_site').bin.find((country) => country._label === getQuery().country_site)._ndocs) : 0;
 
     if (!vce.list) {
         const list = {
