@@ -131,9 +131,16 @@ export function getQuery() {
     }, {});
 }
 
+function getTotalResults(binning) {
+    const bin = binning['binning-set'].find((binningSet) => binningSet._label === 'country_site').bin;
+    const total = Array.isArray(bin) ? bin.find((country) => country._label === getQuery().country_site)._ndocs : bin._ndocs;
+
+    return Number(total);
+}
+
 export function sendResponse(xml) {
     const {vce} = xml2Json(xml);
-    const totalResults = vce.list ? Number(vce.binning['binning-set'].find((bin) => bin._label === 'country_site').bin.find((country) => country._label === getQuery().country_site)._ndocs) : 0;
+    const totalResults = vce.list ? getTotalResults(vce.binning) : 0;
 
     if (!vce.list) {
         const list = {
