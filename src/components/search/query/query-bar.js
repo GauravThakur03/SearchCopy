@@ -134,6 +134,11 @@ class QueryBar extends Component {
 
     searchByQuery = () => {
         if (this.state.userInput.length) {
+            this.setState({
+                activeSuggestion: 0,
+                filteredSuggestions: [],
+                showSuggestions: false
+            });
             const page = this.props.page ? this.props.page : 'siteSearch';
 
             callDTMSearch(this.queryForm.current, page);
