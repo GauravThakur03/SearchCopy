@@ -4,7 +4,7 @@ import {sendResponse, xml2Json} from '../utils/util';
 import {searchSettingXmlURL, autoSuggestionsURL} from '../utils/config';
 
 export function loadSearch(query, url) {
-    const endPoint = `${url}${query}`;
+    const endPoint = `${url}?${query}`;
 
     return fetch(endPoint)
         .then((response) => {
