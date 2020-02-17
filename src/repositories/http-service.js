@@ -1,10 +1,10 @@
 import 'isomorphic-fetch';
 
 import {sendResponse, xml2Json} from '../utils/util';
-import {searchResultsXmlURL, searchSettingXmlURL, autoSuggestionsURL} from '../utils/config';
+import {searchSettingXmlURL, autoSuggestionsURL} from '../utils/config';
 
-export function loadSearch(query) {
-    const endPoint = `${searchResultsXmlURL}${query}`;
+export function loadSearch(query, url) {
+    const endPoint = `${url}?${query}`;
 
     return fetch(endPoint)
         .then((response) => {

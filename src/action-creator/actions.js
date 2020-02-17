@@ -23,7 +23,7 @@ export function loadXML() {
             type: SET_LOADER
         });
 
-        return loadSearch(query)
+        return loadSearch(query, state.settings.searchBaseUrl)
             .then((data) => {
                 const navigation = {
                     perPage: data.list.per,

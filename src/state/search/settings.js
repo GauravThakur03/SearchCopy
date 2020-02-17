@@ -6,6 +6,7 @@ const Settings = t.struct({
     displayImages: t.String,
     modelYear: t.list(Item),
     productCategory: t.list(Item),
+    searchBaseUrl: t.String,
     translations: t.dict(t.String, t.String)
 }, 'Settings');
 
@@ -15,6 +16,7 @@ export function defaultState() {
         displayImages: 'false',
         modelYear: [],
         productCategory: [],
+        searchBaseUrl: '',
         translations: {}
     };
 }
