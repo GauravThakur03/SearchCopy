@@ -539,12 +539,6 @@ blockquote p {
     }
 }
 
-@media screen and (max-width: 991px) {
-  .template-panel.main-content {
-     overflow: auto;
-  }
-}
-
 @media (min-width:768px), print {
     h1 {
         font-size: 45px
