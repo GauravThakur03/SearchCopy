@@ -21,7 +21,7 @@ class QueryBar extends Component {
         this.onUp = this.onUp.bind(this);
         this.state = {
             // The active selection's index
-            activeSuggestion: 0,
+            activeSuggestion: -1,
             // The suggestions that match the user's input
             filteredSuggestions: [],
             // Whether or not the suggestion list is shown
@@ -53,7 +53,7 @@ class QueryBar extends Component {
     onEnter(activeSuggestion, filteredSuggestions, e) {
         e.preventDefault();
         this.setState({
-            activeSuggestion: 0,
+            activeSuggestion: -1,
             showSuggestions: false,
             userInput: filteredSuggestions[activeSuggestion] || this.state.userInput
         }, this.searchByQuery);
@@ -66,7 +66,7 @@ class QueryBar extends Component {
         const list = document.getElementsByClassName('suggestions')[0];
         const SCROLL_OFFSET = 42.6665;
 
-        list.scrollTop = list.scrollTop - SCROLL_OFFSET;
+        //list.scrollTop = list.scrollTop - SCROLL_OFFSET;
         this.setState({
             activeSuggestion: activeSuggestion - 1
         });
@@ -80,7 +80,7 @@ class QueryBar extends Component {
         const targetLi = document.getElementsByClassName('suggestion-active')[0];
         const SCROLL_OFFSET = 43;
 
-        list.scrollTop = targetLi.offsetTop - SCROLL_OFFSET;
+        //list.scrollTop = targetLi.offsetTop - SCROLL_OFFSET;
         this.setState({
             activeSuggestion: activeSuggestion + 1
         });
@@ -90,7 +90,7 @@ class QueryBar extends Component {
         const userInput = e.currentTarget.value;
 
         this.setState({
-            activeSuggestion: 0,
+            activeSuggestion: -1,
             loading: true,
             showSuggestions: userInput.length >= NUMBER_3,
             userInput: e.currentTarget.value
@@ -113,7 +113,7 @@ class QueryBar extends Component {
 
     onClick = (e) => {
         this.setState({
-            activeSuggestion: 0,
+            activeSuggestion: -1,
             filteredSuggestions: [],
             showSuggestions: false,
             userInput: e.currentTarget.innerText
@@ -135,13 +135,13 @@ class QueryBar extends Component {
     searchByQuery = () => {
         if (this.state.userInput.length) {
             this.setState({
-                activeSuggestion: 0,
+                activeSuggestion: -1,
                 filteredSuggestions: [],
                 showSuggestions: false
             });
             const page = this.props.page ? this.props.page : 'siteSearch';
 
-            callDTMSearch(this.queryForm.current, page);
+            //callDTMSearch(this.queryForm.current, page);
             this.props.changeQuery(encodeURIComponent(this.state.userInput));
         }
     }

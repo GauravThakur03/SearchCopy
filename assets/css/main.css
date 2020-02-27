@@ -539,6 +539,12 @@ blockquote p {
     }
 }
 
+@media screen and (max-width: 991px) {
+  .template-panel.main-content {
+     overflow: auto;
+  }
+}
+
 @media (min-width:768px), print {
     h1 {
         font-size: 45px
@@ -3539,7 +3545,6 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 
 .search-results-listing-template .template-panel {
     transition: .5s ease-in-out;
-    overflow-y: auto
 }
 
 .search-results-listing-template .template-panel.main-content .title-main {
