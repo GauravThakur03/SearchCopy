@@ -161,7 +161,7 @@ class QueryBar extends Component {
             });
             const page = this.props.page ? this.props.page : 'siteSearch';
 
-            //callDTMSearch(this.queryForm.current, page);
+            callDTMSearch(this.queryForm.current, page);
             this.props.changeQuery(encodeURIComponent(this.state.userInput));
         }
     }
