@@ -17,6 +17,9 @@ class QueryBar extends Component {
         super(props);
         this.queryForm = React.createRef();
         this.onDown = this.onDown.bind(this);
+        this.setWrapperRef = this.setWrapperRef.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+
         this.onEnter = this.onEnter.bind(this);
         this.onUp = this.onUp.bind(this);
         this.state = {
@@ -38,9 +41,33 @@ class QueryBar extends Component {
         };
     }
 
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+    }
+
     componentDidUpdate(prevProps) {
         if (prevProps.query !== this.props.query) {
             this.updateQuery();
+        }
+    }
+
+    setWrapperRef(node) {
+        this.wrapperRef = node;
+    }
+
+  
+    handleClickOutside(event) {
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target) && this.state.userInput !== this.props.query) {
+            this.setState({
+                activeSuggestion: -1,
+                filteredSuggestions: [],
+                showSuggestions: false,
+                userInput: this.props.query
+            });
         }
     }
 
@@ -134,7 +161,7 @@ class QueryBar extends Component {
             });
             const page = this.props.page ? this.props.page : 'siteSearch';
 
-            callDTMSearch(this.queryForm.current, page);
+            //callDTMSearch(this.queryForm.current, page);
             this.props.changeQuery(encodeURIComponent(this.state.userInput));
         }
     }
@@ -200,7 +227,7 @@ class QueryBar extends Component {
         } = this.displaySuggestion(showSuggestions, filteredSuggestions, activeSuggestion);
 
         return (
-            <div className='search-bar-component'>
+            <div className='search-bar-component' ref={this.setWrapperRef}>
                 <form
                     name='search-form'
                     ref={this.queryForm}
