@@ -45,21 +45,20 @@ class QueryBar extends Component {
         document.addEventListener('mousedown', this.handleClickOutside);
     }
 
-    componentWillUnmount() {
-        document.removeEventListener('mousedown', this.handleClickOutside);
-    }
-
     componentDidUpdate(prevProps) {
         if (prevProps.query !== this.props.query) {
             this.updateQuery();
         }
     }
 
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+    }
+
     setWrapperRef(node) {
         this.wrapperRef = node;
     }
 
-  
     handleClickOutside(event) {
         if (this.wrapperRef && !this.wrapperRef.contains(event.target) && this.state.userInput !== this.props.query) {
             this.setState({
@@ -227,7 +226,10 @@ class QueryBar extends Component {
         } = this.displaySuggestion(showSuggestions, filteredSuggestions, activeSuggestion);
 
         return (
-            <div className='search-bar-component' ref={this.setWrapperRef}>
+            <div
+                className='search-bar-component'
+                ref={this.setWrapperRef}
+            >
                 <form
                     name='search-form'
                     ref={this.queryForm}
