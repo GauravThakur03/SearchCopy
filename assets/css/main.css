@@ -3871,4 +3871,7 @@ html.lock-scroll, html.lock-scroll body {
         height: 100%;
         overflow: hidden
     }
+    .template-panel.left-rail {
+        overflow: auto;
+    }
 }
