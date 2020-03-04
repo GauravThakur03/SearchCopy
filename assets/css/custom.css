@@ -3415,6 +3415,16 @@ html {
     color: #fdda01
 }
 
+.filter-bar-search-results-component .filter-bar-mobile .filter-row-2 .filter-col-2 .clear-filter-link {
+    margin: auto;
+    text-decoration: underline;
+}
+
+.filter-bar-search-results-component .filter-bar-mobile .filter-row-2 .filter-col-1 {
+    padding-right: 25px;
+    padding-left: 10px;
+}
+
 .filter-bar-search-results-component .filter-bar-desktop {
     display: none
 }
