@@ -32,7 +32,7 @@ const PinWrapper = (props) => {
                         </div>
                         <div className='filter-row filter-row-2'>
                             <div className='row'>
-                                <div className='col-xs-14 filter-col-1'>
+                                <div className='filter-col-1'>
                                     <div className='left-btn'>
                                         <a
                                             className='button6 btn-show-results'
@@ -42,10 +42,10 @@ const PinWrapper = (props) => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className='col-xs-10 filter-col-2'>
+                                <div className='filter-col-2'>
                                     <div className='right-btn'>
                                         <a
-                                            className='button6 nsw-btn'
+                                            className='clear-filter-link'
                                             onClick={props.clearFilter}
                                         >
                                             <FormattedMessage id={'CLEAR_FILTERS'}/>
