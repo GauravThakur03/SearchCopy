@@ -65,7 +65,7 @@ class QueryBar extends Component {
                 activeSuggestion: -1,
                 filteredSuggestions: [],
                 showSuggestions: false,
-                userInput: this.props.query
+                userInput: decodeURIComponent(this.props.query.trim())
             });
         }
     }
@@ -135,7 +135,7 @@ class QueryBar extends Component {
             activeSuggestion: -1,
             filteredSuggestions: [],
             showSuggestions: false,
-            userInput: e.currentTarget.innerText
+            userInput: decodeURIComponent(e.currentTarget.innerText.trim())
         });
     };
 
