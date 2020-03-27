@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {injectIntl, intlShape} from 'react-intl';
 
+const showBaseCodes = (label, baseCode) => {
+    return baseCode ? `${label}: ${baseCode.join(',')}` : '';
+};
+
 /* eslint-disable react/no-danger */
 const ResultDiscription = ({
     intl,
@@ -10,7 +14,7 @@ const ResultDiscription = ({
     const baseCodes = intl.formatMessage({
         id: 'BASECODES'
     });
-    const value = list.baseCodes ? `${baseCodes}: ${list.baseCodes.join(',')}` : list.snippet;
+    const value = list.subType === 'Model' ? showBaseCodes(baseCodes, list.baseCodes) : list.snippet;
 
     return (
         <p
