@@ -69,7 +69,7 @@ function getAccumulator(item, accumulator) {
 export function generateSearchList(document) {
     const list = Array.isArray(document) ? document : [document];
     const results = [];
-    const match = ['title', 'year', 'snippet', 'url', 'description', 'country_site', 'base_codes', 'search_image'];
+    const match = ['title', 'year', 'snippet', 'url', 'description', 'country_site', 'base_codes', 'search_image','sub_type'];
 
     list.map((doc) => {
         const content = doc.content.reduce((accumulator, item) => {
