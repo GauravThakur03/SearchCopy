@@ -6,15 +6,18 @@ import PinWrapper from './pin-wrapper';
 
 function mapStateToProps(state) {
     return {
+        query: state.search.urlParams.query,
         totalResults: state.search.pagination.navigation.totalRecords
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        clearFilter: () => {
+        clearFilter: (query) => {
             dispatch(clearFilter());
-            dispatch(loadXML());
+            if (query) {
+                dispatch(loadXML());
+            }
         }
     };
 }
