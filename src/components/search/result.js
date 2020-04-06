@@ -31,6 +31,7 @@ class Result extends Component {
                 <ListContainer
                     list={this.props.item}
                     onPreview={this.onPreview}
+                    query={this.props.query}
                     shouldPreview={this.state.active}
                     shouldShowImage={this.props.shouldShowImage}
                 />
@@ -46,6 +47,7 @@ class Result extends Component {
 
 Result.propTypes = {
     item: PropTypes.object,
+    query: PropTypes.string,
     shouldShowImage: PropTypes.bool
 };
 

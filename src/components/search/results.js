@@ -13,6 +13,7 @@ const Results = (props) => {
                             <Result
                                 item={result}
                                 key={key}
+                                query={props.query}
                                 shouldShowImage={props.displayImages}
                             />
                         );
@@ -25,6 +26,7 @@ const Results = (props) => {
 
 Results.propTypes = {
     displayImages: PropTypes.bool,
+    query: PropTypes.string,
     results: PropTypes.array
 };
 
