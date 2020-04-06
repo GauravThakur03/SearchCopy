@@ -1282,9 +1282,12 @@ th.sub-heading {
         font-size: 14px
     }
     .banner-with-search.hero .search-container input#search, .search-container input#search_middle {
-        width: calc(100% + 10px);
+        width: 70%;
         font-size: 14px;
         height: 35px
+    }
+    .banner-with-search.hero .search-container .react-search-comp-holder input#search, .search-container .react-search-comp-holder input#search_middle {
+        width: calc(100% + 10px)
     }
     .banner-with-filter .drop-down-white-bg.dropdown-input {
         height: 35px;
@@ -1309,8 +1312,12 @@ th.sub-heading {
 
 @media screen and (min-width:426px) and (max-width:660px) {
     .banner-with-search.hero .search-container input#search, .search-container input#search_middle {
+        width:70%;
+    }
+    .banner-with-search.hero .search-container .react-search-comp-holder input#search, .search-container .react-search-comp-holder input#search_middle {
         width: calc(100% + 10px)
     }
+    
     .banner-filter-search-wrapper {
         top: 30%
     }
@@ -3421,7 +3428,7 @@ html {
 }
 
 .filter-bar-search-results-component .filter-bar-mobile .filter-row-2 .filter-col-1 {
-    padding-right: 25px;
+    padding-right: 16px;
     padding-left: 10px;
 }
 
@@ -3857,6 +3864,11 @@ html {
     margin-top: 5px;
     cursor: pointer;
     display: none
+}
+
+.filter-tags-search-results-component .clear-filter-desktop {
+    text-decoration: underline;
+    padding: 16px;
 }
 
 .filter-search-results-component .filters .clear-filters:after {

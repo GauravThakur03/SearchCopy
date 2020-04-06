@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 
 const PinWrapper = (props) => {
+    const clear = () => {
+        props.clearFilter(props.query);
+    };
+
     return (
         <div
             className='pin-wrapper'
@@ -46,7 +50,7 @@ const PinWrapper = (props) => {
                                     <div className='right-btn'>
                                         <a
                                             className='clear-filter-link'
-                                            onClick={props.clearFilter}
+                                            onClick={clear}
                                         >
                                             <FormattedMessage id={'CLEAR_FILTERS'}/>
                                         </a>
@@ -87,6 +91,7 @@ const PinWrapper = (props) => {
 
 PinWrapper.propTypes = {
     clearFilter: PropTypes.func,
+    query: PropTypes.string,
     toggleFilters: PropTypes.func,
     totalResults: PropTypes.number
 };
