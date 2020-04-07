@@ -35,12 +35,13 @@ const AppliedFilter = (props) => {
                 );
             })
         }
-        <a
-            className='clear-filter-desktop'
+        <button
+            className='button-filters-clear'
             onClick={remove('')}
+            type='button'
         >
             <FormattedMessage id={'CLEAR_FILTERS'}/>
-        </a>
+        </button>
     </div>
         : null;
 };

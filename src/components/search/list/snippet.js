@@ -10,7 +10,10 @@ const Snippet = ({list}) => {
     return (
         <div className='ns-snippet'>
             {showDiscription && <ResultDiscription list={list}/>}
-            <ResultAdditionalInfo list={list}/>
+            <ResultAdditionalInfo
+                list={list}
+                paddingCondition={showDiscription}
+            />
         </div>
     );
 };

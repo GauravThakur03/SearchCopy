@@ -2,10 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 
+const padding = {
+    false: 'paddingTop10',
+    true: ''
+};
+
 /* eslint-disable react/no-danger */
-const ResultAdditionalInfo = ({list}) => {
+const ResultAdditionalInfo = ({
+    list,
+    paddingCondition
+}) => {
     return (
-        <div className='new-search-result-additional-info'>
+        <div className={`new-search-result-additional-info ${padding[paddingCondition]}`}>
             <FormattedMessage id={'MODEL_YEAR'}/>{': '}
             <span
                 dangerouslySetInnerHTML={
@@ -19,7 +27,8 @@ const ResultAdditionalInfo = ({list}) => {
 };
 
 ResultAdditionalInfo.propTypes = {
-    list: PropTypes.object
+    list: PropTypes.object,
+    paddingCondition: PropTypes.bool
 };
 
 export default ResultAdditionalInfo;

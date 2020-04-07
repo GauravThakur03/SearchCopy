@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const config = {
    bail: true,
    mode: 'production',
-   devtool: 'source-map',
+   devtool: 'none',
    entry: ["@babel/polyfill", "./main.js"],
    output: {
       path:path.join(__dirname, 'build'),
