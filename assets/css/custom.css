@@ -3428,7 +3428,7 @@ html {
 }
 
 .filter-bar-search-results-component .filter-bar-mobile .filter-row-2 .filter-col-1 {
-    padding-right: 16px;
+    padding-right: 25px;
     padding-left: 10px;
 }
 
@@ -3864,11 +3864,6 @@ html {
     margin-top: 5px;
     cursor: pointer;
     display: none
-}
-
-.filter-tags-search-results-component .clear-filter-desktop {
-    text-decoration: underline;
-    padding: 16px;
 }
 
 .filter-search-results-component .filters .clear-filters:after {

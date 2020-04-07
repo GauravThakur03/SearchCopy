@@ -2,12 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import IconsBar from '../preview/icons-bar';
+import {updateHistory} from '../../../utils/util';
 
 /* eslint-disable react/no-danger */
 const ResultTitle = ({
     list,
-    onPreview
+    onPreview,
+    query
 }) => {
+    const updateHistoryURL = () => {
+        const pushURL = updateHistory(query);
+
+        history.pushState(null, '', pushURL);
+    };
+
     return (
         <h4 className={'preview-title'}>
             <a
@@ -17,6 +25,7 @@ const ResultTitle = ({
                     }
                 }
                 href={list.url}
+                onClick={updateHistoryURL}
             />
             <IconsBar
                 list={list}
@@ -28,7 +37,8 @@ const ResultTitle = ({
 
 ResultTitle.propTypes = {
     list: PropTypes.object,
-    onPreview: PropTypes.func
+    onPreview: PropTypes.func,
+    query: PropTypes.string
 };
 
 export default ResultTitle;

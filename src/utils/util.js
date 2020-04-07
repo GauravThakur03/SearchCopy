@@ -131,6 +131,27 @@ export function getQuery() {
     }, {});
 }
 
+export function updateHistory(query) {
+    if (history.pushState) {
+        const params = getQuery();
+
+        if (!params.hasOwnProperty('query')) {
+            params.query = '';
+        }
+
+        const queryStr = Object.keys(params).reduce((acc, k) => {
+            const key = `${k}=${k === 'query' ? query : params[k]}`;
+
+            acc.push(key);
+
+            return acc;
+        }, []).join('&');
+
+        return `${window.location.protocol}//${window.location.host}${window.location.pathname}?${queryStr}`;
+    }
+    return null;
+}
+
 function getTotalResults(binning) {
     const bin = binning['binning-set'].find((binningSet) => binningSet._label === 'country_site').bin;
     const total = Array.isArray(bin) ? bin.find((country) => country._label === getQuery().country_site)._ndocs : bin._ndocs;

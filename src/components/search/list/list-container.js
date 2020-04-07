@@ -7,6 +7,7 @@ import Snippet from './snippet';
 const ListContainer = ({
     list,
     onPreview,
+    query,
     shouldPreview,
     shouldShowImage
 }) => {
@@ -17,6 +18,7 @@ const ListContainer = ({
             <ResultTitle
                 list={list}
                 onPreview={onPreview}
+                query={query}
             />
             {
                 !shouldPreview ? <Snippet list={list}/> : null
@@ -28,6 +30,7 @@ const ListContainer = ({
 ListContainer.propTypes = {
     list: PropTypes.object,
     onPreview: PropTypes.func,
+    query: PropTypes.string,
     shouldPreview: PropTypes.bool,
     shouldShowImage: PropTypes.bool
 };
