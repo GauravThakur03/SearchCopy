@@ -135,8 +135,12 @@ export function updateHistory(query) {
     if (history.pushState) {
         const params = getQuery();
 
+        if (!params.hasOwnProperty('query')) {
+            params.query = '';
+        }
+
         const queryStr = Object.keys(params).reduce((acc, k) => {
-            const key = `${k}=${k === 'query' ? encodeURIComponent(query) : params[k]}`;
+            const key = `${k}=${k === 'query' ? query : params[k]}`;
 
             acc.push(key);
 
