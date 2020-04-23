@@ -19,8 +19,7 @@ const ResultAdditionalInfo = ({list}) => {
 };
 
 ResultAdditionalInfo.propTypes = {
-    list: PropTypes.object,
-    paddingCondition: PropTypes.bool
+    list: PropTypes.object
 };
 
 export default ResultAdditionalInfo;
