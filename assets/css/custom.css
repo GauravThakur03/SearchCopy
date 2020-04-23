@@ -267,7 +267,8 @@
         display: block!important
     }
     .nav-container {
-        border-bottom: 1px solid #eee
+        border-bottom: 1px solid #eee;
+		position: relative;
     }
 }
 
@@ -3428,7 +3429,7 @@ html {
 }
 
 .filter-bar-search-results-component .filter-bar-mobile .filter-row-2 .filter-col-1 {
-    padding-right: 25px;
+    padding-right: 16px;
     padding-left: 10px;
 }
 
@@ -3865,7 +3866,10 @@ html {
     cursor: pointer;
     display: none
 }
-
+.filter-tags-search-results-component .clear-filter-desktop {	
+    text-decoration: underline;	
+    padding: 16px;	
+}
 .filter-search-results-component .filters .clear-filters:after {
     content: "x";
     font-size: 18px;
