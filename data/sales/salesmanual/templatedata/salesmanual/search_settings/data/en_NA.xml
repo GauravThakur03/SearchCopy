@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <displayImages>true</displayImages>
+    <searchBaseUrl>https://servicesext.deere.com/wex-vsn-query/r4</searchBaseUrl>
+    <translations>
+        <SEARCH>Search</SEARCH>
+        <RESULTS>Results</RESULTS>
+        <PREVIEW>Preview</PREVIEW>
+        <CLEAR_FILTERS>Clear Filters</CLEAR_FILTERS>
+        <MODEL_YEAR>Model Year</MODEL_YEAR>
+        <OPEN_NEW_WINDOW>Open in new window</OPEN_NEW_WINDOW>
+        <CONTEXT_SEARCH_MESSAGE>Showing results for model specific search.</CONTEXT_SEARCH_MESSAGE>
+        <SEARCH_ENTIRE_LINK>Search entire site</SEARCH_ENTIRE_LINK>
+        <NO_SUGGESTIONS>No suggestions, for search term!</NO_SUGGESTIONS>
+        <BASECODES>Base Codes</BASECODES>
+        <CLOSE_PREVIEW>Close Preview</CLOSE_PREVIEW>
+        <SHOW_MORE>Show More</SHOW_MORE>
+        <SHOW_LESS>Show Less</SHOW_LESS>
+        <SHOW_FILTERS>Show Filters</SHOW_FILTERS>
+        <VIEW_RESULTS>View Results</VIEW_RESULTS>
+        <OF>Of</OF>
+        <PRODUCT_CATEGORY>Product Category</PRODUCT_CATEGORY>
+        <CONTENT_TYPE>Content Type</CONTENT_TYPE>
+    </translations>
+    <productCategoryList>
+        <productCategory>
+            <key>AGMS</key>
+            <label>Precision Ag Technology</label>
+            <value>category==Ag management solutions</value>
+        </productCategory>
+        <productCategory>
+            <key>COMBINE_AND_HEADERS</key>
+            <label>Combines and headers</label>
+            <value>category==Combines and headers</value>
+        </productCategory>
+        <productCategory>
+            <key>COMMERCIAL_MOVERS</key>
+            <label>Commercial mowers</label>
+            <value>category==Commercial mowers</value>
+        </productCategory>
+        <productCategory>
+            <key>COTTON_HARVESTERS</key>
+            <label>Cotton harvesters</label>
+            <value>category==Cotton harvesters</value>
+        </productCategory>
+        <productCategory>
+            <key>CUTTERS_SHREDDERS</key>
+            <label>Cutters and shredders</label>
+            <value>category==Cutters and shredders</value>
+        </productCategory>
+        <productCategory>
+            <key>EARTHMOVING_EQUIPMENTS</key>
+            <label>Earthmoving </label>
+            <value>category==Earthmoving </value>
+        </productCategory>
+        <productCategory>
+            <key>FRONTIER_EQUIPMENT</key>
+            <label>Frontier</label>
+            <value>category==Frontier</value>
+        </productCategory>
+        <productCategory>
+            <key>GOLF_AND_TURF</key>
+            <label>Golf and turf</label>
+            <value>category==Golf and turf</value>
+        </productCategory>
+        <productCategory>
+            <key>HAY_AND_FORAGE</key>
+            <label>Hay and forage</label>
+            <value>category==Hay and forage</value>
+        </productCategory>
+        <productCategory>
+            <key>LAWN_EQUIPMENT</key>
+            <label>Lawn equipment</label>
+            <value>category==Lawn equipment</value>
+        </productCategory>
+        <productCategory>
+            <key>MATERIAL_HANDLING</key>
+            <label>Material handling</label>
+            <value>category==Material handling</value>
+        </productCategory>
+        <productCategory>
+            <key>SEEDING</key>
+            <label>Seeding</label>
+            <value>category==Seeding</value>
+        </productCategory>
+        <productCategory>
+            <key>SPRAYERS</key>
+            <label>Sprayers</label>
+            <value>category==Sprayers</value>
+        </productCategory>
+        <productCategory>
+            <key>TILLAGE_PRIMARY</key>
+            <label>Primary tillage</label>
+            <value>category==Tillage</value>
+        </productCategory>
+        <productCategory>
+            <key>TILLAGE_SECONDARY</key>
+            <label>Secondary tillage</label>
+            <value>category==Tillage</value>
+        </productCategory>
+        <productCategory>
+            <key>UTILITY_VEHICLES</key>
+            <label>Utility vehicles</label>
+            <value>category==Utility vehicles</value>
+        </productCategory>
+        <productCategory>
+            <key>TRACTORS</key>
+            <label>Tractors</label>
+            <value>category==Tractors</value>
+        </productCategory>
+    </productCategoryList>
+    <contentTypeList>
+        <contentType>
+            <key>MODEL</key>
+            <label>Model</label>
+            <value>sub_type==Model</value>
+        </contentType>
+        <contentType>
+            <key>FEATURES</key>
+            <label>Feature</label>
+            <value>sub_type==Feature</value>
+        </contentType>
+        <contentType>
+            <key>ATTACHMENTS</key>
+            <label>Attachments</label>
+            <value>sub_type==Attachment</value>
+        </contentType>
+        <contentType>
+            <key>GENERAL_ANNOUNCEMENTS</key>
+            <label>General Announcements</label>
+            <value>sub_type==Product Announcement</value>
+        </contentType>
+        <contentType>
+            <key>COMPETITIVE_COMPARISONS</key>
+            <label>Competitive Announcements</label>
+            <value>sub_type==Competitive</value>
+        </contentType>
+        <contentType>
+            <key>NEW_PRODUCT_LAUNCH_CENTER</key>
+            <label>Product Launch Center</label>
+            <value>sub_type==Product Launch Center</value>
+        </contentType>
+    </contentTypeList>
+    <modelYearList>
+        <modelYear>
+            <key>2021</key>
+            <label>2021</label>
+            <value>year==2021</value>
+        </modelYear>
+        <modelYear>
+            <key>2020</key>
+            <label>2020</label>
+            <value>year==2020</value>
+        </modelYear>
+        <modelYear>
+            <key>2019</key>
+            <label>2019</label>
+            <value>year==2019</value>
+        </modelYear>
+        <modelYear>
+            <key>2018</key>
+            <label>2018</label>
+            <value>year==2018</value>
+        </modelYear>
+        <modelYear>
+            <key>2017</key>
+            <label>2017</label>
+            <value>year==2017</value>
+        </modelYear>
+    </modelYearList>
+</settings>
