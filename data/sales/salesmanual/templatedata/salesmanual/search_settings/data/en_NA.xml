@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
     <displayImages>true</displayImages>
-    <searchBaseUrl>https://servicesext.deere.com/wex-vsn-query/r4</searchBaseUrl>
+    <searchBaseUrl>localjson</searchBaseUrl>
     <translations>
         <SEARCH>Search</SEARCH>
         <RESULTS>Results</RESULTS>
