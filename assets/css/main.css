@@ -412,7 +412,7 @@ body, html {
 
 a {
     text-decoration: underline;
-    color: #367c2b
+    color: #1874b3
 }
 
 a:active, a:focus, a:hover {
@@ -755,7 +755,7 @@ input[type=email], input[type=text] {
 }
 
 .button-push, .button-push:hover {
-    color: #367c2b;
+    color: #1874b3;
     text-decoration: none
 }
 
@@ -765,13 +765,13 @@ input[type=email], input[type=text] {
 
 .button-push:focus {
     text-decoration: none;
-    color: #367c2b
+    color: #1874b3
 }
 
 .button-drop {
-    color: #367c2b;
+    color: #1874b3;
     background: #fff;
-    border: 2px solid #367c2b
+    border: 2px solid #1874b3
 }
 
 .dropdown-select {
@@ -788,11 +788,11 @@ input[type=email], input[type=text] {
 .dropdown-input {
     padding: 14px 40px 14px 20px;
     background: 0;
-    border: 2px solid #367c2b
+    border: 2px solid #1874b3
 }
 
 .dropdown-input .dropdown-icon, .dropdown-input span {
-    color: #367c2b
+    color: #1874b3
 }
 
 .footer {
@@ -952,9 +952,9 @@ body.auto-scrolling .filter-bar-component {
     float: right;
     background-image: url(../images/logo/jd_logo_mobile.png);
     background-repeat: no-repeat;
-    background-size: 185px 56px;
+    background-size: 165px 36px;
     position: relative;
-    left: 0;
+    margin-left: 20px;
     z-index: 660;
     transition: left .5s ease-in-out;
     
@@ -1017,7 +1017,7 @@ body.auto-scrolling .filter-bar-component {
     border-left: 1px solid #e5e6e6;
     border-right: 0;
     height: 56px;
-    color: #367c2b!important;
+    color: #1874b3!important;
     font-size: 16px;
     padding: 17px 17px 0;
     cursor: pointer
@@ -1124,7 +1124,7 @@ body.auto-scrolling .filter-bar-component {
     display: block;
     font-family: jd_sans_probold;
     font-size: 18px;
-    color: #367c2b;
+    color: #1874b3;
     text-decoration: none;
     text-align: left;
     padding: 16px 20px 0
@@ -1135,7 +1135,7 @@ body.auto-scrolling .filter-bar-component {
     display: inline-block;
     font-size: 14px;
     margin-right: 8px;
-    color: #367c2b
+    color: #1874b3
 }
 
 .nav-container .nav-content .nav-aux, .nav-container .nav-content .search, .nav-container .nav-content .search-input {
@@ -1189,7 +1189,7 @@ body.auto-scrolling .filter-bar-component {
     display: inline-block;
     font-size: 14px;
     margin-left: 8px;
-    color: #367c2b;
+    color: #1874b3;
     position: absolute;
     top: 7px;
     right: 0
@@ -1208,7 +1208,7 @@ body.auto-scrolling .filter-bar-component {
 }
 
 .nav-container .nav-content .nav-tier1 li .additional-link.active {
-    color: #367c2b;
+    color: #1874b3;
     background: url(../images/image-icons/global-nav-arrow-white.png);
     background-repeat: no-repeat;
     background-position: 100%
@@ -1257,7 +1257,7 @@ body.auto-scrolling .filter-bar-component {
     display: inline-block;
     font-size: 14px;
     margin-left: 8px;
-    color: #367c2b;
+    color: #1874b3;
     position: absolute;
     top: 7px;
     right: 0
@@ -1343,7 +1343,7 @@ body.auto-scrolling .filter-bar-component {
     display: inline-block;
     font-size: 14px;
     margin-left: 8px;
-    color: #367c2b
+    color: #1874b3
 }
 
 .nav-container .nav-content .nav-tier3 .header {
@@ -1359,7 +1359,7 @@ body.auto-scrolling .filter-bar-component {
 }
 
 .nav-container .nav-content .nav-tier3 .secondary-link {
-    color: #367c2b;
+    color: #1874b3;
     text-decoration: none;
     font-family: jd_sans_probold;
     font-size: 18px;
@@ -1374,8 +1374,7 @@ body.auto-scrolling .filter-bar-component {
     .nav-container.unscrolled .nav-logo {
         width: 253px;
         height: 81px;
-        background-size: 253px 81px;
-        margin-left: -21px
+        background-size: 233px 61px;
     }
     .nav-container.unscrolled .search-input, .nav-container.unscrolled .search-input input {
         height: 79px
@@ -1412,8 +1411,7 @@ body.auto-scrolling .filter-bar-component {
         height: 56px;
         float: right;
         background-image: url(../images/logo/jd_logo_desktop.png);
-        background-size: 177px 56px;
-        margin-left: -15px;
+        background-size: 157px 36px;
     }
     .nav-container .nav-mobile {
         display: none
@@ -1429,7 +1427,7 @@ body.auto-scrolling .filter-bar-component {
     }
     .nav-container .nav-content .search {
         height: 56px;
-        color: #367c2b;
+        color: #1874b3;
         padding: 16px 30px 0;
         cursor: pointer;
         position: relative;
@@ -1551,7 +1549,7 @@ body.auto-scrolling .filter-bar-component {
         display: none
     }
     .nav-container .nav-content .nav-tier1 .primary-link.active {
-        color: #367c2b
+        color: #1874b3
     }
     .nav-container .nav-content .nav-tier1 .additional-link {
         display: none
@@ -1621,13 +1619,13 @@ body.auto-scrolling .filter-bar-component {
         padding-right: 30px
     }
     .nav-container .nav-content .nav-tier2 .secondary-link.active {
-        color: #367c2b;
+        color: #1874b3;
         background: url(../images/image-icons/global-nav-arrow-white.png);
         background-repeat: no-repeat;
         background-position: 100%
     }
     .nav-container .nav-content .nav-tier2 .secondary-link:hover {
-        color: #367c2b
+        color: #1874b3
     }
     .nav-container .nav-content .nav-tier2 .additional-link {
         width: 100%;
@@ -1639,13 +1637,13 @@ body.auto-scrolling .filter-bar-component {
         padding-right: 30px
     }
     .nav-container .nav-content .nav-tier2 .additional-link.active {
-        color: #367c2b;
+        color: #1874b3;
         background: url(/assets/images/image-icons/global-nav-arrow-white.png);
         background-repeat: no-repeat;
         background-position: 100%
     }
     .nav-container .nav-content .nav-tier2 .additional-link:hover {
-        color: #367c2b
+        color: #1874b3
     }
     .nav-container .nav-content .nav-tier3 {
         width: 1000px;
@@ -1675,7 +1673,7 @@ body.auto-scrolling .filter-bar-component {
         opacity: 1
     }
     .nav-container .nav-content .nav-tier3.active .primary-link:hover {
-        color: #367c2b
+        color: #1874b3
     }
     .nav-container .nav-content .nav-tier3 .col1, .nav-container .nav-content .nav-tier3 .col2, .nav-container .nav-content .nav-tier3 .col3 {
         width: auto;
@@ -1725,7 +1723,7 @@ body.auto-scrolling .filter-bar-component {
         display: inline-block;
         font-size: 14px;
         margin-left: 8px;
-        color: #367c2b
+        color: #1874b3
     }
     .nav-container .nav-content .nav-tier3 .header {
         color: #666;
@@ -1735,7 +1733,7 @@ body.auto-scrolling .filter-bar-component {
         margin-bottom: 5px
     }
     .nav-container .nav-content .nav-tier3 .secondary-link {
-        color: #367c2b;
+        color: #1874b3;
         text-decoration: none;
         font-family: jd_sans_probold;
         font-size: 18px
@@ -2354,7 +2352,7 @@ body.auto-scrolling .filter-bar-component {
 
 .nav-sticky .nav-links .nav-link.active {
     background-color: #eff0f0;
-    color: #367c2b
+    color: #1874b3
 }
 
 .nav-sticky .left-container {
@@ -2392,7 +2390,7 @@ body.auto-scrolling .filter-bar-component {
 .nav-sticky .nav-arrow {
     font-family: jd_icon;
     font-size: 12px;
-    color: #367c2b;
+    color: #1874b3;
     cursor: pointer;
     display: none
 }
@@ -2573,7 +2571,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 .expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section .expand-collapse-component-item>h4:before {
     font-family: jd_icon;
     font-size: 14px;
-    color: #367c2b;
+    color: #1874b3;
     position: absolute;
     left: 0;
     top: 2px
@@ -2625,7 +2623,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 .expand-collapse-component .expand-collapse-component-container .expand-collapse-component-section.collapsible>h3:before {
     font-family: jd_icon;
     font-size: 14px;
-    color: #367c2b;
+    color: #1874b3;
     position: absolute;
     left: 0;
     top: 2px
@@ -3038,13 +3036,13 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .filter-search-results-component .filters .filter-group .filter.active .input-range {
-    --range-color: #367c2b
+    --range-color: #1874b3
 }
 
 .filter-search-results-component .filters .filter-group .filter.active h4:before {
     font-family: jd_icon;
     font-size: 14px;
-    color: #367c2b;
+    color: #1874b3;
     position: absolute;
     right: 20px;
     top: 21px
@@ -3064,7 +3062,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 .filter-search-results-component .filters .filter-group .filter h4:before {
     font-family: jd_icon;
     font-size: 14px;
-    color: #367c2b;
+    color: #1874b3;
     position: absolute;
     right: 20px;
     top: 21px
@@ -3146,7 +3144,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 
 .filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-handle .noUi-tooltip {
     font-family: jd_sans_probold;
-    color: #367c2b;
+    color: #1874b3;
     font-size: 14px;
     position: absolute;
     -webkit-transform: translate(-50%);
@@ -3157,11 +3155,11 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-handle.activated {
-    border: 1px solid #367c2b
+    border: 1px solid #1874b3
 }
 
 .filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-connect {
-    background: #367c2b;
+    background: #1874b3;
     border: 0;
     box-shadow: none
 }
@@ -3277,7 +3275,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .search-bar-component .search-icon span {
-    color: #367c2b
+    color: #1874b3
 }
 
 .search-bar-component .twitter-typeahead {
@@ -3476,7 +3474,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
         width: 6px
     }
     .green-bar {
-        background: #367c2b
+        background: #1874b3
     }
     .yellow-bar {
         background: #ffe000
@@ -3642,7 +3640,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 }
 
 .button-filters-clear {
-    color: #367c2b;
+    color: #1874b3;
     border: 2px solid transparent;
     text-decoration: none;
     padding: 12px 16px;
@@ -3654,7 +3652,7 @@ body.global-nav-sticky.auto-scrolling .nav-sticky.stuck {
 
 
 .button-filters-clear:focus, .button-filters-clear:hover {
-    color: #367c2b;
+    color: #1874b3;
     text-decoration: none
 }
 
@@ -3689,7 +3687,7 @@ div.checker:focus, div.radio:focus {
 }
 
 div.checker:focus span, div.checker:hover span, div.radio:focus span, div.radio:hover span {
-    color: #367c2b
+    color: #1874b3
 }
 
 div.checker span, div.radio span {
@@ -3781,8 +3779,8 @@ div.checker.radio span.checked, div.radio.radio span.checked {
 .pagination-news .pagination-next.active, .pagination-news .pagination-prev.active, .pagination-reviews .pagination-next.active, .pagination-reviews .pagination-prev.active, .pagination-search .pagination-next.active, .pagination-search .pagination-prev.active, .pagination-special-offers .pagination-next.active, .pagination-special-offers .pagination-prev.active {
     display: inline-block;
     cursor: pointer;
-    color: #367c2b;
-    border: 2px solid #367c2b
+    color: #1874b3;
+    border: 2px solid #1874b3
 }
 
 .pagination-news .pagination-prev:before, .pagination-reviews .pagination-prev:before, .pagination-search .pagination-prev:before, .pagination-special-offers .pagination-prev:before {
@@ -3849,12 +3847,12 @@ div.checker.radio span.checked, div.radio.radio span.checked {
 }
 
 .pagination-news .pagination-numbers .page-link:hover, .pagination-reviews .pagination-numbers .page-link:hover, .pagination-search .pagination-numbers .page-link:hover, .pagination-special-offers .pagination-numbers .page-link:hover {
-    color: #367c2b
+    color: #1874b3
 }
 
 .pagination-news .pagination-numbers .page-link.current, .pagination-reviews .pagination-numbers .page-link.current, .pagination-search .pagination-numbers .page-link.current, .pagination-special-offers .pagination-numbers .page-link.current {
-    color: #367c2b;
-    border-bottom: 2px solid #367c2b
+    color: #1874b3;
+    border-bottom: 2px solid #1874b3
 }
 
 .pagination-news .pagination-numbers .page-link.active, .pagination-reviews .pagination-numbers .page-link.active, .pagination-search .pagination-numbers .page-link.active, .pagination-special-offers .pagination-numbers .page-link.active {

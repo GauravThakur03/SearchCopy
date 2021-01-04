@@ -307,7 +307,7 @@
 }
 
 .uxf a {
-    color: #367c2b;
+    color: #1874b3;
     text-decoration: none
 }
 
@@ -337,7 +337,7 @@
 .uxf code {
     padding: 2px 4px;
     font-size: 90%;
-    color: #367c2b;
+    color: #1874b3;
     background-color: #ace0a4;
     border-radius: 5px
 }
@@ -2117,7 +2117,7 @@
 }
 
 .uxf .form-control:focus,.uxf.uxf-datatables .dataTables_wrapper .dataTables_length select:focus,.uxf.uxf-datatables .dataTables_wrapper .dataTables_filter input:focus {
-    border-color: #367c2b;
+    border-color: #1874b3;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(54,124,43,0.6)
 }
@@ -2361,11 +2361,11 @@
 }
 
 .uxf .has-success .help-block {
-    color: #367c2b
+    color: #1874b3
 }
 
 .uxf .has-success .form-control,.uxf.uxf-datatables .has-success .dataTables_wrapper .dataTables_length select,.uxf.uxf-datatables .dataTables_wrapper .dataTables_length .has-success select,.uxf.uxf-datatables .has-success .dataTables_wrapper .dataTables_filter input,.uxf.uxf-datatables .dataTables_wrapper .dataTables_filter .has-success input {
-    border-color: #367c2b;
+    border-color: #1874b3;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075)
 }
 
@@ -2376,16 +2376,16 @@
 
 .uxf .has-success .input-group-addon {
     background-color: #ebf2eb;
-    border-color: #367c2b;
-    color: #367c2b
+    border-color: #1874b3;
+    color: #1874b3
 }
 
 .uxf .has-success .form-control-feedback {
-    color: #367c2b
+    color: #1874b3
 }
 
 .uxf .has-success input[type='checkbox']+span::before,.uxf .has-success input[type='radio']+span::before {
-    border-color: #367c2b
+    border-color: #1874b3
 }
 
 .uxf .has-warning .control-label,.uxf .has-warning .radio,.uxf .has-warning .checkbox,.uxf .has-warning .radio-inline,.uxf .has-warning .checkbox-inline,.uxf .has-warning.radio label,.uxf .has-warning.checkbox label,.uxf .has-warning.radio-inline label,.uxf .has-warning.checkbox-inline label {
@@ -2712,7 +2712,7 @@
 
 .uxf .btn-success {
     color: #fff;
-    background-color: #367c2b;
+    background-color: #1874b3;
     border-color: #2e6924
 }
 
@@ -2745,12 +2745,12 @@
 }
 
 .uxf .btn-success.disabled:hover,.uxf .btn-success.disabled:focus,.uxf .btn-success.disabled.focus,.uxf .btn-success[disabled]:hover,.uxf .btn-success[disabled]:focus,.uxf .btn-success[disabled].focus,fieldset[disabled] .uxf .btn-success:hover,fieldset[disabled] .uxf .btn-success:focus,fieldset[disabled] .uxf .btn-success.focus {
-    background-color: #367c2b;
+    background-color: #1874b3;
     border-color: #2e6924
 }
 
 .uxf .btn-success .badge {
-    color: #367c2b;
+    color: #1874b3;
     background-color: #fff
 }
 
@@ -2887,7 +2887,7 @@
 }
 
 .uxf .btn-link {
-    color: #367c2b;
+    color: #1874b3;
     font-weight: normal;
     border-radius: 0
 }
@@ -3039,7 +3039,7 @@
     clear: both;
     font-weight: normal;
     line-height: 1.5;
-    color: #367c2b;
+    color: #1874b3;
     white-space: nowrap
 }
 
@@ -3053,7 +3053,7 @@
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #367c2b
+    background-color: #1874b3
 }
 
 .uxf .dropdown-menu>.disabled>a,.uxf .dropdown-menu>.disabled>a:hover,.uxf .dropdown-menu>.disabled>a:focus {
@@ -3484,7 +3484,7 @@
 
 .uxf .nav .open>a,.uxf .nav .open>a:hover,.uxf .nav .open>a:focus {
     background-color: transparent;
-    border-color: #367c2b
+    border-color: #1874b3
 }
 
 .uxf .nav .nav-divider {
@@ -3499,7 +3499,7 @@
 }
 
 .uxf .nav-tabs {
-    border-bottom: 1px solid #367c2b
+    border-bottom: 1px solid #1874b3
 }
 
 .uxf .nav-tabs>li {
@@ -3515,13 +3515,13 @@
 }
 
 .uxf .nav-tabs>li>a:hover {
-    border-color: #367c2b #367c2b #367c2b
+    border-color: #1874b3 #1874b3 #1874b3
 }
 
 .uxf .nav-tabs>li.active>a,.uxf .nav-tabs>li.active>a:hover,.uxf .nav-tabs>li.active>a:focus {
     color: #000;
     background-color: transparent;
-    border: 1px solid #367c2b;
+    border: 1px solid #1874b3;
     border-bottom-color: transparent;
     cursor: default
 }
@@ -3540,7 +3540,7 @@
 
 .uxf .nav-pills>li.active>a,.uxf .nav-pills>li.active>a:hover,.uxf .nav-pills>li.active>a:focus {
     color: #fff;
-    background-color: #367c2b
+    background-color: #1874b3
 }
 
 .uxf .nav-stacked>li {
@@ -3591,17 +3591,17 @@
 }
 
 .uxf .nav-tabs-justified>.active>a,.uxf .nav-tabs.nav-justified>.active>a,.uxf .nav-tabs-justified>.active>a:hover,.uxf .nav-tabs.nav-justified>.active>a:hover,.uxf .nav-tabs-justified>.active>a:focus,.uxf .nav-tabs.nav-justified>.active>a:focus {
-    border: 1px solid #367c2b
+    border: 1px solid #1874b3
 }
 
 @media(min-width: 576px) {
     .uxf .nav-tabs-justified>li>a,.uxf .nav-tabs.nav-justified>li>a {
-        border-bottom:1px solid #367c2b;
+        border-bottom:1px solid #1874b3;
         border-radius: 5px 5px 0 0
     }
 
     .uxf .nav-tabs-justified>.active>a,.uxf .nav-tabs.nav-justified>.active>a,.uxf .nav-tabs-justified>.active>a:hover,.uxf .nav-tabs.nav-justified>.active>a:hover,.uxf .nav-tabs-justified>.active>a:focus,.uxf .nav-tabs.nav-justified>.active>a:focus {
-        border-bottom-color: #367c2b
+        border-bottom-color: #1874b3
     }
 }
 
@@ -4215,7 +4215,7 @@
 
 .uxf .panel-primary>.panel-heading {
     color: #fff;
-    background-color: #367c2b;
+    background-color: #1874b3;
     border-color: transparent
 }
 
@@ -4224,7 +4224,7 @@
 }
 
 .uxf .panel-primary>.panel-heading .badge {
-    color: #367c2b;
+    color: #1874b3;
     background-color: #fff
 }
 
@@ -4906,7 +4906,7 @@
 }
 
 .uxf .breadcrumb-drop-last li:nth-last-child(2)::after {
-    color: #367c2b;
+    color: #1874b3;
     content: " > ";
     padding: 0 5px
 }
@@ -5043,7 +5043,7 @@
     border-color: #2e6924;
     color: #fff;
     font-weight: bold;
-    background-image: linear-gradient(to bottom,#367c2b 0,#376c25 50%);
+    background-image: linear-gradient(to bottom,#1874b3 0,#376c25 50%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF367C2B',endColorstr='#FF376C25',GradientType=0)
 }
@@ -5095,7 +5095,7 @@
 
 .uxf .btn-success .badge {
     color: #fff;
-    background-image: linear-gradient(to bottom,#367c2b 0,#376c25 50%);
+    background-image: linear-gradient(to bottom,#1874b3 0,#376c25 50%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF367C2B',endColorstr='#FF376C25',GradientType=0)
 }
@@ -5583,23 +5583,23 @@
 }
 
 .uxf input[type='checkbox']+span::before:focus,.uxf input[type='radio']+span::before:focus {
-    border-color: #367c2b;
+    border-color: #1874b3;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(54,124,43,0.6)
 }
 
 .uxf input[type='checkbox']:hover+span::before,.uxf input[type='radio']:hover+span::before {
-    border-color: #367c2b
+    border-color: #1874b3
 }
 
 .uxf input[type='checkbox']:focus+span::before,.uxf input[type='checkbox']:active+span::before,.uxf input[type='radio']:focus+span::before,.uxf input[type='radio']:active+span::before {
-    border-color: #367c2b;
+    border-color: #1874b3;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(54,124,43,0.6)
 }
 
 .uxf input[type='checkbox']:checked+span::before {
-    background-color: #367c2b
+    background-color: #1874b3
 }
 
 .uxf input[type='checkbox']:checked+span::after {
@@ -5616,7 +5616,7 @@
 }
 
 .uxf input[type='radio']:checked+span::after {
-    background-color: #367c2b;
+    background-color: #1874b3;
     border-radius: 50%;
     bottom: 5px;
     height: 10px;
@@ -7060,7 +7060,7 @@
 }
 
 .uxf table.table.table-uxf-traditional>caption+thead>tr:first-child>th.active,.uxf table.table.table-uxf-traditional>colgroup+thead>tr:first-child>th.active,.uxf table.table.table-uxf-traditional>thead:first-child>tr:first-child>th.active {
-    background-color: #367c2b;
+    background-color: #1874b3;
     border-bottom: 0;
     color: #fff
 }
@@ -7119,7 +7119,7 @@
 
 .uxf table.table.table-uxf-modern>caption+thead>tr:first-child>th.active,.uxf table.table.table-uxf-modern>colgroup+thead>tr:first-child>th.active,.uxf table.table.table-uxf-modern>thead:first-child>tr:first-child>th.active {
     background-color: #fff;
-    border-bottom: 1px solid #367c2b;
+    border-bottom: 1px solid #1874b3;
     color: #333
 }
 
@@ -7171,7 +7171,7 @@
 }
 
 .uxf a {
-    color: #367c2b;
+    color: #1874b3;
     cursor: pointer
 }
 
@@ -7194,7 +7194,7 @@
 }
 
 .uxf .sidenav a,.uxf .navbar a,.uxf .nav-tabs a,.uxf .nav-pills a,.uxf .pager a,.uxf .pagination a,.uxf .dropdown a,.uxf .dropdown-menu a,.uxf .nav-uxf-side a {
-    color: #367c2b;
+    color: #1874b3;
     text-decoration: none
 }
 

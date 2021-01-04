@@ -51,7 +51,7 @@
 
 .link-list-simple h5, .link-list-simple h5>a {
     text-transform: none;
-    color: #367c2b;
+    color: #1874b3;
     font-size: 16px;
     font-weight: 400
 }
@@ -197,7 +197,7 @@
 }
 
 .green, a {
-    color: #367c2b
+    color: #1874b3
 }
 
 .paddingTop10 {
@@ -273,7 +273,7 @@
 }
 
 .titleTxt {
-    color: #367c2b;
+    color: #1874b3;
     font-size: 18px;
     line-height: 18px;
     margin: 11px 0!important;
@@ -294,7 +294,7 @@
 
 .titleTxt a, .titleTxt a:active, .titleTxt a:focus {
     text-decoration: none;
-    color: #367c2b
+    color: #1874b3
 }
 
 .region {
@@ -652,7 +652,7 @@ div.featured-head {
 .link-out-icon {
     margin-left: -25px;
     margin-right: 7px;
-    color: #367c2b
+    color: #1874b3
 }
 
 .accordian-link-out .link-out-icon {
@@ -1341,9 +1341,9 @@ th.sub-heading {
 }
 
 .link-chiclet {
-    color: #367c2b;
+    color: #1874b3;
     text-align: center;
-    border: 2px solid #367c2b!important;
+    border: 2px solid #1874b3!important;
     cursor: pointer;
     vertical-align: middle;
     display: table;
@@ -1357,7 +1357,7 @@ th.sub-heading {
 
 div.link-chiclet:active, div.link-chiclet:hover {
     color: #fff;
-    background: #367c2b
+    background: #1874b3
 }
 
 .link-chiclet h3 {
@@ -1743,7 +1743,7 @@ div.link-chiclet:active, div.link-chiclet:hover {
 }
 
 .ent_pagetitle.green {
-    color: #367c2b
+    color: #1874b3
 }
 
 .panel-col .panel-header {
@@ -1788,7 +1788,7 @@ div.link-chiclet:active, div.link-chiclet:hover {
 
 .list-style-disc li:before {
     content: "â€¢";
-    color: #367c2b
+    color: #1874b3
 }
 
 table#panel-row tr {
@@ -2666,7 +2666,7 @@ table#panel-row td.panel-col {
 .button-push:hover {
     background: #e5e6e6;
     text-decoration: none;
-    color: #367c2b
+    color: #1874b3
 }
 
 @media screen and (max-width:767px) {
@@ -2690,7 +2690,7 @@ table#panel-row td.panel-col {
 }
 
 .model-page .top-links {
-    color: #367c2b
+    color: #1874b3
 }
 
 @media (max-width:991px) {
@@ -3075,7 +3075,7 @@ p.new-search-result-description {
 }
 
 .show-less-label a, .show-more-label a {
-    color: #367c2b!important;
+    color: #1874b3!important;
     cursor: pointer
 }
 
@@ -3666,13 +3666,13 @@ html {
 }
 
 .filter-search-results-component .filters .filter-group .filter.active .input-range {
-    --range-color: #367c2b
+    --range-color: #1874b3
 }
 
 .filter-search-results-component .filters .filter-group .filter.active h4:before {
     font-family: jd_icon;
     font-size: 14px;
-    color: #367c2b;
+    color: #1874b3;
     position: absolute;
     right: 20px;
     top: 21px
@@ -3692,7 +3692,7 @@ html {
 .filter-search-results-component .filters .filter-group .filter h4:before {
     font-family: jd_icon;
     font-size: 14px;
-    color: #367c2b;
+    color: #1874b3;
     position: absolute;
     right: 20px;
     top: 21px
@@ -3788,7 +3788,7 @@ html {
 
 .filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-handle .noUi-tooltip {
     font-family: jd_sans_probold;
-    color: #367c2b;
+    color: #1874b3;
     font-size: 14px;
     position: absolute;
     -ms-transform: translate(-50%);
@@ -3798,11 +3798,11 @@ html {
 }
 
 .filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-handle.activated {
-    border: 1px solid #367c2b
+    border: 1px solid #1874b3
 }
 
 .filter-search-results-component .filters .filter-group .filter .range-slider-container .noUi-connect {
-    background: #367c2b;
+    background: #1874b3;
     border: none;
     box-shadow: none
 }
@@ -3890,8 +3890,8 @@ html {
 }
 
 .button6 {
-    color: #367c2b!important;
-    border: 1px solid #367c2b!important;
+    color: #1874b3!important;
+    border: 1px solid #1874b3!important;
     background: #fff!important
 }
 

@@ -8677,13 +8677,13 @@ export const twoProductTypesFilterData = {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2020/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2020/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "base_codes",
@@ -8752,13 +8752,13 @@ export const twoProductTypesFilterData = {
           },
         ],
         url:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2020/model/propane_726_qt_zt.html",
+          "story1.html",
         filetypes: "html ",
         rank: 0,
         source: "deere-vsn-r4-source-253",
         score: 0.111111,
         truncatedUrl:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2020/model/propane_726_qt_zt.html",
+          "story1.html",
         context:
           "https://servicesext.deere.com/wex-vsn-query/r4?v%3afile=viv_ozxQ0X&v%3astate=%28root%29%7croot&v%3aframe=tree&subquery=id%3aNdoc0&active%3d=root&v%3asubsearch=1&",
       },
@@ -8848,13 +8848,13 @@ export const twoProductTypesFilterData = {
           },
         ],
         url:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2019/model/propane_726_qt_zt.html",
+          "story1.html",
         filetypes: "html ",
         rank: 1,
         source: "deere-vsn-r4-source-253",
         score: 0.1,
         truncatedUrl:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2019/model/propane_726_qt_zt.html",
+          "story1.html",
         context:
           "https://servicesext.deere.com/wex-vsn-query/r4?v%3afile=viv_ozxQ0X&v%3astate=%28root%29%7croot&v%3aframe=tree&subquery=id%3aNdoc1&active%3d=root&v%3asubsearch=1&",
       },
@@ -8869,13 +8869,13 @@ export const twoProductTypesFilterData = {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2018/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2018/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "base_codes",
@@ -8944,13 +8944,13 @@ export const twoProductTypesFilterData = {
           },
         ],
         url:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2018/model/propane_726_qt_zt.html",
+          "story1.html",
         filetypes: "html ",
         rank: 2,
         source: "deere-vsn-r4-source-253",
         score: 0.0909091,
         truncatedUrl:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2018/model/propane_726_qt_zt.html",
+          "story1.html",
         context:
           "https://servicesext.deere.com/wex-vsn-query/r4?v%3afile=viv_ozxQ0X&v%3astate=%28root%29%7croot&v%3aframe=tree&subquery=id%3aNdoc2&active%3d=root&v%3asubsearch=1&",
       },
@@ -8965,13 +8965,13 @@ export const twoProductTypesFilterData = {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2017/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2017/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "base_codes",
@@ -9040,13 +9040,13 @@ export const twoProductTypesFilterData = {
           },
         ],
         url:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2017/model/propane_726_qt_zt.html",
+          "story1.html",
         filetypes: "html ",
         rank: 3,
         source: "deere-vsn-r4-source-253",
         score: 0.0833333,
         truncatedUrl:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2017/model/propane_726_qt_zt.html",
+          "story1.html",
         context:
           "https://servicesext.deere.com/wex-vsn-query/r4?v%3afile=viv_ozxQ0X&v%3astate=%28root%29%7croot&v%3aframe=tree&subquery=id%3aNdoc3&active%3d=root&v%3asubsearch=1&",
       },
@@ -9061,13 +9061,13 @@ export const twoProductTypesFilterData = {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2020/model/1550_terrain_cut.html',
+              'story1.html',
           },
           {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2020/model/1550_terrain_cut.html',
+              'story1.html',
           },
           {
             name: "base_codes",
@@ -11220,7 +11220,7 @@ export const twoProductTypesFilterData = {
   results: [
     {
       url:
-        "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2020/model/propane_726_qt_zt.html",
+        "story1.html",
       baseCodes: ["9970TC"],
       countrySite: "en_NA",
       searchImage:
@@ -11234,7 +11234,7 @@ export const twoProductTypesFilterData = {
     },
     {
       url:
-        "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2019/model/propane_726_qt_zt.html",
+        "story1.html",
       baseCodes: ["9970TC"],
       countrySite: "en_NA",
       searchImage:
@@ -11248,7 +11248,7 @@ export const twoProductTypesFilterData = {
     },
     {
       url:
-        "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2018/model/propane_726_qt_zt.html",
+        "story1.html",
       baseCodes: ["9970TC"],
       countrySite: "en_NA",
       searchImage:
@@ -11262,7 +11262,7 @@ export const twoProductTypesFilterData = {
     },
     {
       url:
-        "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2017/model/propane_726_qt_zt.html",
+        "story1.html",
       baseCodes: ["9970TC"],
       countrySite: "en_NA",
       searchImage:
@@ -11742,7 +11742,7 @@ export const oneProductTypeFilterData = {
           {
             type: "text",
             name: "title",
-            text: "John Deere engine speed management",
+            text: "Equipment Search engine speed management",
           },
           {
             name: "dcr_path",
@@ -11754,7 +11754,7 @@ export const oneProductTypeFilterData = {
             name: "snippet",
             type: "html",
             text:
-              "John Deere engine speed management    Overview    Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with  ...",
+              "Equipment Search engine speed management    Overview    Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with  ...",
           },
         ],
         url:
@@ -11910,7 +11910,7 @@ export const oneProductTypeFilterData = {
           {
             type: "text",
             name: "title",
-            text: "John Deere engine speed management",
+            text: "Equipment Search engine speed management",
           },
           {
             name: "dcr_path",
@@ -11922,7 +11922,7 @@ export const oneProductTypeFilterData = {
             name: "snippet",
             type: "html",
             text:
-              "John Deere engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
+              "Equipment Search engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
           },
         ],
         url:
@@ -12078,7 +12078,7 @@ export const oneProductTypeFilterData = {
           {
             type: "text",
             name: "title",
-            text: "John Deere engine speed management",
+            text: "Equipment Search engine speed management",
           },
           {
             name: "dcr_path",
@@ -12090,7 +12090,7 @@ export const oneProductTypeFilterData = {
             name: "snippet",
             type: "html",
             text:
-              "John Deere engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
+              "Equipment Search engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
           },
         ],
         url:
@@ -12241,7 +12241,7 @@ export const oneProductTypeFilterData = {
           {
             type: "text",
             name: "title",
-            text: "John Deere engine speed management",
+            text: "Equipment Search engine speed management",
           },
           {
             name: "dcr_path",
@@ -12253,7 +12253,7 @@ export const oneProductTypeFilterData = {
             name: "snippet",
             type: "html",
             text:
-              "John Deere engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
+              "Equipment Search engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
           },
         ],
         url:
@@ -12370,7 +12370,7 @@ export const oneProductTypeFilterData = {
           {
             type: "text",
             name: "title",
-            text: "John Deere engine speed management",
+            text: "Equipment Search engine speed management",
           },
           {
             name: "dcr_path",
@@ -12382,7 +12382,7 @@ export const oneProductTypeFilterData = {
             name: "snippet",
             type: "html",
             text:
-              "John Deere engine speed management          Road mode engage       \nEngine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped  ...",
+              "Equipment Search engine speed management          Road mode engage       \nEngine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped  ...",
           },
         ],
         url:
@@ -14334,9 +14334,9 @@ export const oneProductTypeFilterData = {
         "/sales/salesmanual/images/NA/combines_headers/combines/road_mode_engage.jpg",
       subType: "Feature",
       year: 2021,
-      title: "John Deere engine speed management",
+      title: "Equipment Search engine speed management",
       snippet:
-        "John Deere engine speed management    Overview    Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with  ...",
+        "Equipment Search engine speed management    Overview    Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with  ...",
     },
     {
       url:
@@ -14344,9 +14344,9 @@ export const oneProductTypeFilterData = {
       countrySite: "en_NA",
       subType: "Feature",
       year: 2020,
-      title: "John Deere engine speed management",
+      title: "Equipment Search engine speed management",
       snippet:
-        "John Deere engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
+        "Equipment Search engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
     },
     {
       url:
@@ -14354,9 +14354,9 @@ export const oneProductTypeFilterData = {
       countrySite: "en_NA",
       subType: "Feature",
       year: 2019,
-      title: "John Deere engine speed management",
+      title: "Equipment Search engine speed management",
       snippet:
-        "John Deere engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
+        "Equipment Search engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
     },
     {
       url:
@@ -14364,9 +14364,9 @@ export const oneProductTypeFilterData = {
       countrySite: "en_NA",
       subType: "Feature",
       year: 2018,
-      title: "John Deere engine speed management",
+      title: "Equipment Search engine speed management",
       snippet:
-        "John Deere engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
+        "Equipment Search engine speed management       Engine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped with a ProDrive™  ...",
     },
     {
       url:
@@ -14376,9 +14376,9 @@ export const oneProductTypeFilterData = {
         "/sales/salesmanual/images/NA/combines_headers/combines/r4b001173_road_mde_275.jpg",
       subType: "Feature",
       year: 2017,
-      title: "John Deere engine speed management",
+      title: "Equipment Search engine speed management",
       snippet:
-        "John Deere engine speed management          Road mode engage       \nEngine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped  ...",
+        "Equipment Search engine speed management          Road mode engage       \nEngine speed management is standard software for combines with a Final Tier 4 (FT4) engine that are equipped  ...",
     },
     {
       url:
@@ -14656,13 +14656,13 @@ export const defaultData = {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2020/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2020/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "base_codes",
@@ -14731,13 +14731,13 @@ export const defaultData = {
           },
         ],
         url:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2020/model/propane_726_qt_zt.html",
+          "story1.html",
         filetypes: "html ",
         rank: 0,
         source: "deere-vsn-r4-source-204",
         score: 0.111111,
         truncatedUrl:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2020/model/propane_726_qt_zt.html",
+          "story1.html",
         context:
           "https://servicesext.deere.com/wex-vsn-query/r4?v%3afile=viv_q9YxKv&v%3astate=%28root%29%7croot&v%3aframe=tree&subquery=id%3aNdoc0&active%3d=root&v%3asubsearch=1&",
       },
@@ -14827,13 +14827,13 @@ export const defaultData = {
           },
         ],
         url:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2019/model/propane_726_qt_zt.html",
+          "story1.html",
         filetypes: "html ",
         rank: 1,
         source: "deere-vsn-r4-source-204",
         score: 0.1,
         truncatedUrl:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2019/model/propane_726_qt_zt.html",
+          "story1.html",
         context:
           "https://servicesext.deere.com/wex-vsn-query/r4?v%3afile=viv_q9YxKv&v%3astate=%28root%29%7croot&v%3aframe=tree&subquery=id%3aNdoc1&active%3d=root&v%3asubsearch=1&",
       },
@@ -14848,13 +14848,13 @@ export const defaultData = {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2018/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2018/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "base_codes",
@@ -14923,13 +14923,13 @@ export const defaultData = {
           },
         ],
         url:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2018/model/propane_726_qt_zt.html",
+          "story1.html",
         filetypes: "html ",
         rank: 2,
         source: "deere-vsn-r4-source-204",
         score: 0.0909091,
         truncatedUrl:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2018/model/propane_726_qt_zt.html",
+          "story1.html",
         context:
           "https://servicesext.deere.com/wex-vsn-query/r4?v%3afile=viv_q9YxKv&v%3astate=%28root%29%7croot&v%3aframe=tree&subquery=id%3aNdoc2&active%3d=root&v%3asubsearch=1&",
       },
@@ -14944,13 +14944,13 @@ export const defaultData = {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2017/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2017/model/propane_726_qt_zt.html',
+              'story1.html',
           },
           {
             name: "base_codes",
@@ -15019,13 +15019,13 @@ export const defaultData = {
           },
         ],
         url:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2017/model/propane_726_qt_zt.html",
+          "story1.html",
         filetypes: "html ",
         rank: 3,
         source: "deere-vsn-r4-source-204",
         score: 0.0833333,
         truncatedUrl:
-          "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2017/model/propane_726_qt_zt.html",
+          "story1.html",
         context:
           "https://servicesext.deere.com/wex-vsn-query/r4?v%3afile=viv_q9YxKv&v%3astate=%28root%29%7croot&v%3aframe=tree&subquery=id%3aNdoc3&active%3d=root&v%3asubsearch=1&",
       },
@@ -15040,13 +15040,13 @@ export const defaultData = {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2020/model/1550_terrain_cut.html',
+              'story1.html',
           },
           {
             name: "url",
             type: "text",
             text:
-              'https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_<span class="vivbold qt0">mowers</span>/2020/model/1550_terrain_cut.html',
+              'story1.html',
           },
           {
             name: "base_codes",
@@ -17199,7 +17199,7 @@ export const defaultData = {
   results: [
     {
       url:
-        "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2020/model/propane_726_qt_zt.html",
+        "story1.html",
       baseCodes: ["9970TC"],
       countrySite: "en_NA",
       searchImage:
@@ -17213,7 +17213,7 @@ export const defaultData = {
     },
     {
       url:
-        "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2019/model/propane_726_qt_zt.html",
+        "story1.html",
       baseCodes: ["9970TC"],
       countrySite: "en_NA",
       searchImage:
@@ -17227,7 +17227,7 @@ export const defaultData = {
     },
     {
       url:
-        "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2018/model/propane_726_qt_zt.html",
+        "story1.html",
       baseCodes: ["9970TC"],
       countrySite: "en_NA",
       searchImage:
@@ -17241,7 +17241,7 @@ export const defaultData = {
     },
     {
       url:
-        "https://dlrdoc.deere.com/sales/salesmanual/en_NA/commercial_mowers/2017/model/propane_726_qt_zt.html",
+        "story1.html",
       baseCodes: ["9970TC"],
       countrySite: "en_NA",
       searchImage:

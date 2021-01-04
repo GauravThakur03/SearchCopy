@@ -285,3 +285,7 @@ export function onHeaderLoad() {
     }
   }
 }
+
+export function getRandomStory(max, min) {
+  return `story${Math.floor(Math.random() * (max - min)) + min}`;
+}
